@@ -4,42 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title data-i18n="newtabTitle">Search Tools</title>
+  <link rel="icon" type="image/png" href="../img/ublock64.png">
+  <link rel="stylesheet" href="../css/ultimate.css">
   <link rel="stylesheet" href="../css/newtab.css">
-<link rel="stylesheet" href="../css/ultimate.css">
 </head>
 <body>
-  <header>
-    <img src="../img/ublock256.png" alt="" id="header-logo">
-    <div class="header-text">
-      <h1 data-i18n="newtabTitle">Search Tools</h1>
-      <p class="sub" data-i18n="newtabSubtitle">Choose a search tool, enter a query, and open results directly from that provider.</p>
-    </div>
-    <div class="header-toolbar">
-      <div class="gb_L" id="gbwa">
-        <a class="toolbar-btn gb_C" aria-label="Google apps" href="https://www.google.com/intl/en/about/products" role="button" tabindex="0">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
-          </svg>
-        </a>
-        <div class="gb-dropdown gb-apps-dropdown" id="gb-apps-dropdown">
-          <div class="gb-dropdown-scroll">
-            <div class="gb-apps-grid" id="gb-apps-grid"></div>
-          </div>
-        </div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">
+        <img src="../img/ublock128.png" alt="" id="header-logo">
+      </span>
+      <div class="header-text">
+        <strong>uBlock Ultimate</strong>
+        <span data-i18n="newtabTitle">Search Tools</span>
       </div>
-      
+    </div>
+    <div class="runtime-badge" aria-label="Manifest Version 3">
+      <span aria-hidden="true"></span>
+      MV3
     </div>
   </header>
 
   <main>
-    <p id="newtab-hint" data-i18n="newtabHint">Use settings from dashboard to toggle back to original chrome page.</p>
-    <div class="searchbar">
+    <div class="hero-copy">
+      <p class="eyebrow">ULTIMATE SEARCH</p>
+      <h1 data-i18n="newtabTitle">Search Tools</h1>
+      <p class="sub" data-i18n="newtabSubtitle">Choose a search tool, enter a query, and open results directly from that provider.</p>
+    </div>
+
+    <div class="searchbar" role="search">
       <form id="search-form">
-        <label for="query" data-i18n="newtabSearchQuery">Search query</label>
-        <input id="query" name="q" type="search" inputmode="search" dir="auto" autofocus>
-        <div class="actions">
+        <label class="sr-only" for="query" data-i18n="newtabSearchQuery">Search query</label>
+        <div class="provider-summary">
+          <span class="provider-dot" aria-hidden="true"></span>
+          <span id="selected-name" aria-live="polite">Google</span>
+        </div>
+        <div class="query-wrap">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="m21 20-4.35-4.35a7.5 7.5 0 1 0-1.42 1.42L19.59 21 21 20ZM5 10.5a5.5 5.5 0 1 1 11 0 5.5 5.5 0 0 1-11 0Z"></path>
+          </svg>
+          <input id="query" name="q" type="search" inputmode="search" dir="auto" autocomplete="off" autofocus>
+          <button class="submit" type="submit">
+            <span data-i18n="newtabSearch">Search</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="m13 5-1.4 1.4 4.6 4.6H4v2h12.2l-4.6 4.6L13 19l7-7-7-7Z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="search-meta">
           <button type="button" class="default-btn" id="default-btn"><span data-i18n="newtabSetDefault"></span></button>
-          <button class="submit" type="submit"><span data-i18n="newtabSearch">Search</span> <span id="selected-name">Google</span></button>
+          <p id="newtab-hint" data-i18n="newtabHint">Use settings from dashboard to toggle back to original chrome page.</p>
         </div>
       </form>
       <noscript>This standalone page needs JavaScript enabled to send searches to the selected provider.</noscript>
@@ -47,7 +64,6 @@
 
     <nav class="jump" aria-label="Tool categories" id="category-links"></nav>
     <div class="grid" id="tool-grid"></div>
-
   </main>
 
   <footer data-i18n="newtabFooter">Standalone search launcher. No remote scripts, tracking code, or advertising blocks are included.</footer>

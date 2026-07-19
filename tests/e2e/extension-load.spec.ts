@@ -101,6 +101,19 @@ test('loads Chromium MV3 worker, popup and every dashboard tab', async () => {
             );
         }
 
+        await dashboard.evaluate(async () => {
+            await chrome.storage.local.set({ showCustomNewTab: true });
+        });
+        const newTab = await context.newPage();
+        await newTab.goto(
+            `chrome-extension://${extensionId}/pages/newtab.html`,
+        );
+        await expect(newTab.locator('.topbar')).toBeVisible();
+        await expect(newTab.locator('.searchbar')).toBeVisible();
+        await expect(newTab.locator('#tool-grid > section')).toHaveCount(15);
+        await expect(newTab.locator('#category-links > a')).toHaveCount(15);
+        await expect(newTab.locator('.tool.active')).toHaveText('Google');
+
         const protectionFrame = dashboard.frameLocator('#iframe');
         await dashboard.locator('[data-pane="protections.html"]').click();
         await expect(protectionFrame.locator('.ruleset-card')).toHaveCount(7);
