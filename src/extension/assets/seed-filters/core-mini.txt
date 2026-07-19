@@ -1,0 +1,55 @@
+! uBlockUltimate core-mini seed filter list
+! Used by tools/build-static-rulesets.mjs to exercise the static
+! DNR compiler end-to-end. Lines prefixed with `!` are comments and
+! are skipped. Any non-supported syntax is recorded in the
+! unsupported-syntax report (one of the Rev15 release 0.6 exit
+! criteria).
+!
+! This file is hand-curated and small on purpose: it is the
+! minimum corpus that exercises every lane the static compiler
+! knows about, so the resulting budget.json, source-map.json, and
+! unsupported.json all carry real content.
+
+! --- basic network blocks ---
+||doubleclick.net^
+||googlesyndication.com^
+||google-analytics.com^
+||scorecardresearch.com^
+||adsystem.amazon.com^
+
+! --- basic network allows ---
+@@||allowlisted-trusted-cdn.example^
+@@||cdnjs.cloudflare.com^
+
+! --- limited-supported (static-key removeparam) ---
+||example.com^$removeparam=utm_source
+
+! --- unsupported-recognized (regex removeparam) ---
+||example.com^$removeparam=/^fbclid$/
+
+! --- unsupported-recognized (value-based removeparam) ---
+||example.com^$removeparam=utm_source=/newsletter/
+
+! --- unsupported-recognized ($popup) ---
+||popunder.example.com^$popup
+
+! --- unsupported-recognized ($csp) ---
+||csp-test.example.com^$csp=script-src 'self'
+
+! --- unsupported-recognized ($replace) ---
+||tracker.example.org^$replace=/foo/bar/
+
+! --- cosmetic filters (deferred to cosmetic engine; not in static) ---
+example.com##.banner-ad
+tracker.example.org##.sidebar-promo
+@@||example.com^##.sticky-header
+
+! --- $badfilter pair (block + matching badfilter) ---
+||deprecated-tracker.example.net^
+||deprecated-tracker.example.net^$badfilter
+
+! --- malformed line, recorded as invalid ---
+   spaces and tabs   ! actually valid since uBO ignores trailing whitespace
+
+! --- a line that should be flagged for safety / overbroad ---
+||*.*^$third-party

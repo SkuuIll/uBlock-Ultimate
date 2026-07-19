@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM"],
+    "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "types": ["chrome", "node"],
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
+    "paths": {
+      "@mv3/*": ["src/js/mv3/*"],
+      "@contentscript/*": ["src/js/contentscript/*"],
+      "@epicker/*": ["src/js/epicker/*"],
+      "@types/*": ["src/types/*"]
+    }
+  },
+  "include": [
+    "src/js/mv3/**/*.ts",
+    "src/js/contentscript/**/*.ts",
+    "src/extension/js/hybrid-filter-updater.ts",
+    "src/extension/js/storage-schema-v2.ts",
+    "src/types/**/*.ts"
+  ],
+  "exclude": [
+  ]
+}

@@ -1,0 +1,484 @@
+[
+  {
+    "id": 1,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||pagead2.googlesyndication.com^",
+      "initiatorDomains": [
+        "next-episode.net"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "japscan.foo",
+        "japscan.lol",
+        "japscan.si",
+        "japscan.vip"
+      ],
+      "resourceTypes": [
+        "image",
+        "xmlhttprequest",
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 560000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "/^https?:\\/\\/(?:[a-z]{2}\\.)?[a-z]{7,14}\\.[a-z]{3,7}\\/[a-z][0-9A-Za-z]{10,}\\/\\d{4,6}$/",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "japscan.foo",
+        "japscan.lol",
+        "japscan.si",
+        "japscan.vip"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 4,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/^https:\\/\\/acscdn\\.com\\/script\\/(?:aclib|atg|compatibility|ippg|suv4|ut)\\.js\\??(?:cb=\\d{13})?$/",
+      "isUrlFilterCaseSensitive": true,
+      "initiatorDomains": [
+        "japscan.foo",
+        "japscan.lol",
+        "japscan.si",
+        "japscan.vip"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 5,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "japscan.*"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "japscan.*"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "japscan.*"
+      ],
+      "resourceTypes": [
+        "image",
+        "xmlhttprequest",
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 560000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "/^https?:\\/\\/(?:[a-z]{2}\\.)?[0-9a-z]{5,16}\\.[a-z]{3,7}\\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\\/\\d{4,6}(?:\\?[_a-z]=[-0-9a-z]+)?$/",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "japscan.*"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 9,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/^https:\\/\\/acscdn\\.com\\/script\\/(?:aclib|atg|compatibility|ippg|suv4|ut)\\.js(\\?cb=\\d{13})?$/",
+      "isUrlFilterCaseSensitive": true,
+      "initiatorDomains": [
+        "japscan.*"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 10,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adsco.re^",
+      "initiatorDomains": [
+        "poophq.com",
+        "veev.to",
+        "doods.to"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/dl?op=aa&cmd=ga&_a=",
+      "initiatorDomains": [
+        "poophq.com",
+        "veev.to",
+        "doods.to"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 12,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/dl?op=player_api&cmd=*adb=",
+      "initiatorDomains": [
+        "poophq.com",
+        "veev.to",
+        "doods.to"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 13,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/empty"
+      }
+    },
+    "condition": {
+      "urlFilter": "||adsco.re^",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "poophq.com",
+        "veev.to",
+        "doods.to"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "poophq.com",
+        "veev.to",
+        "doods.to"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 15,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "initiatorDomains": [
+        "poophq.com",
+        "veev.to"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 16,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||html-load.com^",
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 17,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/^https:\\/\\/loader\\.[-0-9a-z]+\\.[a-z][a-z][a-z]?\\/loader\\.min\\.js$/",
+      "isUrlFilterCaseSensitive": true,
+      "excludedInitiatorDomains": [
+        "edu",
+        "gov"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 18,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/^https:\\/\\/loader\\.[-0-9a-z]+\\.[a-z][a-z][a-z]?\\/script\\/www\\.[-0-9a-z]+\\.js$/",
+      "isUrlFilterCaseSensitive": true,
+      "excludedInitiatorDomains": [
+        "edu",
+        "gov"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 19,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||loader.nyitvatartas24.hu^"
+    }
+  },
+  {
+    "id": 20,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "bg-gledai.*",
+        "gledaitv.*",
+        "bg-gledai.video",
+        "gledaitv.fan",
+        "gledaitv.live"
+      ],
+      "resourceTypes": [
+        "image",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||pagead2.googlesyndication.com^",
+      "initiatorDomains": [
+        "bg-gledai.*",
+        "gledaitv.*",
+        "bg-gledai.video",
+        "gledaitv.fan",
+        "gledaitv.live"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||viads.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "bg-gledai.video"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||seir-sanduk.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 24,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||raw.githubusercontent.com^",
+      "initiatorDomains": [
+        "nontonx.com"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||embed.wcostream.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 26,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/jsi18n/|",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 27,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||static.ads-twitter.com^"
+    }
+  }
+]

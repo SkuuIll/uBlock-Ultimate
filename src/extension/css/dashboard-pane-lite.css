@@ -1,0 +1,33 @@
+body {
+    min-height: 100vh;
+}
+
+button[disabled],
+input[disabled],
+textarea[disabled],
+select[disabled] {
+    cursor: default;
+}
+
+.dashboard-lite-editor {
+    background-color: var(--surface-0);
+    border: 1px solid var(--border-1);
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-height: 16rem;
+    overflow: auto;
+    padding: 1rem;
+}
+
+.dashboard-lite-editor__content {
+    color: var(--ink-2);
+    font-family: monospace;
+    font-size: var(--monospace-size);
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+#cloudWidget,
+[data-cloud-entry] {
+    opacity: 0.6;
+}

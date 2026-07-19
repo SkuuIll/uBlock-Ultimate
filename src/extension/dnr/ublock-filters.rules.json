@@ -1,0 +1,7471 @@
+[
+  {
+    "id": 1,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*_ad_",
+      "initiatorDomains": [
+        "youtube.com"
+      ],
+      "resourceTypes": [
+        "media"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 2,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/nofab.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*/fuckadblock-",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/nofab.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*/fuckadblock.",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/nofab.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*/blockadblock.",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/nofab.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*/blockadblock-",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/nofab.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*/wp-adblock-",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||tag.aticdn.net^",
+      "initiatorDomains": [
+        "sport1.de"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||static.clmbtech.com^",
+      "initiatorDomains": [
+        "indiatimes.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tags.crwdcntrl.net^",
+      "initiatorDomains": [
+        "indiatimes.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*/pwafeeds/amazon_",
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||dealspakki.com^",
+      "initiatorDomains": [
+        "eisamay.com",
+        "iamgujarat.com",
+        "indiatimes.com",
+        "maharashtratimes.com",
+        "samayam.com",
+        "vijaykarnataka.com"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "aranzulla.it"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||zedo.com^",
+      "initiatorDomains": [
+        "indiatoday.in",
+        "intoday.in"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "initiatorDomains": [
+        "indiatoday.in",
+        "intoday.in"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "||indiatimes.com^",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/amazon_products_prod.js",
+      "initiatorDomains": [
+        "aajtak.in"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||x.shopsavvy.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 18,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "web.de"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "||tagger.opecloud.com^",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "bild.de"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||servedby.adbility-media.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 21,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adition.com^",
+      "initiatorDomains": [
+        "spiegel.de"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/pop.js",
+      "initiatorDomains": [
+        "booru.*",
+        "erotic-beauties.com",
+        "hardsex.cc",
+        "rule34.top",
+        "sex-movies.biz",
+        "tube18.sexy",
+        "xvideos.name"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||xbooru.com^",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 24,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sascdn.com^",
+      "initiatorDomains": [
+        "transfermarkt.de"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*expires",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "sat1.de",
+        "wetter.com"
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||em0n.com^",
+      "initiatorDomains": [
+        "grubstreet.com",
+        "twitchy.com"
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": ".com/external/*?width=300&height=250",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 28,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": ".com/nativeexternal/",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 29,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/script/bootstrap.js",
+      "initiatorDomains": [
+        "torlock.*",
+        "torlock2.*"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 30,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "9to5google.com",
+        "9to5mac.com",
+        "9to5toys.com",
+        "dronedj.com",
+        "electrek.co",
+        "marketrealist.com"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "9to5google.com",
+        "9to5mac.com",
+        "9to5toys.com",
+        "dronedj.com",
+        "electrek.co",
+        "marketrealist.com"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*/plugin/advertisement/",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||myreadingmanga.disqus.com^",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||earn-bitcoins.net^",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 35,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ajax.googleapis.com^",
+      "initiatorDomains": [
+        "ultrahorny.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "mp4upload.com"
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tgwidget.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 38,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*/script/clock.js",
+      "initiatorDomains": [
+        "yts.*"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/(?:com|net)\\/[a-z-]{3,10}\\.html$/",
+      "initiatorDomains": [
+        "imgadult.com",
+        "imgdrive.net",
+        "imgtaxi.com",
+        "imgwallet.com"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 40,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/(?:com|net)\\/[0-9a-f]{12}\\.js$/",
+      "initiatorDomains": [
+        "imgadult.com",
+        "imgdrive.net",
+        "imgtaxi.com",
+        "imgwallet.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 41,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/ea/fl.js"
+    }
+  },
+  {
+    "id": 42,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/ea2/fl.js"
+    }
+  },
+  {
+    "id": 43,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/altiframe.php",
+      "initiatorDomains": [
+        "imgadult.com",
+        "imgdrive.net",
+        "imgtaxi.com",
+        "imgwallet.com"
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/altiframe2.php",
+      "initiatorDomains": [
+        "imgadult.com",
+        "imgdrive.net",
+        "imgtaxi.com",
+        "imgwallet.com"
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/frame.php",
+      "initiatorDomains": [
+        "imgadult.com",
+        "imgdrive.net",
+        "imgtaxi.com",
+        "imgwallet.com"
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||vkcdnservice.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 47,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ebd.cda-hd.cc^"
+    }
+  },
+  {
+    "id": 48,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||fbs.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 49,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||trcklks.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 50,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/nbk/frnd_ld.js"
+    }
+  },
+  {
+    "id": 51,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||grandfuckauto.xxx^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 52,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||long.xxx^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 53,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "clik.pw"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||api-secure.solvemedia.com^",
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||api.solvemedia.com^",
+      "resourceTypes": [
+        "script",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "simply-hentai.com"
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.gif",
+      "initiatorDomains": [
+        "daporn.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "sponsor=",
+      "initiatorDomains": [
+        "mcfucker.com"
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "initiatorDomains": [
+        "mypapercraft.net"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ajax.googleapis.com^",
+      "initiatorDomains": [
+        "zdnet.fr"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/all-for-adsense/*"
+    }
+  },
+  {
+    "id": 62,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hprofits.com^",
+      "initiatorDomains": [
+        "gogaytube.tv",
+        "shemaleporntube.tv"
+      ]
+    }
+  },
+  {
+    "id": 63,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/iframe.php?spotID="
+    }
+  },
+  {
+    "id": 64,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||mdsrwdassets-a.akamaihd.net^",
+      "initiatorDomains": [
+        "telecinco.es",
+        "cuatro.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest",
+        "script",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 65,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "ouo.*"
+      ]
+    }
+  },
+  {
+    "id": 66,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||monad.network^",
+      "initiatorDomains": [
+        "shooshtime.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 67,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*expire=",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "viki.com"
+      ]
+    }
+  },
+  {
+    "id": 68,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/contents/images-banners/*"
+    }
+  },
+  {
+    "id": 69,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/static/js/amvn.js"
+    }
+  },
+  {
+    "id": 70,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sexu.com^",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 71,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/^https:\\/\\/[a-z]\\.pussyspace\\.(?:com|net)\\/(?:yip?|xvs)\\/videos\\/20\\d{4}\\/\\d{2}\\/\\d{9}\\/(?:original|thumbs_\\d{2})\\/\\d{0,2}(?:\\(m=e[0-9A-Za-z]{5,7}(?:aaaa)?\\)\\(mh=[-_0-9A-Za-z]{16}\\))?\\d{0,2}\\.jpg$/",
+      "initiatorDomains": [
+        "pussyspace.com",
+        "pussyspace.net"
+      ],
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 72,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/^https:\\/\\/[a-z]\\.pussyspace\\.(?:com|net)\\/(?:yip?|xvs)\\/videos\\/thumbs169l\\/[0-9a-f]{2}\\/[0-9a-f]{2}\\/[0-9a-f]{2}\\/[0-9a-f]{32}(?:-\\d)?\\/[0-9a-f]{32}\\.\\d{1,2}\\.jpg$/",
+      "initiatorDomains": [
+        "pussyspace.com",
+        "pussyspace.net"
+      ],
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 73,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/^https:\\/\\/[a-z]\\.pussyspace\\.(?:com|net)\\/(?:yip?|xvs)\\/videos\\/thumbs_5\\/\\d{1,2}(?:\\(m=e[0-9A-Za-z]{5,7}aaaa\\)\\(mh=[-_0-9A-Za-z]{16}\\))?\\.jpg$/",
+      "initiatorDomains": [
+        "pussyspace.com",
+        "pussyspace.net"
+      ],
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 74,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/^https:\\/\\/[a-z]\\.pussyspace\\.(?:com|net)\\/[a-z]?jz\\/(?:[0-9a-f]\\/){3,5}[0-9a-f]{42}-?(?:\\d{2,3}|(?:(?:\\d{3,4}-){3}h264)?\\.(?:mp4-\\d{1,2}|flv-\\d))\\.jpg$/",
+      "initiatorDomains": [
+        "pussyspace.com",
+        "pussyspace.net"
+      ],
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 75,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/^https:\\/\\/[a-z]\\.pussyspace\\.(?:com|net)\\/sb\\/t\\/\\d{6,8}\\/\\d\\/\\d\\/w:300\\/t\\d{1,2}-enh\\/(?:[0-9a-z]+-)*[0-9a-z]+\\.jpg$/",
+      "initiatorDomains": [
+        "pussyspace.com",
+        "pussyspace.net"
+      ],
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 76,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/^https:\\/\\/st\\.pussyspace\\.(?:com|net)\\/upload\\/cat\\.image\\/[_3a-z]{2,16}\\.jpg$/",
+      "initiatorDomains": [
+        "pussyspace.com",
+        "pussyspace.net"
+      ],
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 77,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/^https:\\/\\/st\\.pussyspace\\.(?:com|net)\\/upload\\/poster_img_url\\/par\\/c3Rhci9[%0-9A-Za-z]{16,32}&size_width\\/par\\/160\\/l\\.jpg$/",
+      "initiatorDomains": [
+        "pussyspace.com",
+        "pussyspace.net"
+      ],
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 78,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||doathair.com^"
+    }
+  },
+  {
+    "id": 79,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adn.porndig.com^"
+    }
+  },
+  {
+    "id": 80,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "initiatorDomains": [
+        "incredibox.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 81,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "ceesty.com",
+        "corneey.com",
+        "destyy.com",
+        "festyy.com",
+        "gestyy.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 82,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/get/*?zoneid=",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 83,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "cpmlink.net"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 84,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/api/model/feed?siteId=",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 85,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/code/script/back.php|"
+    }
+  },
+  {
+    "id": 86,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||next-episode.net^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 87,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "next-episode.net"
+      ]
+    }
+  },
+  {
+    "id": 88,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||dwf6crl4raal7.cloudfront.net^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 89,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||techmyntra.net^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 90,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "imgsen.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 91,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/\\/[0-9a-z]{5,9}\\.js(\\?[a-z]{3})?$/",
+      "initiatorDomains": [
+        "dewimg.*",
+        "imgtown.*",
+        "imgviu.*",
+        "mazpic.*",
+        "outletpic.*",
+        "picrok.*"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 92,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adblockenterpriseedition.com^"
+    }
+  },
+  {
+    "id": 93,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "1ink.cc"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 94,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.gif",
+      "initiatorDomains": [
+        "met.bz"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 95,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "aternos.org"
+      ]
+    }
+  },
+  {
+    "id": 96,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tech426.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 97,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ultra-rv.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 98,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||atom-ds.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 99,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "r"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "||htlb.casalemedia.com^"
+    }
+  },
+  {
+    "id": 100,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tubemania.org^",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 101,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "||thebookee.net^",
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 102,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "freeopenvpn.org"
+      ]
+    }
+  },
+  {
+    "id": 103,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "spiegel.de"
+      ]
+    }
+  },
+  {
+    "id": 104,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "spiegel.de"
+      ]
+    }
+  },
+  {
+    "id": 105,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||doubleclick.net^",
+      "initiatorDomains": [
+        "spiegel.de"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 106,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "ariva.de"
+      ]
+    }
+  },
+  {
+    "id": 107,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||visitweb.com^",
+      "initiatorDomains": [
+        "pronpic.org"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 108,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*/adsid/integrator.js",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "dl.ccbluex.net"
+      ]
+    }
+  },
+  {
+    "id": 109,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "dl.ccbluex.net"
+      ]
+    }
+  },
+  {
+    "id": 110,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hipercontas.com.br^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 111,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ichlnk.com^"
+    }
+  },
+  {
+    "id": 112,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||gotprofits.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 113,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||v.fwmrm.net^",
+      "initiatorDomains": [
+        "stream.golfchannel.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 114,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||a2ztechworld.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 115,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/strip_ngn_2020_august",
+      "initiatorDomains": [
+        "porcore.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 116,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.xml",
+      "initiatorDomains": [
+        "eporner.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 117,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||yollamedia.com^"
+    }
+  },
+  {
+    "id": 118,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/pu-placer.js"
+    }
+  },
+  {
+    "id": 119,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||bntech.io^",
+      "initiatorDomains": [
+        "buffalonews.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 120,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sersh.com^"
+    }
+  },
+  {
+    "id": 121,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ddacn6pr5v0tl.cloudfront.net^"
+    }
+  },
+  {
+    "id": 122,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "strikeout.*"
+      ]
+    }
+  },
+  {
+    "id": 123,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "||a-ads.com^",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "initiatorDomains": [
+        "dogefaucet.com"
+      ]
+    }
+  },
+  {
+    "id": 124,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||dx-tv.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 125,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "vipbox.*"
+      ]
+    }
+  },
+  {
+    "id": 126,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||neulionms-a.akamaihd.net^",
+      "initiatorDomains": [
+        "nba.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 127,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "caid"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "||clips-manifests-aka.warnermediacdn.com^"
+    }
+  },
+  {
+    "id": 128,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||benkhouya.com^",
+      "initiatorDomains": [
+        "anonymousemail.me"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 129,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*/wp-content/plugins/adunblocker/*",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 130,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "lusthero.com"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 131,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "animedao.*"
+      ]
+    }
+  },
+  {
+    "id": 132,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "pornfay.*"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 133,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||bokarsolutions.co.uk^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 134,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "youmath.it"
+      ]
+    }
+  },
+  {
+    "id": 135,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/key=",
+      "initiatorDomains": [
+        "ashemaletube.com"
+      ],
+      "resourceTypes": [
+        "media"
+      ]
+    }
+  },
+  {
+    "id": 136,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*/wp-content/plugins/deadblocker/*",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 137,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||courier-js.dallasnews.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 138,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||grtyb.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 139,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/tortoise.min.js",
+      "initiatorDomains": [
+        "boards.net",
+        "freeforums.net",
+        "proboards.com"
+      ]
+    }
+  },
+  {
+    "id": 140,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/\\/uploads\\/2025/\\d{2}\\/[0-9a-z]{6,12}\\.jpg$/",
+      "isUrlFilterCaseSensitive": true,
+      "initiatorDomains": [
+        "igg-games.co",
+        "igg-games.com",
+        "pcgamestorrents.com",
+        "pcgamestorrents.org"
+      ],
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 141,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cfgr2.com^"
+    }
+  },
+  {
+    "id": 142,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hrtya.com^"
+    }
+  },
+  {
+    "id": 143,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||exmarketplace.com^",
+      "initiatorDomains": [
+        "tvserial.it"
+      ]
+    }
+  },
+  {
+    "id": 144,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/watchbutton11.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 145,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/download11.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 146,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||vuwomoby.pro^"
+    }
+  },
+  {
+    "id": 147,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||i.imgur.com^",
+      "initiatorDomains": [
+        "vinaurl.*"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 148,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||chaturbate.com^",
+      "initiatorDomains": [
+        "sexviacam.com"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 149,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||chaturbate.com^",
+      "initiatorDomains": [
+        "naughtymachinima.com"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 150,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||clprr.com^"
+    }
+  },
+  {
+    "id": 151,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||bblivecams.com^",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 152,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||gldrdr.com^",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 153,
+    "priority": 560000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*/rellect/AdblockDetector/handler.min.js",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 154,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "goto.com.np"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 155,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cdn.witchhut.com^",
+      "initiatorDomains": [
+        "ejocuri.ro",
+        "gamesheep.com",
+        "girlg.com",
+        "girlsplay.com",
+        "jocurifete.ro",
+        "playpod.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 156,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "senmanga.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 157,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cdn.rawgit.com^*/arlinablock.js",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 158,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cdn.rawgit.com^*/AdblockRampok.js",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 159,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "initiatorDomains": [
+        "faucetcrypto.com"
+      ]
+    }
+  },
+  {
+    "id": 160,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.gif",
+      "initiatorDomains": [
+        "visionias.net"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 161,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "imgtorrnt.in"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 162,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.gif",
+      "initiatorDomains": [
+        "imgtorrnt.in"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 163,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "*/assets/prebid/",
+      "initiatorDomains": [
+        "gentside.*",
+        "maxisciences.com",
+        "ohmymag.*"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 164,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdn.adsafeprotected.com^",
+      "initiatorDomains": [
+        "gentside.*",
+        "ohmymag.*",
+        "maxisciences.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 165,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "duellinksmeta.com"
+      ]
+    }
+  },
+  {
+    "id": 166,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdn.intergient.com^",
+      "initiatorDomains": [
+        "duellinksmeta.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 167,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||duellinksmeta.com^",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 168,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "rmdown.com"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 169,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "delcotimes.com",
+        "macombdaily.com",
+        "santacruzsentinel.com",
+        "saratogian.com",
+        "theoaklandpress.com",
+        "trentonian.com"
+      ]
+    }
+  },
+  {
+    "id": 170,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/2x2.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "delcotimes.com",
+        "macombdaily.com",
+        "santacruzsentinel.com",
+        "saratogian.com",
+        "theoaklandpress.com",
+        "trentonian.com"
+      ]
+    }
+  },
+  {
+    "id": 171,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-1s.mp4"
+      }
+    },
+    "condition": {
+      "urlFilter": "||2mdn.net^",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "games2rule.com"
+      ]
+    }
+  },
+  {
+    "id": 172,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "ebookdz.com"
+      ]
+    }
+  },
+  {
+    "id": 173,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "prof"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "||ssaimanifest.prod.boltdns.net^"
+    }
+  },
+  {
+    "id": 174,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||aa.pornvideotop.com^"
+    }
+  },
+  {
+    "id": 175,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "marie-claire.es"
+      ]
+    }
+  },
+  {
+    "id": 176,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "||adblockanalytics.com^",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 177,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||forwardrb.bid^"
+    }
+  },
+  {
+    "id": 178,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ugdturner.com^",
+      "initiatorDomains": [
+        "live.bleacherreport.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 179,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/invoke.js",
+      "initiatorDomains": [
+        "mirrorace.*"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 180,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "muyinteresante.es"
+      ]
+    }
+  },
+  {
+    "id": 181,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||clipbongda.info^"
+    }
+  },
+  {
+    "id": 182,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||yourlustmedia.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 183,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ad.masteranime.tv^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 184,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-1s.mp4"
+      }
+    },
+    "condition": {
+      "urlFilter": "*.mp4",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "abc.go.com"
+      ]
+    }
+  },
+  {
+    "id": 185,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "camvideos.org"
+      ],
+      "resourceTypes": [
+        "media"
+      ]
+    }
+  },
+  {
+    "id": 186,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "leechpremium.link"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 187,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/wp-content/themes/mts_ad_sense/*",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 188,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||myfreecopyright.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 189,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/googlesyndication_adsbygoogle.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "3dzip.org"
+      ]
+    }
+  },
+  {
+    "id": 190,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/googlesyndication_adsbygoogle.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "fatgirlskinny.net"
+      ]
+    }
+  },
+  {
+    "id": 191,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "canaltdt.es"
+      ]
+    }
+  },
+  {
+    "id": 192,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||witchhut.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 193,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "audiotools.blog"
+      ]
+    }
+  },
+  {
+    "id": 194,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "picbaron.com"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 195,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||popcent.org^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 196,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||boyfriendmeaningless.com^"
+    }
+  },
+  {
+    "id": 197,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||disproveknob.com^"
+    }
+  },
+  {
+    "id": 198,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||romgoc.net^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 199,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*&expires",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "prosieben.at",
+        "prosieben.de",
+        "prosiebenmaxx.de",
+        "ran.de"
+      ]
+    }
+  },
+  {
+    "id": 200,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||d19f0dp1dh77jq.cloudfront.net^"
+    }
+  },
+  {
+    "id": 201,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||share.notizie.it^"
+    }
+  },
+  {
+    "id": 202,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||areyouabot.net^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 203,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||n1g459ky7y.com^"
+    }
+  },
+  {
+    "id": 204,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*/media/*.mp4|",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "rte.ie"
+      ]
+    }
+  },
+  {
+    "id": 205,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "rte.ie"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 206,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adslop.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 207,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||celebjihad.live^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 208,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/quwet.js",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 209,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||all-usanomination.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 210,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||willalland.info^"
+    }
+  },
+  {
+    "id": 211,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||clivads.com^"
+    }
+  },
+  {
+    "id": 212,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||d1b0fk9ns6n0w9.cloudfront.net^"
+    }
+  },
+  {
+    "id": 213,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "9ig.de"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 214,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||unlockapk.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 215,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "mangovideo.*"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 216,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||doo6pwib3qngu.cloudfront.net^"
+    }
+  },
+  {
+    "id": 217,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||filesenzu.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 218,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||wakanim.tv^",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 219,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ecotrackings.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 220,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||audiotag.info^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 221,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "audiotag.info"
+      ]
+    }
+  },
+  {
+    "id": 222,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sports-streams-online.club^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 223,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||strpjmp.com^"
+    }
+  },
+  {
+    "id": 224,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||d1pozdfelzfhyt.cloudfront.net^"
+    }
+  },
+  {
+    "id": 225,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "kinoger.pw"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 226,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ronnoble.com^"
+    }
+  },
+  {
+    "id": 227,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||pandanetwork.club^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 228,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||winfr-wtc.com^"
+    }
+  },
+  {
+    "id": 229,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "dutchycorp.*"
+      ],
+      "excludedRequestDomains": [
+        "sentry-cdn.com"
+      ]
+    }
+  },
+  {
+    "id": 230,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdnjs.cloudflare.com^",
+      "initiatorDomains": [
+        "autofaucet.dutchycorp.*"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 231,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||imasdk.googleapis.com^",
+      "initiatorDomains": [
+        "autofaucet.dutchycorp.*"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 232,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||ads.exoclick.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "uflash.tv"
+      ]
+    }
+  },
+  {
+    "id": 233,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||r2.dev^",
+      "initiatorDomains": [
+        "hubcloud.*"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 234,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||poweredbyliquidfire.mobi^"
+    }
+  },
+  {
+    "id": 235,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*/script/pattern.js|",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 236,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/adu.php",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 237,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||d3t9nyds4ufoqz.cloudfront.net^"
+    }
+  },
+  {
+    "id": 238,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||geoguessr.com^",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 239,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "||link-to.net^",
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 240,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||d13jhr4vol1304.cloudfront.net^"
+    }
+  },
+  {
+    "id": 241,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/jquery.watch.js|",
+      "excludedInitiatorDomains": [
+        "dekrantvantoen.nl"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 242,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||static.sunmedia.tv^",
+      "initiatorDomains": [
+        "ivoox.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 243,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||liveflirt.net^",
+      "initiatorDomains": [
+        "cambro.tv"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 244,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.gif",
+      "initiatorDomains": [
+        "hanimesubth.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 245,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.webp",
+      "initiatorDomains": [
+        "hanimesubth.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 246,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "gsmturkey.net"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 247,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "ovagames.com"
+      ],
+      "excludedRequestDomains": [
+        "facebook.net",
+        "fbcdn.net"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 248,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||redefineadpl.hit.gemius.pl^",
+      "initiatorDomains": [
+        "polsatsport.pl"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 249,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||gemius.pl^",
+      "initiatorDomains": [
+        "polsatnews.pl"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 250,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||metrika.lookmovie.io^"
+    }
+  },
+  {
+    "id": 251,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*expires",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "kabeleins.de"
+      ]
+    }
+  },
+  {
+    "id": 252,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*expires",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "kabeleinsdoku.de"
+      ]
+    }
+  },
+  {
+    "id": 253,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*expires",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "sat1gold.de"
+      ]
+    }
+  },
+  {
+    "id": 254,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*expires",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "sixx.de"
+      ]
+    }
+  },
+  {
+    "id": 255,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hotdeals360.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 256,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/pup.php?",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 257,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/zone?pub"
+    }
+  },
+  {
+    "id": 258,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "ustream.to"
+      ]
+    }
+  },
+  {
+    "id": 259,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*&token",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "peekvids.com",
+        "playvids.com",
+        "pornflip.com",
+        "pornoeggs.com"
+      ]
+    }
+  },
+  {
+    "id": 260,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||mediaite.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 261,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||xxxwebdlxxx.org^",
+      "initiatorDomains": [
+        "imgdawgknuttz.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 262,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "imgdawgknuttz.com"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 263,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "imgdawgknuttz.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 264,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||get-link.xyz^"
+    }
+  },
+  {
+    "id": 265,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hitcashtag.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 266,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||techcdn.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 267,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||grumft.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 268,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||proxy.ads.canalplus-bo.net^",
+      "initiatorDomains": [
+        "mycanal.fr"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 269,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||notebookcheck.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 270,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||notebookcheck.net^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 271,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||notebookcheck-ru.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 272,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||notebook-check.com^",
+      "initiatorDomains": [
+        "notebookcheck.com",
+        "notebookcheck.net",
+        "notebookcheck-ru.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 273,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||notebookcheck-ru.com^",
+      "initiatorDomains": [
+        "notebookcheck.com",
+        "notebookcheck.net",
+        "notebookcheck-ru.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 274,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||www-league.nhlstatic.com^",
+      "initiatorDomains": [
+        "nhl.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 275,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*&expire",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "nhl.com"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 276,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "fc-lc.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 277,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||descargaloaca.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 278,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||fc.lc^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 279,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "streameast.*",
+        "thestreameast.*"
+      ]
+    }
+  },
+  {
+    "id": 280,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/32x32.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "streameast.*",
+        "thestreameast.*"
+      ]
+    }
+  },
+  {
+    "id": 281,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||doubleclick.net^",
+      "initiatorDomains": [
+        "viz.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 282,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdn.playwire.com^",
+      "initiatorDomains": [
+        "krunker.io"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 283,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "krunker.io"
+      ]
+    }
+  },
+  {
+    "id": 284,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||pagead2.googlesyndication.com^",
+      "initiatorDomains": [
+        "krunker.io"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 285,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||securepubads.g.doubleclick.net^",
+      "initiatorDomains": [
+        "krunker.io"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 286,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "freecourseweb.com"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 287,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mn-shop.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 288,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "sexvid.*"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 289,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||welect.de^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 290,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||wlct-three.de^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 291,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "deltabit.co"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 292,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||karconsulting.us^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 293,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ads.adrise.tv^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 294,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "||.mp4^",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "tubitv.com"
+      ]
+    }
+  },
+  {
+    "id": 295,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adsrt.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 296,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sp.booking.com^",
+      "initiatorDomains": [
+        "thecrazytourist.com"
+      ]
+    }
+  },
+  {
+    "id": 297,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||megatube.xxx^",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 298,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||gelbeseiten.de^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 299,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||paraphrasing-tool.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 300,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "grafixfather.com"
+      ]
+    }
+  },
+  {
+    "id": 301,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hitadsmedia.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 302,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "linternaute.com"
+      ]
+    }
+  },
+  {
+    "id": 303,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||psaiceex.net^"
+    }
+  },
+  {
+    "id": 304,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||js.allporncomic.com^"
+    }
+  },
+  {
+    "id": 305,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "||pmdipads-a.akamaihd.net^",
+      "resourceTypes": [
+        "media"
+      ]
+    }
+  },
+  {
+    "id": 306,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "vev.red",
+        "vidop.icu",
+        "vidup.io"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 307,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "vidup.io"
+      ]
+    }
+  },
+  {
+    "id": 308,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||activistpost.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 309,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cdn.pushcrew.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 310,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "tf1.fr"
+      ]
+    }
+  },
+  {
+    "id": 311,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||footprint.net^",
+      "initiatorDomains": [
+        "prod-player.tf1.fr"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 312,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "||slpubmedias.tf1.fr^",
+      "resourceTypes": [
+        "media"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 313,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||lnk2.cc^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 314,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||mairdumont.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "kachelmannwetter.com"
+      ]
+    }
+  },
+  {
+    "id": 315,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||md-nx.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "meteologix.com",
+        "weather.us"
+      ]
+    }
+  },
+  {
+    "id": 316,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||bitcoinsports.org^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 317,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/sw.js",
+      "initiatorDomains": [
+        "eio.io",
+        "exe.app"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 318,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/ad-m.js",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 319,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||measur-d.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 320,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||rusexclips.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 321,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||scopateitaliane.it^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 322,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "extremereportbot.com"
+      ]
+    }
+  },
+  {
+    "id": 323,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||pagead2.googlesyndication.com^*/show_ads_impl.js",
+      "initiatorDomains": [
+        "extremereportbot.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 324,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "initiatorDomains": [
+        "extremereportbot.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 325,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/dao/dao-fel.js",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 326,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "pornclassic.tube",
+        "tubepornclassic.com"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 327,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/sex.gif",
+      "initiatorDomains": [
+        "epikporn.com",
+        "erotichdworld.com",
+        "guruofporn.com",
+        "jesseporn.xyz",
+        "jumboporn.xyz",
+        "kendralist.com",
+        "steezylist.com"
+      ]
+    }
+  },
+  {
+    "id": 328,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/yep.gif",
+      "initiatorDomains": [
+        "abellalist.com",
+        "doseofporn.com",
+        "freyalist.com",
+        "lizardporn.com",
+        "moozporn.com",
+        "zehnporn.com"
+      ]
+    }
+  },
+  {
+    "id": 329,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/flr.js",
+      "initiatorDomains": [
+        "8boobs.com",
+        "angelgals.com",
+        "babesexy.com",
+        "babesinporn.com",
+        "fooxybabes.com",
+        "hotbabeswanted.com",
+        "hotstunners.com",
+        "mainbabes.com",
+        "nakedbabes.club",
+        "nakedgirlsroom.com",
+        "nudebabes.sexy",
+        "pleasuregirl.net",
+        "rabbitsfun.com",
+        "sexybabes.club",
+        "sexybabesart.com",
+        "silkengirl.*",
+        "wantedbabes.com"
+      ]
+    }
+  },
+  {
+    "id": 330,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/2x2.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "/images/*/b/*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "babesandbitches.net",
+        "babesaround.com",
+        "babesbang.com",
+        "babeuniversum.com",
+        "grabpussy.com",
+        "join2babes.com",
+        "nightdreambabe.com",
+        "novojoy.com",
+        "novoporn.com",
+        "novostrong.com",
+        "pbabes.com",
+        "pussystate.com",
+        "redpornblog.com",
+        "rossoporn.com",
+        "sexynakeds.com"
+      ]
+    }
+  },
+  {
+    "id": 331,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/2x2.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "/images/*/banners/*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "100bucksbabes.com",
+        "8boobs.com",
+        "babeimpact.com",
+        "babesandgirls.com",
+        "babesaround.com",
+        "babesinporn.com",
+        "babesmachine.com",
+        "bustybloom.com",
+        "chickteases.com",
+        "decorativemodels.com",
+        "dirtyyoungbitches.com",
+        "exgirlfriendmarket.com",
+        "fooxybabes.com",
+        "girlsofdesire.org",
+        "glam0ur.com",
+        "hotstunners.com",
+        "livejasminbabes.net",
+        "morazzia.com",
+        "nakedneighbour.com",
+        "novoglam.com",
+        "pleasuregirl.net",
+        "rabbitsfun.com",
+        "sexyaporno.com",
+        "sexykittenporn.com",
+        "silkengirl.*",
+        "slutsandangels.com",
+        "theomegaproject.org",
+        "thousandbabes.com",
+        "vibraporn.com",
+        "wantedbabes.com",
+        "wildfanny.com"
+      ]
+    }
+  },
+  {
+    "id": 332,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/istripper/istripper_",
+      "initiatorDomains": [
+        "8boobs.com",
+        "babesinporn.com",
+        "fooxybabes.com",
+        "hotstunners.com",
+        "mainbabes.com",
+        "pleasuregirl.net",
+        "rabbitsfun.com",
+        "silkengirl.*",
+        "wantedbabes.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 333,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/smallfr/*",
+      "initiatorDomains": [
+        "babeimpact.com",
+        "decorativemodels.com",
+        "sexykittenporn.com"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 334,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/smallfr2/*",
+      "initiatorDomains": [
+        "babeimpact.com",
+        "decorativemodels.com"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 335,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/\\.com\\/[_0-9a-zA-Z]+\\.jpg$/",
+      "initiatorDomains": [
+        "hottystop.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 336,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/gofd_fl.js"
+    }
+  },
+  {
+    "id": 337,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/backend_loader",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 338,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cdn.jsdelivr.net^*/arlinablock.js",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 339,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/1clkn/*",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 340,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/apu.php?*&zoneid="
+    }
+  },
+  {
+    "id": 341,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||p23hxejm1.com^"
+    }
+  },
+  {
+    "id": 342,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||cdn.yollamedia.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "spieleklassiker.com"
+      ]
+    }
+  },
+  {
+    "id": 343,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||yandexcdn.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 344,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||coinlyhub.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 345,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "coinlyhub.com",
+        "cryptotinker.com"
+      ]
+    }
+  },
+  {
+    "id": 346,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||leechall.download^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 347,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||digiseller.ru^",
+      "initiatorDomains": [
+        "leechall.com"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 348,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "leechall.download",
+        "leechall.com"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 349,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||bitcoinadvertise.net^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 350,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "||cdn.zomap.de^",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "the-voice-of-germany.*"
+      ]
+    }
+  },
+  {
+    "id": 351,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "unfriend-app.com"
+      ]
+    }
+  },
+  {
+    "id": 352,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||d2wpknqle9nuv8.cloudfront.net^"
+    }
+  },
+  {
+    "id": 353,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/1x1.gif"
+      }
+    },
+    "condition": {
+      "urlFilter": "||flsaudio.com^",
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 354,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*/gfp_video_ads/*",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "digisport.ro"
+      ]
+    }
+  },
+  {
+    "id": 355,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "||gvt1.com^",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "digisport.ro"
+      ]
+    }
+  },
+  {
+    "id": 356,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||entitlements.jwplayer.com^",
+      "initiatorDomains": [
+        "digisport.ro"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 357,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||wap4dollar.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 358,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mediapass.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 359,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/32x32.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "bluemediafiles.*"
+      ]
+    }
+  },
+  {
+    "id": 360,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/script/su.js",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 361,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "||slacker.com^*/getspot/?spotid=",
+      "resourceTypes": [
+        "media"
+      ]
+    }
+  },
+  {
+    "id": 362,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||mangalist.org^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 363,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||okean-qoj.com^"
+    }
+  },
+  {
+    "id": 364,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*/assets.sidearmsports.com/",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 365,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/templates/dfp/dfp-component-template.html",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 366,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/components/js/analytics.js|",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 367,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "acusports.com",
+        "atlantic10.com",
+        "big12sports.com",
+        "bigten.org",
+        "cmumavericks.com",
+        "conferenceusa.com",
+        "dartmouthsports.com",
+        "daytonflyers.com",
+        "dbupatriots.com",
+        "dbusports.com",
+        "fduknights.com",
+        "floridagators.com",
+        "friscofighters.com",
+        "gamecocksonline.com",
+        "gobobcats.com",
+        "gocreighton.com",
+        "goetbutigers.com",
+        "golobos.com",
+        "gophersports.com",
+        "gopsusports.com",
+        "goracers.com",
+        "goshockers.com",
+        "goterriers.com",
+        "gotigersgo.com",
+        "gousfbulls.com",
+        "govandals.com",
+        "gowyo.com",
+        "goxavier.com",
+        "gozags.com",
+        "gozips.com",
+        "griffinathletics.com",
+        "guhoyas.com",
+        "gwusports.com",
+        "hailstate.com",
+        "hamptonpirates.com",
+        "hawaiiathletics.com",
+        "hokiesports.com",
+        "huskers.com",
+        "icgaels.com",
+        "iuhoosiers.com",
+        "jsugamecocksports.com",
+        "longbeachstate.com",
+        "loyolaramblers.com",
+        "lrtrojans.com",
+        "lsusports.net",
+        "morrisvillemustangs.com",
+        "msuspartans.com",
+        "muleriderathletics.com",
+        "mutigers.com",
+        "navysports.com",
+        "nevadawolfpack.com",
+        "niuhuskies.com",
+        "nulakers.ca",
+        "nkunorse.com",
+        "nuhuskies.com",
+        "nusports.com",
+        "oceanbreezenyc.org",
+        "okstate.com",
+        "olemisssports.com",
+        "omavs.com",
+        "ovcsports.com",
+        "owlsports.com",
+        "purduesports.com",
+        "redstormsports.com",
+        "richmondspiders.com",
+        "sfajacks.com",
+        "shupirates.com",
+        "siusalukis.com",
+        "smcgaels.com",
+        "smumustangs.com",
+        "soconsports.com",
+        "soonersports.com",
+        "themw.com",
+        "tulsahurricane.com",
+        "txst.com",
+        "txstatebobcats.com",
+        "ubbulls.com",
+        "ucfknights.com",
+        "ucirvinesports.com",
+        "uconnhuskies.com",
+        "uhcougars.com",
+        "uicflames.com",
+        "umterps.com",
+        "uncwsports.com",
+        "unipanthers.com",
+        "unlvrebels.com",
+        "uoflsports.com",
+        "usdtoreros.com",
+        "utahstateaggies.com",
+        "utepathletics.com",
+        "utrockets.com",
+        "uvmathletics.com",
+        "uwbadgers.com",
+        "villanova.com",
+        "wkusports.com",
+        "wmubroncos.com",
+        "woffordterriers.com",
+        "1pack1goal.com",
+        "bcuathletics.com",
+        "bubraves.com",
+        "goblackbears.com",
+        "golightsgo.com",
+        "gomcpanthers.com",
+        "goutsa.com",
+        "mercerbears.com",
+        "pirateblue.com",
+        "pirateblue.net",
+        "pirateblue.org",
+        "quinnipiacbobcats.com",
+        "towsontigers.com",
+        "tribeathletics.com",
+        "tribeclub.com",
+        "utepminermaniacs.com",
+        "utepminers.com",
+        "wkutickets.com"
+      ]
+    }
+  },
+  {
+    "id": 368,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "aopathletics.org",
+        "atlantichockeyonline.com",
+        "bigsouthnetwork.com",
+        "bigsouthsports.com",
+        "chawomenshockey.com",
+        "dbupatriots.org",
+        "drakerelays.org",
+        "ecac.org",
+        "ecacsports.com",
+        "emueagles.com",
+        "emugameday.com",
+        "gculopes.com",
+        "godrakebulldog.com",
+        "godrakebulldogs.com",
+        "godrakebulldogs.net",
+        "goeags.com",
+        "goislander.com",
+        "goislanders.com",
+        "gojacks.com",
+        "gomacsports.com",
+        "gseagles.com",
+        "hubison.com",
+        "iowaconference.com",
+        "ksuowls.com",
+        "lonestarconference.org",
+        "mascac.org",
+        "midwestconference.org",
+        "mountaineast.org",
+        "niu-pack.com",
+        "oswegolakers.com",
+        "ovcdigitalnetwork.com",
+        "pacersports.com",
+        "rmacsports.org",
+        "rollrivers.com",
+        "samfordsports.com",
+        "uncpbraves.com",
+        "usfdons.com",
+        "wiacsports.com",
+        "alaskananooks.com",
+        "broncathleticfund.com",
+        "cameronaggies.com",
+        "columbiacougars.com",
+        "etownbluejays.com",
+        "gobadgers.ca",
+        "golancers.ca",
+        "gometrostate.com",
+        "gothunderbirds.ca",
+        "kentstatesports.com",
+        "lehighsports.com",
+        "lopers.com",
+        "lycoathletics.com",
+        "lycomingathletics.com",
+        "maraudersports.com",
+        "mauiinvitational.com",
+        "msumavericks.com",
+        "nauathletics.com",
+        "nueagles.com",
+        "nwusports.com",
+        "patriotathleticfund.com",
+        "pittband.com",
+        "principiaathletics.com",
+        "roadrunnersathletics.com",
+        "sidearmsocial.com",
+        "snhupenmen.com",
+        "stablerarena.com",
+        "stoutbluedevils.com",
+        "uwlathletics.com",
+        "yumacs.com",
+        "collegefootballplayoff.com",
+        "csurams.com",
+        "cubuffs.com",
+        "gobearcats.com",
+        "gohuskies.com",
+        "mgoblue.com",
+        "osubeavers.com",
+        "pittsburghpanthers.com",
+        "rolltide.com",
+        "texassports.com",
+        "thesundevils.com",
+        "uclabruins.com",
+        "wvuathletics.com",
+        "wvusports.com",
+        "arizonawildcats.com",
+        "calbears.com",
+        "cuse.com",
+        "georgiadogs.com",
+        "goducks.com",
+        "goheels.com",
+        "insidekstatesports.com",
+        "insidekstatesports.info",
+        "insidekstatesports.net",
+        "insidekstatesports.org",
+        "k-stateathletics.com",
+        "k-statefootball.net",
+        "k-statefootball.org",
+        "k-statesports.com",
+        "k-statesports.net",
+        "k-statesports.org",
+        "k-statewomenshoops.com",
+        "k-statewomenshoops.net",
+        "k-statewomenshoops.org",
+        "kstateathletics.com",
+        "kstatefootball.net",
+        "kstatefootball.org",
+        "kstatesports.com",
+        "kstatewomenshoops.com"
+      ]
+    }
+  },
+  {
+    "id": 369,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "kstatewomenshoops.net",
+        "kstatewomenshoops.org",
+        "ksuathletics.com",
+        "ksusports.com",
+        "scarletknights.com",
+        "showdownforrelief.com",
+        "syracusecrunch.com",
+        "texastech.com",
+        "theacc.com",
+        "ukathletics.com",
+        "usctrojans.com",
+        "utahutes.com",
+        "utsports.com",
+        "wsucougars.com"
+      ]
+    }
+  },
+  {
+    "id": 370,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||sidearm-syndication.s3.amazonaws.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 371,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||i.imgur.com^",
+      "initiatorDomains": [
+        "megalink.*"
+      ]
+    }
+  },
+  {
+    "id": 372,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "canalplus.com"
+      ]
+    }
+  },
+  {
+    "id": 373,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||bran-media.canalplus.pro^",
+      "initiatorDomains": [
+        "canalplus.com"
+      ],
+      "resourceTypes": [
+        "media"
+      ]
+    }
+  },
+  {
+    "id": 374,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||vidads.gr^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 375,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||naruto-arena.net^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 376,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adnxs.com^",
+      "initiatorDomains": [
+        "welt.de"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 377,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||asadcdn.com^",
+      "initiatorDomains": [
+        "welt.de"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 378,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||damoh.welect.de^"
+    }
+  },
+  {
+    "id": 379,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||united-infos.net^",
+      "initiatorDomains": [
+        "gmx.*",
+        "web.de"
+      ]
+    }
+  },
+  {
+    "id": 380,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "gmx.*",
+        "web.de"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 381,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||akamaiedge.net^",
+      "initiatorDomains": [
+        "gmx.*",
+        "web.de"
+      ],
+      "resourceTypes": [
+        "media"
+      ]
+    }
+  },
+  {
+    "id": 382,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||shrink-service.it^",
+      "initiatorDomains": [
+        "adshrink.it"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 383,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||offer.alibaba.com^",
+      "initiatorDomains": [
+        "adshrink.it"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 384,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "turkanime.*"
+      ]
+    }
+  },
+  {
+    "id": 385,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.gif",
+      "initiatorDomains": [
+        "stream1688.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 386,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "stream1688.com"
+      ]
+    }
+  },
+  {
+    "id": 387,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||nwch.az-cdn.ch^",
+      "initiatorDomains": [
+        "oltnertagblatt.ch"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 388,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "freevocabulary.com"
+      ]
+    }
+  },
+  {
+    "id": 389,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.gif",
+      "initiatorDomains": [
+        "cartoonth12.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 390,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*.mp4",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "cartoonth12.com"
+      ]
+    }
+  },
+  {
+    "id": 391,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.gif",
+      "initiatorDomains": [
+        "037-hd.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 392,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "037-hd.com"
+      ]
+    }
+  },
+  {
+    "id": 393,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||domnovrek.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 394,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "imdb.com"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 395,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||media-imdb.com^",
+      "initiatorDomains": [
+        "imdb.com"
+      ],
+      "resourceTypes": [
+        "media"
+      ]
+    }
+  },
+  {
+    "id": 396,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "bolly4umovies.*"
+      ],
+      "resourceTypes": [
+        "sub_frame",
+        "xmlhttprequest",
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 397,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||bonjourdefrance.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 398,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/bab.min.js",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 399,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||sonyliv.com^",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 400,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||tda.io^",
+      "initiatorDomains": [
+        "tagesanzeiger.ch"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 401,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||wohnungsboerse.net^",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 402,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "btik.com"
+      ]
+    }
+  },
+  {
+    "id": 403,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "initiatorDomains": [
+        "camera.aeonax.com"
+      ]
+    }
+  },
+  {
+    "id": 404,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||rtl.it^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 405,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||mastercoria.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 406,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.php",
+      "initiatorDomains": [
+        "webcamsdolls.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 407,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||pub.searchnova.net^"
+    }
+  },
+  {
+    "id": 408,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*preRoll",
+      "initiatorDomains": [
+        "porngo.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 409,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "audioblog.com"
+      ]
+    }
+  },
+  {
+    "id": 410,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||perfotrack.com^"
+    }
+  },
+  {
+    "id": 411,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||fundingchoicesmessages.google.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 412,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.gif",
+      "initiatorDomains": [
+        "movieon21.*"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 413,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||doubleclick.net^",
+      "initiatorDomains": [
+        "pccomponentes.com"
+      ]
+    }
+  },
+  {
+    "id": 414,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "initiatorDomains": [
+        "pccomponentes.com"
+      ]
+    }
+  },
+  {
+    "id": 415,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||googletagservices.com^",
+      "initiatorDomains": [
+        "pccomponentes.com"
+      ]
+    }
+  },
+  {
+    "id": 416,
+    "priority": 560000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||omtrdc.net^",
+      "initiatorDomains": [
+        "pccomponentes.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 417,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||vidazoo.com^",
+      "initiatorDomains": [
+        "readonepiece.com"
+      ]
+    }
+  },
+  {
+    "id": 418,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "hausbau-forum.de"
+      ]
+    }
+  },
+  {
+    "id": 419,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "texviewer.herokuapp.com"
+      ]
+    }
+  },
+  {
+    "id": 420,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||protectsurf-a.akamaihd.net^"
+    }
+  },
+  {
+    "id": 421,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "myschool-eng.com"
+      ]
+    }
+  },
+  {
+    "id": 422,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "ehubsoft.herokuapp.com"
+      ]
+    }
+  },
+  {
+    "id": 423,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "onemanhua.com"
+      ]
+    }
+  },
+  {
+    "id": 424,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "laksa19.github.io"
+      ]
+    }
+  },
+  {
+    "id": 425,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "kurnasional.blogspot.com"
+      ]
+    }
+  },
+  {
+    "id": 426,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||thewizardsmanse.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 427,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "puregym.com"
+      ]
+    }
+  },
+  {
+    "id": 428,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mrfog.com^",
+      "initiatorDomains": [
+        "dr-farfar.net"
+      ]
+    }
+  },
+  {
+    "id": 429,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||doublepimpads.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 430,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "pcgamez-download.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest",
+        "sub_frame"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 431,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||catsnbootsncats2020.com^"
+    }
+  },
+  {
+    "id": 432,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||boyfriendlive.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 433,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||numbeo.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 434,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "tgbeautymedia.blogspot.com"
+      ]
+    }
+  },
+  {
+    "id": 435,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "allkaicerteam.com"
+      ]
+    }
+  },
+  {
+    "id": 436,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||thgss.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 437,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/2x2.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "redbox.com"
+      ]
+    }
+  },
+  {
+    "id": 438,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "luscious.net"
+      ]
+    }
+  },
+  {
+    "id": 439,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||downsub.com^",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 440,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/webroot/modern_theme/img/dwndbnr*",
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 441,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "5flix.top"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 442,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "vidlii.com"
+      ]
+    }
+  },
+  {
+    "id": 443,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/2x2.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "image"
+      ],
+      "initiatorDomains": [
+        "mobilelegends.shop"
+      ]
+    }
+  },
+  {
+    "id": 444,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||survivalservers.com^",
+      "initiatorDomains": [
+        "ads.bdcraft.net"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 445,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||bitcoines.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 446,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "savesubs.com"
+      ]
+    }
+  },
+  {
+    "id": 447,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*.gif",
+      "initiatorDomains": [
+        "lebahmovie.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 448,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||fegortius.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 449,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||weblion777.github.io^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 450,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||corported.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 451,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||kataprius.com^"
+    }
+  },
+  {
+    "id": 452,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adf.underhentai.net^",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 453,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "thumpertalk.com"
+      ]
+    }
+  },
+  {
+    "id": 454,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*",
+      "initiatorDomains": [
+        "songsio.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 455,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||judicialcaselaw.com^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 456,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||nohat.me^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 457,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "bigbrothercanada.ca"
+      ]
+    }
+  },
+  {
+    "id": 458,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||d2klx87bgzngce.cloudfront.net^",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 459,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||allbloggingtips.com^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 460,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||short.pe^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 461,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "onbatch.my.id"
+      ]
+    }
+  },
+  {
+    "id": 462,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||twitch.tv^",
+      "initiatorDomains": [
+        "controlc.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 463,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "script"
+      ],
+      "initiatorDomains": [
+        "pandora.com"
+      ]
+    }
+  },
+  {
+    "id": 464,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||clk.sh^",
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 465,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.txt"
+      }
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "initiatorDomains": [
+        "podu.me"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 466,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop-0.1s.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "*/ads",
+      "resourceTypes": [
+        "media"
+      ],
+      "initiatorDomains": [
+        "podu.me"
+      ]
+    }
+  },
+  {
+    "id": 467,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*/player/plugins/vast-*.js",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 468,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/tag*.js",
+      "initiatorDomains": [
+        "supervideo.tv",
+        "supervideo.one",
+        "supervideo.cc"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 469,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/web_accessible_resources/noop.js"
+      }
+    },
+    "condition": {
+      "urlFilter": "||intellipopup.com^",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  }
+]

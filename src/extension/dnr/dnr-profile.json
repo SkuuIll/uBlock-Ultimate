@@ -1,0 +1,15 @@
+{
+  "minimumChromeVersion": 120,
+  "maxDynamicRules": 30000,
+  "maxUnsafeDynamicRules": 5000,
+  "maxSessionRules": 5000,
+  "maxDisabledStaticRuleIds": 5000,
+  "maxEnabledStaticRulesets": 50,
+  "guaranteedStaticRules": 30000,
+  "regexRulesPerType": 1000,
+  "rulesUsingUnavailableFieldsRejected": true,
+  "sessionRulesClearedOnBrowserShutdown": true,
+  "sessionRulesClearedOnExtensionUpdate": true,
+  "safeDynamicActions": ["block", "allow", "allowAllRequests"],
+  "unsafeDynamicActions": ["redirect", "modifyHeaders"]
+}

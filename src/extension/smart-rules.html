@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="smartRulesPageName"></title>
+<link rel="stylesheet" href="css/themes/default.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/smart-rules.css">
+<link rel="stylesheet" href="css/ultimate.css">
+</head>
+<body>
+  <div class="header">
+    <h2 data-i18n="smartRulesPageName"></h2>
+    <div class="header-actions">
+      <span class="stats" id="ruleStats"></span>
+      <button id="refreshBtn" class="iconified" type="button" data-i18n-title="smartRulesRefresh">
+        <span class="fa-icon">refresh</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-pane="rules" data-i18n="smartRulesTabRules"></button>
+    <button class="tab" data-pane="collections" data-i18n="smartRulesTabCollections"></button>
+    <button class="tab" data-pane="import" data-i18n="smartRulesTabImport"></button>
+    <button class="tab" data-pane="export" data-i18n="smartRulesTabExport"></button>
+    <button class="tab" data-pane="tester" data-i18n="smartRulesTabTester"></button>
+  </div>
+
+  <div id="pane-rules" class="pane active">
+    <div class="toolbar">
+      <button id="addRuleBtn" class="preferred" type="button" data-i18n="smartRulesAddRule"></button>
+      <span class="search-box">
+        <input id="ruleSearch" type="search" data-i18n-placeholder="smartRulesSearch" class="searchInput">
+      </span>
+    </div>
+    <div id="ruleList" class="rule-list"></div>
+    <div id="noRules" class="empty-state" data-i18n="smartRulesNoRules"></div>
+  </div>
+
+  <div id="pane-collections" class="pane">
+    <div class="toolbar">
+      <button id="addCollectionBtn" class="preferred" type="button" data-i18n="smartRulesAddCollection"></button>
+    </div>
+    <div id="collectionList" class="collection-list"></div>
+  </div>
+
+  <div id="pane-import" class="pane">
+    <div class="import-form">
+      <label data-i18n="smartRulesImportLabel"></label>
+      <textarea id="importYaml" class="import-textarea" placeholder="Paste YAML rules here..."></textarea>
+      <div class="import-actions">
+        <button id="importBtn" type="button" class="preferred" data-i18n="smartRulesImportBtn"></button>
+        <span id="importStatus" class="import-status"></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="pane-export" class="pane">
+    <div class="export-form">
+      <div class="export-actions">
+        <button id="exportYamlBtn" type="button" class="preferred" data-i18n="smartRulesExportYamlBtn"></button>
+        <button id="exportClassicBtn" type="button" data-i18n="smartRulesExportClassicBtn"></button>
+      </div>
+      <div id="exportStats" class="export-stats"></div>
+      <textarea id="exportOutput" class="export-textarea" readonly placeholder="Export output will appear here..."></textarea>
+      <div class="export-copy">
+        <button id="copyExportBtn" type="button" data-i18n="smartRulesCopyBtn">Copy to clipboard</button>
+        <span id="copyStatus" class="copy-status"></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="pane-tester" class="pane">
+    <div class="tester-form">
+      <label data-i18n="smartRulesTesterURL"></label>
+      <input id="testerUrl" type="url" placeholder="https://example.com" class="searchInput">
+      <button id="testerBtn" type="button" class="preferred" data-i18n="smartRulesTesterTest"></button>
+    </div>
+    <div id="testerResults" class="tester-results"></div>
+  </div>
+
+  <div id="ruleEditor" class="modal" style="display:none">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="editorTitle" data-i18n="smartRulesEditRule"></span>
+        <button id="editorClose" class="iconified" type="button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label data-i18n="smartRulesEditorType"></label>
+          <select id="editorType">
+            <option value="hide-exact">Hide Exact</option>
+            <option value="hide-similar">Hide Similar</option>
+            <option value="smart-hide">Smart Hide</option>
+            <option value="smart-allow">Smart Allow</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-i18n="smartRulesEditorTargets"></label>
+          <input id="editorTargets" type="text" placeholder="host:example.com" class="searchInput">
+        </div>
+        <div class="form-group">
+          <label data-i18n="smartRulesEditorSelector"></label>
+          <input id="editorSelector" type="text" placeholder="#ad, .sponsor, div[data-ad]" class="searchInput">
+        </div>
+        <div class="form-group">
+          <label data-i18n="smartRulesEditorState"></label>
+          <select id="editorState">
+            <option value="enabled">Enabled</option>
+            <option value="disabled">Disabled</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="editorSave" class="preferred" type="button" data-i18n="smartRulesEditorSave"></button>
+        <button id="editorCancel" type="button" data-i18n="smartRulesEditorCancel"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vapi.js"></script>
+  <script src="js/vapi-common.js"></script>
+  <script src="js/vapi-client.js"></script>
+  <script src="js/dom.js"></script>
+  <script src="js/i18n-bundle.js" type="module"></script>
+  <script src="js/fa-icons-bundle.js" type="module"></script>
+  <script src="js/smart-rules-bundle.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+:root {
+    color-scheme: dark;
+    --ultimate-bg: #080b14;
+    --ultimate-bg-elevated: #101525;
+    --ultimate-surface: rgb(22 28 48 / 92%);
+    --ultimate-surface-muted: rgb(30 38 63 / 78%);
+    --ultimate-border: rgb(167 139 250 / 24%);
+    --ultimate-border-strong: rgb(167 139 250 / 48%);
+    --ultimate-text: #f4f3ff;
+    --ultimate-text-muted: #b7b9cc;
+    --ultimate-accent: #9b7cff;
+    --ultimate-accent-strong: #7c5cff;
+    --ultimate-success: #43d6a0;
+    --ultimate-warning: #f6c768;
+    --ultimate-danger: #ff6f91;
+    --ultimate-focus: #c4b5fd;
+    --ultimate-radius-sm: 6px;
+    --ultimate-radius: 10px;
+    --ultimate-radius-lg: 16px;
+    --ultimate-shadow: 0 12px 34px rgb(0 0 0 / 32%);
+    --ultimate-transition: 120ms ease;
+    accent-color: var(--ultimate-accent);
+}
+
+html,
+body {
+    background: var(--ultimate-bg);
+    color: var(--ultimate-text);
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+    border-color: var(--ultimate-border);
+    border-radius: var(--ultimate-radius-sm);
+}
+
+button,
+[role="button"],
+a,
+input,
+select,
+textarea {
+    transition:
+        border-color var(--ultimate-transition),
+        background-color var(--ultimate-transition),
+        color var(--ultimate-transition),
+        opacity var(--ultimate-transition);
+}
+
+button:hover,
+[role="button"]:hover {
+    border-color: var(--ultimate-border-strong);
+}
+
+:where(button, [role="button"], a, input, select, textarea):focus-visible {
+    outline: 2px solid var(--ultimate-focus);
+    outline-offset: 2px;
+}
+
+::selection {
+    background: rgb(124 92 255 / 48%);
+    color: #fff;
+}
+
+* {
+    scrollbar-color: var(--ultimate-accent-strong) var(--ultimate-bg-elevated);
+    scrollbar-width: thin;
+}
+
+.notice,
+.modalDialog,
+.dialog,
+.panel {
+    border-color: var(--ultimate-border);
+    box-shadow: var(--ultimate-shadow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+@media (forced-colors: active) {
+    :where(button, [role="button"], a, input, select, textarea):focus-visible {
+        outline: 2px solid Highlight;
+    }
+}

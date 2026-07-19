@@ -1,0 +1,305 @@
+{
+    "profiles": {
+        "app-shell": {
+            "network": "safe",
+            "firstPartyNetwork": "explicit-only",
+            "cosmetic": "specific-only",
+            "genericCosmetic": false,
+            "proceduralCosmetic": false,
+            "smartCosmetic": false,
+            "scriptlets": "trusted-specific-only",
+            "genericVideo": "observe-only",
+            "mainWorldHooks": "trusted-specific-only",
+            "observeOnly": false,
+            "dryRun": false,
+            "antiAdblockCountermeasures": false,
+            "energyAwareScanBudget": false,
+            "scriptletBudget": 30,
+            "privtree": false,
+            "privacyAnnotations": false,
+            "allowPopups": true,
+            "allowPointerCapture": true,
+            "remoteFontsAllowed": true,
+            "largeMediaAllowed": true,
+            "popupsAllowed": true,
+            "trustedSite": false,
+            "cosmeticFilteringEnabled": true,
+            "scriptletsEnabled": false,
+            "networkField": {
+                "mode": "safe",
+                "firstParty": "explicit-only",
+                "highRiskResources": "specific-only",
+                "firstPartyResponseMutation": false,
+                "allowBlock": true,
+                "allowRedirect": false,
+                "allowUpgrade": false,
+                "allowSurrogate": false,
+                "antiAdblockCountermeasures": false
+            },
+            "cosmeticField": {
+                "specific": true,
+                "generic": false,
+                "procedural": false,
+                "smart": false
+            },
+            "video": {
+                "mode": "observe-only",
+                "allowObservation": true,
+                "allowMutation": false,
+                "allowSkipClick": false
+            },
+            "scriptletsField": {
+                "mode": "trusted-specific-only",
+                "mainWorldHooks": false
+            },
+            "contentScript": {
+                "enabled": true,
+                "loadCosmeticRuntime": true,
+                "loadSmartRuntime": false,
+                "loadVideoRuntime": false,
+                "loadInterceptors": false,
+                "firstPartyDomDetection": false,
+                "fetchWrapping": false,
+                "xhrMutation": false,
+                "domMarking": false
+            },
+            "instrumentation": {
+                "webRequestTracking": false,
+                "loggerAttribution": false,
+                "collectMatchedRules": false
+            }
+        },
+        "auth-sensitive": {
+            "network": "off",
+            "cosmetic": "specific-only",
+            "genericCosmetic": false,
+            "proceduralCosmetic": false,
+            "smartCosmetic": false,
+            "scriptlets": "off",
+            "genericVideo": "off",
+            "mainWorldHooks": "off",
+            "networkField": {
+                "mode": "off",
+                "firstParty": "off",
+                "highRiskResources": "reject",
+                "firstPartyResponseMutation": false,
+                "allowBlock": false,
+                "allowRedirect": false,
+                "allowUpgrade": false,
+                "allowSurrogate": false,
+                "antiAdblockCountermeasures": false
+            },
+            "contentScript": {
+                "enabled": true,
+                "loadCosmeticRuntime": true,
+                "loadSmartRuntime": false,
+                "loadVideoRuntime": false,
+                "loadInterceptors": false,
+                "firstPartyDomDetection": false,
+                "fetchWrapping": false,
+                "xhrMutation": false,
+                "domMarking": false
+            },
+            "video": {
+                "mode": "off",
+                "allowMutation": false,
+                "allowSkipClick": false,
+                "allowObservation": false
+            },
+            "cosmeticField": {
+                "specific": true,
+                "generic": false,
+                "procedural": false,
+                "smart": false
+            }
+        },
+        "payment-sensitive": {
+            "network": "off",
+            "cosmetic": "specific-only",
+            "genericCosmetic": false,
+            "proceduralCosmetic": false,
+            "smartCosmetic": false,
+            "scriptlets": "off",
+            "genericVideo": "off",
+            "mainWorldHooks": "off",
+            "networkField": {
+                "mode": "off",
+                "firstParty": "off",
+                "highRiskResources": "reject",
+                "firstPartyResponseMutation": false,
+                "allowBlock": false,
+                "allowRedirect": false,
+                "allowUpgrade": false,
+                "allowSurrogate": false,
+                "antiAdblockCountermeasures": false
+            },
+            "contentScript": {
+                "enabled": true,
+                "loadCosmeticRuntime": true,
+                "loadSmartRuntime": false,
+                "loadVideoRuntime": false,
+                "loadInterceptors": false,
+                "firstPartyDomDetection": false,
+                "fetchWrapping": false,
+                "xhrMutation": false,
+                "domMarking": false
+            },
+            "video": {
+                "mode": "off",
+                "allowMutation": false,
+                "allowSkipClick": false,
+                "allowObservation": false
+            },
+            "cosmeticField": {
+                "specific": true,
+                "generic": false,
+                "procedural": false,
+                "smart": false
+            }
+        },
+        "video-site": {
+            "network": "full",
+            "cosmetic": "full",
+            "genericCosmetic": true,
+            "proceduralCosmetic": "limited",
+            "smartCosmetic": false,
+            "scriptlets": "trusted-specific-only",
+            "genericVideo": "known-adapter-only",
+            "mainWorldHooks": "trusted-specific-only",
+            "observeOnly": false,
+            "dryRun": false,
+            "antiAdblockCountermeasures": false,
+            "energyAwareScanBudget": false,
+            "scriptletBudget": 50,
+            "privtree": false,
+            "privacyAnnotations": false,
+            "allowPopups": true,
+            "allowPointerCapture": true,
+            "networkField": {
+                "mode": "full",
+                "firstParty": "explicit-only",
+                "highRiskResources": "specific-only",
+                "firstPartyResponseMutation": false,
+                "allowBlock": true,
+                "allowRedirect": false,
+                "allowUpgrade": false,
+                "allowSurrogate": false,
+                "antiAdblockCountermeasures": false
+            },
+            "cosmeticField": {
+                "specific": true,
+                "generic": true,
+                "procedural": true,
+                "smart": false
+            },
+            "video": {
+                "mode": "known-adapter",
+                "allowMutation": true,
+                "allowSkipClick": true,
+                "allowObservation": true
+            },
+            "contentScript": {
+                "enabled": true,
+                "loadCosmeticRuntime": true,
+                "loadSmartRuntime": false,
+                "loadVideoRuntime": true,
+                "loadInterceptors": true,
+                "firstPartyDomDetection": true,
+                "fetchWrapping": true,
+                "xhrMutation": true,
+                "domMarking": false
+            }
+        },
+        "default-web": {
+            "network": "full",
+            "cosmetic": "full",
+            "genericCosmetic": true,
+            "proceduralCosmetic": true,
+            "smartCosmetic": "limited",
+            "scriptlets": "trusted-specific-only",
+            "genericVideo": "full",
+            "mainWorldHooks": true,
+            "observeOnly": false,
+            "dryRun": false,
+            "antiAdblockCountermeasures": false,
+            "energyAwareScanBudget": false,
+            "scriptletBudget": 50,
+            "privtree": false,
+            "privacyAnnotations": false,
+            "allowPopups": true,
+            "allowPointerCapture": true,
+            "networkField": {
+                "mode": "full",
+                "firstParty": "explicit-only",
+                "highRiskResources": "specific-only",
+                "firstPartyResponseMutation": false,
+                "allowBlock": true,
+                "allowRedirect": false,
+                "allowUpgrade": false,
+                "allowSurrogate": false,
+                "antiAdblockCountermeasures": false
+            },
+            "cosmeticField": {
+                "specific": true,
+                "generic": true,
+                "procedural": true,
+                "smart": true
+            },
+            "video": {
+                "mode": "full",
+                "allowMutation": true,
+                "allowSkipClick": true,
+                "allowObservation": true
+            },
+            "contentScript": {
+                "enabled": true,
+                "loadCosmeticRuntime": true,
+                "loadSmartRuntime": true,
+                "loadVideoRuntime": true,
+                "loadInterceptors": true,
+                "firstPartyDomDetection": true,
+                "fetchWrapping": true,
+                "xhrMutation": true,
+                "domMarking": false
+            }
+        },
+        "trusted-off": {
+            "network": "off",
+            "cosmetic": "off",
+            "genericCosmetic": false,
+            "proceduralCosmetic": false,
+            "smartCosmetic": false,
+            "scriptlets": "off",
+            "genericVideo": "off",
+            "mainWorldHooks": "off",
+            "networkField": {
+                "mode": "off",
+                "firstParty": "off",
+                "highRiskResources": "reject",
+                "firstPartyResponseMutation": false,
+                "allowBlock": false,
+                "allowRedirect": false,
+                "allowUpgrade": false,
+                "allowSurrogate": false,
+                "antiAdblockCountermeasures": false
+            },
+            "contentScript": {
+                "enabled": false,
+                "loadCosmeticRuntime": false,
+                "loadSmartRuntime": false,
+                "loadVideoRuntime": false,
+                "loadInterceptors": false,
+                "firstPartyDomDetection": false,
+                "fetchWrapping": false,
+                "xhrMutation": false,
+                "domMarking": false
+            },
+            "video": {
+                "mode": "off",
+                "allowMutation": false,
+                "allowSkipClick": false,
+                "allowObservation": false
+            }
+        }
+    }
+}

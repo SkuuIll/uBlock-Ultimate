@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html id="ubol-zapper">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapper</title>
+    <link rel="stylesheet" href="/css/zapper-ui.css">
+<link rel="stylesheet" href="css/ultimate.css">
+</head>
+<body>
+    <aside>
+        <div id="windowbar">
+            <div id="minimize"></div>
+            <div id="move"></div>
+        </div>
+        <div id="quit" data-i18n-title="zapperClose">
+            <span class="fa-icon">times</span>
+        </div>
+        <div id="undo" data-i18n-title="zapperUndo" aria-disabled="true">
+            <span class="fa-icon">undo</span>
+        </div>
+        <span id="removeCount" data-i18n-title="zapperElementsRemoved">0</span>
+    </aside>
+
+    <svg id="overlay">
+        <path/>
+        <path/>
+    </svg>
+
+    <div id="tooltip"></div>
+
+    <script src="/js/fa-icons-bundle.js"></script>
+    <script src="/js/i18n-bundle.js"></script>
+    <script src="/js/scripting/zapper-ui.js"></script>
+</body>
+</html>

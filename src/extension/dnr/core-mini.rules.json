@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||doubleclick.net^"
+    }
+  },
+  {
+    "id": 2,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^"
+    }
+  },
+  {
+    "id": 3,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||google-analytics.com^"
+    }
+  },
+  {
+    "id": 4,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||scorecardresearch.com^"
+    }
+  },
+  {
+    "id": 5,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adsystem.amazon.com^"
+    }
+  },
+  {
+    "id": 6,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||allowlisted-trusted-cdn.example^"
+    }
+  },
+  {
+    "id": 7,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdnjs.cloudflare.com^"
+    }
+  },
+  {
+    "id": 8,
+    "priority": 420000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "utm_source"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "||example.com^"
+    }
+  },
+  {
+    "id": 9,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "spaces and tabs   ! actually valid since uBO ignores trailing whitespace"
+    }
+  }
+]

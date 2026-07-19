@@ -1,0 +1,537 @@
+[
+  {
+    "id": 1,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||trafficjunky.net^"
+    }
+  },
+  {
+    "id": 2,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||trafficjunky.com^"
+    }
+  },
+  {
+    "id": 3,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||juicyads.com^"
+    }
+  },
+  {
+    "id": 4,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||juicyads.me^"
+    }
+  },
+  {
+    "id": 5,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adnium.com^"
+    }
+  },
+  {
+    "id": 6,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||plugrush.com^"
+    }
+  },
+  {
+    "id": 7,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ero-advertising.com^"
+    }
+  },
+  {
+    "id": 8,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ero-advertising.net^"
+    }
+  },
+  {
+    "id": 9,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hilltopads.net^"
+    }
+  },
+  {
+    "id": 10,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||popcash.net^"
+    }
+  },
+  {
+    "id": 11,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||onclickads.net^"
+    }
+  },
+  {
+    "id": 12,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||onclickalgo.com^"
+    }
+  },
+  {
+    "id": 13,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||realsrv.com^"
+    }
+  },
+  {
+    "id": 14,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||yllix.com^"
+    }
+  },
+  {
+    "id": 15,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||evadav.com^"
+    }
+  },
+  {
+    "id": 16,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exoclick.com^"
+    }
+  },
+  {
+    "id": 17,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exoclick.net^"
+    }
+  },
+  {
+    "id": 18,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||propellerads.com^"
+    }
+  },
+  {
+    "id": 19,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adsterra.com^"
+    }
+  },
+  {
+    "id": 20,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adsterra.net^"
+    }
+  },
+  {
+    "id": 21,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||popads.net^"
+    }
+  },
+  {
+    "id": 22,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||vast.yomeno.xyz^",
+      "initiatorDomains": [
+        "embed-player.space"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||roomgome.com^",
+      "initiatorDomains": [
+        "embed-player.space"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||v.scurra.space^",
+      "initiatorDomains": [
+        "embed-player.space"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||markreptiloid.com^",
+      "initiatorDomains": [
+        "embed-player.space"
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||serve.7kprtners.com^",
+      "initiatorDomains": [
+        "embed-player.space"
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||syndication.realsrv.com^",
+      "initiatorDomains": [
+        "embed-player.space"
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||rtb.tsyndicate.com^",
+      "initiatorDomains": [
+        "semyana.top"
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cenoobi.run^",
+      "initiatorDomains": [
+        "semyana.top"
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||vast.yomeno.xyz^",
+      "initiatorDomains": [
+        "semyana.top"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||markreptiloid.com^",
+      "initiatorDomains": [
+        "semyana.top"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||deductgreedyheadroom.com^",
+      "initiatorDomains": [
+        "semyana.top"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||s.magsrv.com^",
+      "initiatorDomains": [
+        "semyana.top"
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||s.magsrv.com^",
+      "initiatorDomains": [
+        "noodlemagazine.net"
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tsyndicate.com^",
+      "initiatorDomains": [
+        "noodlemagazine.net"
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||kintg.site^",
+      "initiatorDomains": [
+        "noodlemagazine.net"
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||clammyendearedkeg.com^",
+      "initiatorDomains": [
+        "noodlemagazine.net"
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||s.magsrv.com^",
+      "initiatorDomains": [
+        "nmcorp.video"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tsyndicate.com^",
+      "initiatorDomains": [
+        "nmcorp.video"
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||kintg.site^",
+      "initiatorDomains": [
+        "nmcorp.video"
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||clammyendearedkeg.com^",
+      "initiatorDomains": [
+        "nmcorp.video"
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||s.magsrv.com^",
+      "initiatorDomains": [
+        "ppembed.com"
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||foxiceberg.com^",
+      "initiatorDomains": [
+        "ppembed.com"
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||s.magsrv.com^",
+      "initiatorDomains": [
+        "p0sembed.com"
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||foxiceberg.com^",
+      "initiatorDomains": [
+        "p0sembed.com"
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||btsar.space^",
+      "initiatorDomains": [
+        "p0sembed.com"
+      ]
+    }
+  }
+]

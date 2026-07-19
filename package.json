@@ -1,0 +1,45 @@
+{
+  "name": "ublock-ultimate",
+  "version": "0.2.0",
+  "private": true,
+  "description": "uBlock Ultimate — efficient Chromium MV3 content blocker",
+  "type": "module",
+  "author": "SkuuIll",
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkuuIll/uBlock-Ultimate.git"
+  },
+  "homepage": "https://github.com/SkuuIll/uBlock-Ultimate#readme",
+  "bugs": {
+    "url": "https://github.com/SkuuIll/uBlock-Ultimate/issues"
+  },
+  "engines": {
+    "node": ">=22",
+    "npm": ">=11"
+  },
+  "scripts": {
+    "clean": "node build.mjs --clean",
+    "build": "node build.mjs",
+    "dev": "node build.mjs --dev",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint build.mjs tools/modern-audit.mjs tools/package-release.mjs src/extension/js/hybrid-filter-updater.ts src/extension/js/storage-schema-v2.ts src/runtime tests",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "audit": "node tools/modern-audit.mjs",
+    "package": "npm run build && npm run audit && node tools/package-release.mjs",
+    "verify": "npm run typecheck && npm run lint && npm run test && npm run build && npm run audit"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@playwright/test": "^1.59.1",
+    "@types/chrome": "^0.1.39",
+    "@types/node": "^25.5.2",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.34.0",
+    "globals": "^15.14.0",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.61.1",
+    "vitest": "^4.1.10"
+  }
+}

@@ -1,0 +1,345 @@
+:root#ubol-picker {
+    --ubol-overlay-fill: rgba(255, 64, 64, 0.10);
+    --ubol-overlay-border: #f00;
+    --ubol-overlay-canvas: rgba(128, 128, 128, 0.3);
+}
+
+:root#ubol-picker,
+:root#ubol-picker > body {
+    background: transparent;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+}
+
+
+
+:root#ubol-picker :focus {
+    outline: none;
+}
+
+#ubol-picker.paused svg#overlay {
+    cursor: not-allowed;
+}
+
+svg#overlay {
+    box-sizing: border-box;
+    cursor: crosshair;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+svg#overlay > path:first-child {
+    fill: var(--ubol-overlay-canvas);
+    fill-rule: evenodd;
+}
+
+svg#overlay > path + path {
+    fill: var(--ubol-overlay-fill);
+    stroke: var(--ubol-overlay-border);
+    stroke-width: 1.5px;
+}
+
+:root#ubol-picker aside {
+    background-color: var(--surface-1);
+    border: 1px solid var(--border-2);
+    box-sizing: border-box;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    max-width: min(32rem, 100vw - 4px);
+    min-width: min(24rem, 100vw - 4px);
+    overflow: hidden;
+    position: fixed;
+    width: min(32rem, 100vw - 4px);
+    z-index: 100;
+}
+
+:root#ubol-picker:not(.paused) aside > *:not(#windowbar) {
+    display: none;
+}
+
+:root#ubol-picker.minimized aside {
+    min-width: min(24rem, 100vw - 4px);
+    width: min(32rem, 100vw - 4px);
+}
+:root#ubol-picker.minimized aside > *:not(#windowbar) {
+    display: none !important;
+}
+:root#ubol-picker.minimized aside #windowbar > div {
+    height: 1.6em;
+    width: 1.6em;
+}
+:root#ubol-picker.minimized aside #windowbar > #minimize svg > path {
+    display: none;
+}
+:root#ubol-picker.minimized aside #windowbar > #minimize svg > rect {
+    display: initial;
+}
+
+:root#ubol-picker aside #windowbar {
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25em;
+}
+:root#ubol-picker.minimized aside #windowbar {
+    border-bottom: 1px solid var(--border-1);
+}
+:root#ubol-picker:not(.paused) aside #windowbar {
+    display: none;
+}
+
+:root#ubol-picker aside #windowbar > div {
+    fill: none;
+    height: 1.6em;
+    stroke: var(--ink-1);
+    stroke-width: 3px;
+    width: 1.6em;
+}
+
+:root#ubol-picker #windowbar > #move {
+    cursor: grab;
+    flex-grow: 1;
+}
+
+:root#ubol-picker #windowbar > div:hover,
+#ubol-picker #toolbar button:hover {
+    background-color: var(--surface-2);
+}
+
+#ubol-picker #pickerPanel {
+    padding: 0.5em 1em 1em;
+    position: relative;
+}
+
+#ubol-picker textarea {
+    border: 1px solid var(--border-2);
+    box-sizing: border-box;
+    font-family: var(--monospace-font, monospace);
+    font-size: var(--monospace-size);
+    min-height: 5em;
+    overflow-y: auto;
+    padding: 0.5em;
+    resize: none;
+    width: 100%;
+}
+
+#ubol-picker .resultsetWidgets {
+    display: flex;
+    font-size: var(--font-size-smaller);
+}
+
+#resultsetModifiers {
+    align-items: flex-end;
+    display: inline-flex;
+    flex-grow: 1;
+    gap: 0.5em;
+}
+
+#resultsetModifiers.hide > * {
+    visibility: hidden;
+}
+
+.resultsetModifier {
+    border: 0;
+    pointer-events: auto;
+    position: relative;
+    width: 50%;
+}
+
+.resultsetModifier > span {
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    pointer-events: none;
+    width: 100%;
+}
+
+.resultsetModifier > span > span {
+    margin: 2px 0;
+}
+
+.resultsetModifier > span > span:nth-of-type(1) {
+    background-color: var(--ink-1);
+    border-inline-end: 1px solid var(--surface-3);
+    display: inline-block;
+    flex-shrink: 0;
+    height: 6px;
+}
+
+.resultsetModifier > span > span:nth-of-type(2) {
+    background-color: var(--ink-1);
+    clip-path: polygon(
+        calc(50% - 2px) 0%,
+        0% calc(100% - 6px),
+        0% 100%,
+        100% 100%,
+        100% calc(100% - 6px),
+        calc(50% + 2px) 0%
+    );
+    display: inline-block;
+    flex-shrink: 0;
+    height: 20px;
+    width: 20px;
+}
+
+.resultsetModifier > span > span:nth-of-type(3) {
+    background-color: var(--surface-3);
+    border-inline-start: 1px solid var(--surface-3);
+    display: inline-block;
+    flex-grow: 1;
+    height: 6px;
+}
+
+.resultsetModifier input {
+    border: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.resultsetWidgets {
+    position: relative;
+}
+
+#resultsetCount {
+    align-items: center;
+    background-color: var(--surface-3);
+    color: var(--ink-1);
+    display: inline-flex;
+    font-size: 10px;
+    justify-content: center;
+    min-width: 1.4em;
+    padding: 1px 4px;
+    position: absolute;
+    right: 0;
+    top: -14px;
+}
+
+#ubol-picker #toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+#ubol-picker #toolbar button {
+    border: 1px solid var(--border-2);
+    font-size: 85%;
+    min-width: 4em;
+    padding: 0.2em 0.5em;
+}
+
+#ubol-picker #candidateFilters {
+    list-style: none;
+    margin: 0 1em 1em;
+    padding: 0;
+}
+
+#ubol-picker #candidateFilters > li {
+    list-style: none;
+    margin: 0;
+}
+
+#ubol-picker #candidateFilters > li > span {
+    display: block;
+    font-size: 90%;
+    margin-bottom: 2px;
+}
+#ubol-picker #candidateFilters > li > span::after {
+    content: ":";
+}
+
+#ubol-picker #candidateFilters .changeFilter {
+    background: var(--surface-0);
+    border: 1px solid var(--border-2);
+    list-style: none;
+    margin: 0;
+    max-height: min(18em, 24vh);
+    overflow-y: auto;
+    padding: 0.5em;
+}
+
+#ubol-picker #candidateFilters .changeFilter li {
+    border: 1px solid transparent;
+    cursor: pointer;
+    direction: ltr;
+    font: 13px/1.5 monospace;
+    list-style: none;
+    white-space: nowrap;
+}
+
+#ubol-picker #candidateFilters .changeFilter li.active {
+    border: 1px dotted var(--accent-ink-1);
+}
+
+#ubol-picker #candidateFilters .changeFilter li:hover {
+    background-color: var(--surface-2);
+}
+
+/* Create button - should look like other buttons when enabled */
+#ubol-picker #toolbar button#create {
+    background-color: var(--button-surface);
+    color: var(--button-ink);
+    border: 1px solid var(--border-1);
+}
+
+#ubol-picker #toolbar button#create:not([disabled]):hover {
+    background-color: var(--button-preferred-surface);
+    color: var(--button-preferred-ink);
+}
+
+#ubol-picker #toolbar button#pick[disabled] {
+    opacity: 0.45;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* Hide the aside panel until user picks an element */
+:root#ubol-picker.aside-hidden aside {
+    visibility: hidden;
+}
+
+/* Loading state while candidates are being fetched */
+:root#ubol-picker.loading-results #loadingIndicator {
+    display: flex;
+}
+:root#ubol-picker.loading-results #candidateFilters {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* Loading spinner */
+#loadingIndicator {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface-1);
+    z-index: 1;
+}
+body:not(.loading) #loadingIndicator {
+    display: none;
+}
+#loadingIndicator .spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-2);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

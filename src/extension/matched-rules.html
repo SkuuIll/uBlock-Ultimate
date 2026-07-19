@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark" />
+<link rel="stylesheet" href="css/themes/default.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/fa-icons.css">
+<link rel="stylesheet" href="css/logger-ui.css">
+<link rel="icon" type="image/png" href="img/icon_64.png">
+<title data-i18n="matchedRulesPageName">Matched Rules</title>
+<style>
+body {
+    font-family: monospace;
+    padding: 10px;
+}
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: var(--ui-fonts-control);
+    border-radius: 4px;
+}
+.toolbar button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+#matchedRulesList {
+    width: 100%;
+    border-collapse: collapse;
+}
+#matchedRulesList th,
+#matchedRulesList td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--ui-border-color);
+}
+#matchedRulesList th {
+    background: var(--ui-fonts-control);
+    font-weight: bold;
+}
+.rule-blocked {
+    color: var(--filter-log-blocked);
+}
+.rule-allowed {
+    color: var(--filter-log-allowed);
+}
+.rule-info {
+    color: var(--filter-log-modified);
+}
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    color: var(--ui-text-color-muted);
+}
+</style>
+<link rel="stylesheet" href="css/ultimate.css">
+</head>
+<body>
+
+<div class="toolbar">
+    <button id="refreshBtn" class="iconified" type="button">
+        <span class="fa-icon">refresh</span> <span data-i18n="refresh">Refresh</span>
+    </button>
+    <button id="clearBtn" class="iconified" type="button">
+        <span class="fa-icon">eraser</span> <span data-i18n="clear">Clear</span>
+    </button>
+    <span id="status" style="margin-left: auto; padding-top: 6px;"></span>
+</div>
+
+<table id="matchedRulesList">
+    <thead>
+        <tr>
+            <th data-i18n="time">Time</th>
+            <th data-i18n="sourceList">Source list</th>
+            <th data-i18n="line">Line</th>
+            <th data-i18n="filter">Filter</th>
+            <th data-i18n="rule">Rule</th>
+            <th data-i18n="action">Action</th>
+        </tr>
+    </thead>
+    <tbody id="matchedRulesBody">
+    </tbody>
+</table>
+
+<div id="emptyState" class="empty-state" style="display: none;">
+    <span class="fa-icon" style="font-size: 48px;">info-circle</span>
+    <p data-i18n="noMatchedRules">No matched rules yet.</p>
+    <p data-i18n="matchedRulesDescription">Rules recently matched on this tab appear after a user-triggered refresh.</p>
+</div>
+
+<script src="js/vapi.js"></script>
+<script src="js/vapi-common.js"></script>
+<script src="js/vapi-client.js"></script>
+<script src="js/i18n.js" type="module"></script>
+<script src="js/matched-rules.js"></script>
+</body>
+</html>

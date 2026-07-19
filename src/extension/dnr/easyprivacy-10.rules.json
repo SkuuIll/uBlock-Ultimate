@@ -1,0 +1,4496 @@
+[
+  {
+    "id": 50001,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||logger.rm.uol.com.br^"
+    }
+  },
+  {
+    "id": 50002,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||logger.uol.com.br^"
+    }
+  },
+  {
+    "id": 50003,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||logsdk.kwai-pro.com^"
+    }
+  },
+  {
+    "id": 50004,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||master.cifraclub.com.br^"
+    }
+  },
+  {
+    "id": 50005,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||matt.mercadolivre.com.br^"
+    }
+  },
+  {
+    "id": 50006,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||metrics.uol.com.br^"
+    }
+  },
+  {
+    "id": 50007,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||olx.com.br^*/lurker."
+    }
+  },
+  {
+    "id": 50008,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sdk-analytics-web.cloud.itau.com.br^"
+    }
+  },
+  {
+    "id": 50009,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||standvirtual.com^",
+      "resourceTypes": [
+        "ping"
+      ]
+    }
+  },
+  {
+    "id": 50010,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||stats.uniplaces.com^"
+    }
+  },
+  {
+    "id": 50011,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||strapi.clickjogos.com.br^"
+    }
+  },
+  {
+    "id": 50012,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tags.globo.com^"
+    }
+  },
+  {
+    "id": 50013,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||terra.com.br^*/metrics.js"
+    }
+  },
+  {
+    "id": 50014,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||track.exame.com^"
+    }
+  },
+  {
+    "id": 50015,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||track.magazineluiza.com.br^"
+    }
+  },
+  {
+    "id": 50016,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||track.olx.com.br^"
+    }
+  },
+  {
+    "id": 50017,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tracker.bt.uol.com.br^"
+    }
+  },
+  {
+    "id": 50018,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tracker.publico.pt^"
+    }
+  },
+  {
+    "id": 50019,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||trackid.globoid.globo.com^"
+    }
+  },
+  {
+    "id": 50020,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||uai.com.br^*/analytics.js"
+    }
+  },
+  {
+    "id": 50021,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||udr.uol.com.br^"
+    }
+  },
+  {
+    "id": 50022,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||uni7.uniplaces.com^"
+    }
+  },
+  {
+    "id": 50023,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||unleash.livepix.gg^"
+    }
+  },
+  {
+    "id": 50024,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||analytics.okazii.ro^"
+    }
+  },
+  {
+    "id": 50025,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tracking-api.bookzone.ro^"
+    }
+  },
+  {
+    "id": 50026,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||views.b1tv.ro^"
+    }
+  },
+  {
+    "id": 50027,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||views.romaniatv.net^"
+    }
+  },
+  {
+    "id": 50028,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||2ch.hk^*/tracker.js?"
+    }
+  },
+  {
+    "id": 50029,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||a.lifehacker.ru^"
+    }
+  },
+  {
+    "id": 50030,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||a.mts.ru^"
+    }
+  },
+  {
+    "id": 50031,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||a.pikabu.ru^"
+    }
+  },
+  {
+    "id": 50032,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||a.ria.ru^"
+    }
+  },
+  {
+    "id": 50033,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ad7.bigmir.net^"
+    }
+  },
+  {
+    "id": 50034,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||affilate.hh.ru^"
+    }
+  },
+  {
+    "id": 50035,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||alloy-web.zvuk.com^"
+    }
+  },
+  {
+    "id": 50036,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||analytics.carambatv.ru^"
+    }
+  },
+  {
+    "id": 50037,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||api-metric.gosweb.gosuslugi.ru^"
+    }
+  },
+  {
+    "id": 50038,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||booster.osnova.io^"
+    }
+  },
+  {
+    "id": 50039,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||c.sibnet.ru^"
+    }
+  },
+  {
+    "id": 50040,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||clck.dzen.ru^"
+    }
+  },
+  {
+    "id": 50041,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||counter.drom.ru^"
+    }
+  },
+  {
+    "id": 50042,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||counter.sibnet.ru^"
+    }
+  },
+  {
+    "id": 50043,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cpa.hh.ru^"
+    }
+  },
+  {
+    "id": 50044,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cs42.pikabu.ru^"
+    }
+  },
+  {
+    "id": 50045,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cs43.pikabu.ru^"
+    }
+  },
+  {
+    "id": 50046,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cvt1.sibnet.ru^"
+    }
+  },
+  {
+    "id": 50047,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||data.glamour.ru^"
+    }
+  },
+  {
+    "id": 50048,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||goya.rutube.ru^",
+      "excludedResourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 50049,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||link.subscribe.ru^"
+    }
+  },
+  {
+    "id": 50050,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||lmcdn.ru^*/statistics.js"
+    }
+  },
+  {
+    "id": 50051,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||log.dzen.ru^"
+    }
+  },
+  {
+    "id": 50052,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||log.ren.tv^"
+    }
+  },
+  {
+    "id": 50053,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||log.rutube.ru^"
+    }
+  },
+  {
+    "id": 50054,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||metrika.kontur.ru^"
+    }
+  },
+  {
+    "id": 50055,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ms.dzen.ru^"
+    }
+  },
+  {
+    "id": 50056,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ms.vk.com^"
+    }
+  },
+  {
+    "id": 50057,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ms.vk.ru^"
+    }
+  },
+  {
+    "id": 50058,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mstat.mos.ru^"
+    }
+  },
+  {
+    "id": 50059,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||otel-collector.lenta.tech^"
+    }
+  },
+  {
+    "id": 50060,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||pixels.boxberry.ru^"
+    }
+  },
+  {
+    "id": 50061,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||radar.imgsmail.ru^"
+    }
+  },
+  {
+    "id": 50062,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||seedr.ru^*/stats/"
+    }
+  },
+  {
+    "id": 50063,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ssp.rambler.ru^"
+    }
+  },
+  {
+    "id": 50064,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||st.nic.ru^"
+    }
+  },
+  {
+    "id": 50065,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||stat.5-tv.ru^"
+    }
+  },
+  {
+    "id": 50066,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||stat.api.2gis.ru^"
+    }
+  },
+  {
+    "id": 50067,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||stat.bankiros.ru^"
+    }
+  },
+  {
+    "id": 50068,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||stat.pravmir.ru^"
+    }
+  },
+  {
+    "id": 50069,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||stat.russianfood.com^"
+    }
+  },
+  {
+    "id": 50070,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||stat.stars.ru^"
+    }
+  },
+  {
+    "id": 50071,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||stats.mos.ru^"
+    }
+  },
+  {
+    "id": 50072,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sync.rambler.ru^"
+    }
+  },
+  {
+    "id": 50073,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||t.sports.ru^"
+    }
+  },
+  {
+    "id": 50074,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||telemetry.dzen.ru^"
+    }
+  },
+  {
+    "id": 50075,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||top-staging.mail.ru^"
+    }
+  },
+  {
+    "id": 50076,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||traces.youdo.com^"
+    }
+  },
+  {
+    "id": 50077,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||trk.mail.ru^",
+      "resourceTypes": [
+        "image",
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50078,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||vstat.rtr-vesti.ru^"
+    }
+  },
+  {
+    "id": 50079,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||xapi.ozon.ru^",
+      "resourceTypes": [
+        "ping"
+      ]
+    }
+  },
+  {
+    "id": 50080,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||xray.mail.ru^"
+    }
+  },
+  {
+    "id": 50081,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||yast.rutube.ru^"
+    }
+  },
+  {
+    "id": 50082,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||harvester.cms.markiza.sk^"
+    }
+  },
+  {
+    "id": 50083,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||analitika.derp.si^"
+    }
+  },
+  {
+    "id": 50084,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||go-usertrack-importer.pub.24ur.si^"
+    }
+  },
+  {
+    "id": 50085,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tracker.azet.sk^"
+    }
+  },
+  {
+    "id": 50086,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||analytics.bolavip.com^"
+    }
+  },
+  {
+    "id": 50087,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||analytics.emol.com^"
+    }
+  },
+  {
+    "id": 50088,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||analytics.redlink.com.ar^"
+    }
+  },
+  {
+    "id": 50089,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||audiencies.3cat.cat^"
+    }
+  },
+  {
+    "id": 50090,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||audiencies.ccma.cat^"
+    }
+  },
+  {
+    "id": 50091,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||coletor.terra.com^"
+    }
+  },
+  {
+    "id": 50092,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||compare.easyviajar.com^"
+    }
+  },
+  {
+    "id": 50093,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||counters.libertaddigital.com^"
+    }
+  },
+  {
+    "id": 50094,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||data-ingest.xtralife.com^"
+    }
+  },
+  {
+    "id": 50095,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||data.acierto.com^"
+    }
+  },
+  {
+    "id": 50096,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||estadisticas.lanacion.com.ar^"
+    }
+  },
+  {
+    "id": 50097,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||estadonline.publiguias.cl^"
+    }
+  },
+  {
+    "id": 50098,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||fnvma.milanuncios.com^"
+    }
+  },
+  {
+    "id": 50099,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||g.siliconweek.es^"
+    }
+  },
+  {
+    "id": 50100,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||geo.emol.cl^"
+    }
+  },
+  {
+    "id": 50101,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hits.antena3.com^"
+    }
+  },
+  {
+    "id": 50102,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||horizon-track.globo.com^"
+    }
+  },
+  {
+    "id": 50103,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||logs.openbank.com^"
+    }
+  },
+  {
+    "id": 50104,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mega.promodescuentos.com^"
+    }
+  },
+  {
+    "id": 50105,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ocular.promodescuentos.com^"
+    }
+  },
+  {
+    "id": 50106,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||pixel.europapress.net^"
+    }
+  },
+  {
+    "id": 50107,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||px-intl.ucweb.com^"
+    }
+  },
+  {
+    "id": 50108,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||realtime.bbcl.cl^"
+    }
+  },
+  {
+    "id": 50109,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||rvv.emol.com^"
+    }
+  },
+  {
+    "id": 50110,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sst.cooperativa.cl^"
+    }
+  },
+  {
+    "id": 50111,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||statsmp2.emol.com^"
+    }
+  },
+  {
+    "id": 50112,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||t-pan.triodos.com^"
+    }
+  },
+  {
+    "id": 50113,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||targetone-callback.chedraui.com.mx^"
+    }
+  },
+  {
+    "id": 50114,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||terra.com.mx^*/metrics_begin.js"
+    }
+  },
+  {
+    "id": 50115,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||terra.com.mx^*/metrics_end.js"
+    }
+  },
+  {
+    "id": 50116,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||terra.com^*/td.asp?bstat"
+    }
+  },
+  {
+    "id": 50117,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tracker.atrapalo.com^"
+    }
+  },
+  {
+    "id": 50118,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tracker.jkplayers.com^"
+    }
+  },
+  {
+    "id": 50119,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||unm.emol.com^"
+    }
+  },
+  {
+    "id": 50120,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||wssgmstats.vibbo.com^"
+    }
+  },
+  {
+    "id": 50121,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||wsstats.coches.net^"
+    }
+  },
+  {
+    "id": 50122,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ai.idg.se^"
+    }
+  },
+  {
+    "id": 50123,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ax.idg.se^"
+    }
+  },
+  {
+    "id": 50124,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||fotbollskanalen.se^",
+      "resourceTypes": [
+        "ping"
+      ]
+    }
+  },
+  {
+    "id": 50125,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||fusion.bonniertidskrifter.se^"
+    }
+  },
+  {
+    "id": 50126,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||gx.idg.se^"
+    }
+  },
+  {
+    "id": 50127,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||stat.nyheter24.se^"
+    }
+  },
+  {
+    "id": 50128,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||dek-d.com^*/analytic.js"
+    }
+  },
+  {
+    "id": 50129,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||scribe.wongnai.com^"
+    }
+  },
+  {
+    "id": 50130,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ta.sanook.com^"
+    }
+  },
+  {
+    "id": 50131,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||a.n11.com^"
+    }
+  },
+  {
+    "id": 50132,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||analytics.cosmopolitanmag.com.tr^"
+    }
+  },
+  {
+    "id": 50133,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||analytics.mgm.gov.tr^"
+    }
+  },
+  {
+    "id": 50134,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||athena-event-provider.n11.com^"
+    }
+  },
+  {
+    "id": 50135,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||c.gazetevatan.com^"
+    }
+  },
+  {
+    "id": 50136,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||d.haberler.com^"
+    }
+  },
+  {
+    "id": 50137,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||d.sondakika.com^"
+    }
+  },
+  {
+    "id": 50138,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||h.n11.com^"
+    }
+  },
+  {
+    "id": 50139,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hit.cnbce.com^"
+    }
+  },
+  {
+    "id": 50140,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hstats.hepsiburada.com^"
+    }
+  },
+  {
+    "id": 50141,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hstatstest.hepsiburada.com^"
+    }
+  },
+  {
+    "id": 50142,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||plausible.elbisebul.com^"
+    }
+  },
+  {
+    "id": 50143,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||stats.birgun.net^"
+    }
+  },
+  {
+    "id": 50144,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tracker.blutv.com^"
+    }
+  },
+  {
+    "id": 50145,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tracker.grupanya.com^"
+    }
+  },
+  {
+    "id": 50146,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||analytics.cosmonova.net^"
+    }
+  },
+  {
+    "id": 50147,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||counter.nv.ua^"
+    }
+  },
+  {
+    "id": 50148,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||counter.ukr.net^"
+    }
+  },
+  {
+    "id": 50149,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||remp.nv.ua^"
+    }
+  },
+  {
+    "id": 50150,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||stats.itc.ua^"
+    }
+  },
+  {
+    "id": 50151,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||target.ukr.net^"
+    }
+  },
+  {
+    "id": 50152,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||analytics.aita.gov.vn^"
+    }
+  },
+  {
+    "id": 50153,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||api.baomoi.com^",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 50154,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||log.ttbc-hcm.gov.vn^"
+    }
+  },
+  {
+    "id": 50155,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||logsbin.dantri.com.vn^"
+    }
+  },
+  {
+    "id": 50156,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||pixel.coccoc.com^"
+    }
+  },
+  {
+    "id": 50157,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||track-srv.vietnamnet.vn^"
+    }
+  },
+  {
+    "id": 50158,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||w-api.baomoi.com^",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 50159,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "/cgi-bin/counter_module?action=list_models",
+      "resourceTypes": [
+        "sub_frame"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50160,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||adobedtm.com^*/launch-",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50161,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||adobedtm.com^*/s-code-",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50162,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||adobedtm.com^*/satellite-",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50163,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||aeries.net^*/require/analytics/views/",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50164,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||analytics.amplitude.com^",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50165,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||analytics.itunes.apple.com^",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50166,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||api-analytics.magstimconnect.net^",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50167,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||api-mg2.db-ip.com^",
+      "initiatorDomains": [
+        "journal-news.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50168,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||api.amplitude.com^",
+      "initiatorDomains": [
+        "insiderintelligence.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50169,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||api.ipinfodb.com^",
+      "initiatorDomains": [
+        "management30.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50170,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||api.perfops.net^",
+      "initiatorDomains": [
+        "cdnperf.com",
+        "dnsperf.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50171,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||api.touchnote.io^",
+      "initiatorDomains": [
+        "app.touchnote.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50172,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||asb.co.nz.ssl.d2.sc.omtrdc.net^",
+      "initiatorDomains": [
+        "asb.co.nz"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50173,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||att.tv^*/VisitorAPI.js",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50174,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||autocomplete.clearbit.com^",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50175,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||bam.nr-data.net^",
+      "initiatorDomains": [
+        "kapwing.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50176,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||blackcircles.ca^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50177,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||bookmate.com^*/impressions?",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50178,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||browser-intake-datadoghq.com^",
+      "initiatorDomains": [
+        "grubhub.com",
+        "mightyape.co.nz"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50179,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdn.deviceinf.com^",
+      "initiatorDomains": [
+        "etail.market"
+      ]
+    }
+  },
+  {
+    "id": 50180,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdn.heapanalytics.com^",
+      "initiatorDomains": [
+        "libertymutual.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50181,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdn.jsdelivr.net^*/fp.min.js",
+      "initiatorDomains": [
+        "cuevana2.io"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50182,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||certona.net^*/scripts/resonance.js",
+      "initiatorDomains": [
+        "canadiantire.ca",
+        "finishline.com",
+        "summitracing.com",
+        "tumi.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50183,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||channel.images.production.web.w4a.tv^*/ard.png?",
+      "initiatorDomains": [
+        "yallo.tv"
+      ]
+    }
+  },
+  {
+    "id": 50184,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||chart-embed.service.newrelic.com^",
+      "resourceTypes": [
+        "sub_frame",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50185,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||clouderrorreporting.googleapis.com^",
+      "initiatorDomains": [
+        "waze.com"
+      ]
+    }
+  },
+  {
+    "id": 50186,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cqcounter.com^",
+      "initiatorDomains": [
+        "cqcounter.com"
+      ]
+    }
+  },
+  {
+    "id": 50187,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||data.adxcel-ec2.com^",
+      "initiatorDomains": [
+        "laguardia.edu"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 50188,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||datadoghq-browser-agent.com^",
+      "initiatorDomains": [
+        "bbcgoodfood.com",
+        "cdn.spatialbuzz.com",
+        "dashboard.getdriven.app",
+        "espn.com",
+        "goindigo.in",
+        "hungryroot.com",
+        "usa.experian.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50189,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||datadome.monster.com.first-party-js.datadome.co^",
+      "initiatorDomains": [
+        "monster.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50190,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||driverfix.com^*/index_src.php?tracking=",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50191,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ensighten.com^*/Bootstrap.js",
+      "initiatorDomains": [
+        "americanexpress.com",
+        "ba.com",
+        "bestbuy.com",
+        "britishairways.com",
+        "capitalone.com",
+        "caranddriver.com",
+        "cart.autodesk.com",
+        "citi.com",
+        "citigold.com.sg",
+        "citizensbank.com",
+        "dell.com",
+        "fidelity.com",
+        "france24.com",
+        "hp.com",
+        "norton.com",
+        "rfi.fr",
+        "sbs.com.au",
+        "sfgate.com",
+        "staples.com",
+        "target.com",
+        "verizonwireless.com",
+        "williamhill.com",
+        "womenshealthmag.com",
+        "zales.com"
+      ]
+    }
+  },
+  {
+    "id": 50192,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ensighten.com^*/code/",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50193,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ensighten.com^*/scode/",
+      "initiatorDomains": [
+        "norton.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50194,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ensighten.com^*/serverComponent.php?",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50195,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||events.raceresult.com^",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50196,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||extreme-ip-lookup.com^",
+      "initiatorDomains": [
+        "bulkbarn.ca"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50197,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||friendbuy.com^",
+      "initiatorDomains": [
+        "butcherbox.com"
+      ]
+    }
+  },
+  {
+    "id": 50198,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||go-mpulse.net^",
+      "initiatorDomains": [
+        "costcobusinessdelivery.com"
+      ]
+    }
+  },
+  {
+    "id": 50199,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||gstatic.com^*/firebase-performance-standalone.js",
+      "initiatorDomains": [
+        "flightradar24.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50200,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||hobbyking.com^*/gtm.js",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50201,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||identity.mparticle.com^",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50202,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ikea.com^*/analyticsEvent.",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50203,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||img.logo.dev^",
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 50204,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||js-agent.newrelic.com^",
+      "initiatorDomains": [
+        "alliantcreditunion.com",
+        "giftcards.com",
+        "kapwing.com",
+        "live.griiip.com"
+      ]
+    }
+  },
+  {
+    "id": 50205,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||js.sentry-cdn.com^",
+      "initiatorDomains": [
+        "app.homebinder.com",
+        "bolt.new",
+        "book.dmm.com",
+        "etsy.com",
+        "interacty.me",
+        "jobs.ch",
+        "pizzahut.com.au"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50206,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||lab.eu.amplitude.com^",
+      "initiatorDomains": [
+        "bluelightcard.co.uk"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50207,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||lacoste.com^*/click-analytics.js",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50208,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||leanplum.com^",
+      "initiatorDomains": [
+        "arkadium.com"
+      ]
+    }
+  },
+  {
+    "id": 50209,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||lightning.bleacherreport.com^*/launch-",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50210,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||live.rezync.com^",
+      "initiatorDomains": [
+        "batteriesplus.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50211,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||logging.apache.org^",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50212,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||maptiles.ping-admin.ru^",
+      "initiatorDomains": [
+        "ping-admin.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 50213,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||maxmind.com^*/geoip.js",
+      "initiatorDomains": [
+        "aljazeera.com",
+        "ballerstatus.com",
+        "bikemap.net",
+        "carltonjordan.com",
+        "cashu.com",
+        "dr.dk",
+        "everydaysource.com",
+        "fab.com",
+        "girlgames4u.com",
+        "ip-address.cc",
+        "qatarairways.com",
+        "sat-direction.com",
+        "sotctours.com",
+        "stoli.com",
+        "vibe.com"
+      ]
+    }
+  },
+  {
+    "id": 50214,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||maxmind.com^*/geoip2.js",
+      "initiatorDomains": [
+        "bandai-hobby.net",
+        "boostedboards.com",
+        "donorschoose.org",
+        "driftinnovation.com",
+        "fallout4.com",
+        "ibanez.com",
+        "instamed.com",
+        "metronews.ca",
+        "mtv.com.lb",
+        "runningheroes.com",
+        "tama.com",
+        "teslamotors.com"
+      ]
+    }
+  },
+  {
+    "id": 50215,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||mozu.com^*/monetate.js",
+      "initiatorDomains": [
+        "acehardware.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50216,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||mxpnl.com^",
+      "initiatorDomains": [
+        "mixpanel.com"
+      ]
+    }
+  },
+  {
+    "id": 50217,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||natureetdecouvertes.com^*/pixel.png",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50218,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||nocookie.net^*/tracking-opt-in.min.js",
+      "initiatorDomains": [
+        "fandom.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50219,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||nytimes.com^*/EventTracker.js",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50220,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ondemand.sas.com^",
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 50221,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||onenote.com^*/aria-web-telemetry"
+    }
+  },
+  {
+    "id": 50222,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||optimove.net^",
+      "initiatorDomains": [
+        "app.touchnote.com"
+      ]
+    }
+  },
+  {
+    "id": 50223,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||plugins.matomo.org^",
+      "resourceTypes": [
+        "image"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50224,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||public.profitwell.com^",
+      "initiatorDomains": [
+        "adblockplus.org",
+        "getadblock.com"
+      ]
+    }
+  },
+  {
+    "id": 50225,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||reactandshare.com^",
+      "initiatorDomains": [
+        "maanmittauslaitos.fi"
+      ]
+    }
+  },
+  {
+    "id": 50226,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||res-x.com^*/Resonance.aspx?"
+    }
+  },
+  {
+    "id": 50227,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||researchintel.com^*/feedback.asp",
+      "initiatorDomains": [
+        "intel.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50228,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||rollbar.com^*/rollbar.min.js",
+      "initiatorDomains": [
+        "rollingstone.com",
+        "variety.com",
+        "wwd.com"
+      ]
+    }
+  },
+  {
+    "id": 50229,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||scorecardresearch.com^*/streamingtag_plugin_jwplayer.js"
+    }
+  },
+  {
+    "id": 50230,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||simpleanalyticsexternal.com^",
+      "initiatorDomains": [
+        "inleo.io"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50231,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||smushcdn.com^*/1.gif",
+      "initiatorDomains": [
+        "retrounlim.com"
+      ]
+    }
+  },
+  {
+    "id": 50232,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||snowplow.swm.digital^",
+      "initiatorDomains": [
+        "7plus.com.au"
+      ]
+    }
+  },
+  {
+    "id": 50233,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||sohotheatre.com^*/PageView.js",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50234,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||sophos.com^*/tracking/gainjectmin.js",
+      "initiatorDomains": [
+        "community.sophos.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50235,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ssl-images-amazon.com^*/satelliteLib-",
+      "initiatorDomains": [
+        "audible.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50236,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||static.foxnews.com^*/VisitorAPI.js",
+      "initiatorDomains": [
+        "foxbusiness.com",
+        "foxnews.com"
+      ]
+    }
+  },
+  {
+    "id": 50237,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||static.pinpoll.com^",
+      "initiatorDomains": [
+        "iframely.net"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 50238,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||stats.britishbaseball.org.uk^"
+    }
+  },
+  {
+    "id": 50239,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||stats.sports.bellmedia.ca^",
+      "initiatorDomains": [
+        "rds.ca",
+        "tsn.ca"
+      ]
+    }
+  },
+  {
+    "id": 50240,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||store.storeimages.cdn-apple.com^*/appmeasurement.js",
+      "initiatorDomains": [
+        "apple.com"
+      ]
+    }
+  },
+  {
+    "id": 50241,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||tagcommander.com^*/tc_",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50242,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||taplytics.com^",
+      "initiatorDomains": [
+        "royalbank.com"
+      ]
+    }
+  },
+  {
+    "id": 50243,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||tinypass.com^*/logAutoMicroConversion?",
+      "initiatorDomains": [
+        "chicago.suntimes.com"
+      ]
+    }
+  },
+  {
+    "id": 50244,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||tools.pinpoll.com^",
+      "initiatorDomains": [
+        "iframely.net"
+      ],
+      "resourceTypes": [
+        "script",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 50245,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||try.abtasty.com^",
+      "initiatorDomains": [
+        "tickpick.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50246,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||userapi.com^*.gif?extra=",
+      "initiatorDomains": [
+        "vk.com"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 50247,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||vidible.tv^*/ComScore.StreamSense.js"
+    }
+  },
+  {
+    "id": 50248,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||vidible.tv^*/ComScore.Viewability.js"
+    }
+  },
+  {
+    "id": 50249,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||vivocha.com^*/vivocha.js?",
+      "initiatorDomains": [
+        "kartell.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50250,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||yottaa.net^",
+      "initiatorDomains": [
+        "containerstore.com",
+        "hannaandersson.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50251,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||api.lab.amplitude.com^",
+      "initiatorDomains": [
+        "watch.outsideonline.com"
+      ]
+    }
+  },
+  {
+    "id": 50252,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||flag.lab.amplitude.com^",
+      "initiatorDomains": [
+        "watch.outsideonline.com"
+      ]
+    }
+  },
+  {
+    "id": 50253,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||browser.sentry-cdn.com^",
+      "initiatorDomains": [
+        "acustica-audio.com",
+        "alphaxiv.org",
+        "dic.pixiv.net",
+        "doconcall.com.my",
+        "eco-clobber.co.uk",
+        "fundhero.io",
+        "marshmallow-qa.com",
+        "members.bifa.film",
+        "menshealth.com",
+        "ocado.com",
+        "pocketguard.com",
+        "podcasty.seznam.cz",
+        "roomster.com",
+        "shop.dns-net.de",
+        "spacemarket.com",
+        "timesprime.com",
+        "vivareal.com.br",
+        "womenshealthmag.com"
+      ]
+    }
+  },
+  {
+    "id": 50254,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||adobedtm.com^*/satelliteLib-",
+      "initiatorDomains": [
+        "absa.co.za",
+        "ally.com",
+        "americanexpress.com",
+        "as.com",
+        "auspost.com.au",
+        "backcountry.com",
+        "bmw.com.au",
+        "canadapost-postescanada.ca",
+        "ceair.com",
+        "collegeboard.org",
+        "conad.it",
+        "costco.com",
+        "crackle.com",
+        "crackle.com.ar",
+        "crackle.com.br",
+        "crackle.com.ec",
+        "crackle.com.mx",
+        "crackle.com.pe",
+        "crackle.com.py",
+        "crave.ca",
+        "crimewatchdaily.com",
+        "dhl.de",
+        "directline.com",
+        "elgiganten.se",
+        "elkjop.no",
+        "eonline.com",
+        "fcbarcelona.cat",
+        "fcbarcelona.cn",
+        "fcbarcelona.com",
+        "fcbarcelona.es",
+        "fcbarcelona.fr",
+        "fcbarcelona.jp",
+        "firststatesuper.com.au",
+        "gigantti.fi",
+        "godigit.com",
+        "hellobank.fr",
+        "hgtv.com",
+        "hrw.com",
+        "ilsole24ore.com",
+        "jeep.com",
+        "laredoute.be",
+        "laredoute.ch",
+        "laredoute.co.uk",
+        "laredoute.com",
+        "laredoute.es",
+        "laredoute.fr",
+        "laredoute.it",
+        "laredoute.pl",
+        "laredoute.pt",
+        "laredoute.ru",
+        "lenovo.com",
+        "lowes.com",
+        "malaysiaairlines.com",
+        "mastercard.us",
+        "mathworks.com",
+        "monoprice.com",
+        "myaetnasupplemental.com",
+        "nbcnews.com",
+        "nfl.com",
+        "nflgamepass.com",
+        "nofrills.ca",
+        "nrj.fr",
+        "oprah.com",
+        "oracle.com",
+        "pnc.com",
+        "poweredbycovermore.com",
+        "radiko.jp",
+        "realtor.com",
+        "redbull.tv",
+        "repco.co.nz",
+        "sbb.ch",
+        "searspartsdirect.com",
+        "shoppersdrugmart.ca",
+        "smooth.com.au",
+        "sony.jp",
+        "stuff.co.nz",
+        "subaru.com",
+        "support.nec-lavie.jp",
+        "tatacliq.com",
+        "telegraph.co.uk",
+        "timewarnercable.com",
+        "tou.tv",
+        "usanetwork.com",
+        "vanityfair.com",
+        "verizon.com",
+        "vtr.com",
+        "wayin.com",
+        "wired.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50255,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||adobedtm.com^*-libraryCode_source.min.js",
+      "initiatorDomains": [
+        "doda.jp"
+      ]
+    }
+  },
+  {
+    "id": 50256,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||adobedtm.com^*_source.min.js",
+      "initiatorDomains": [
+        "ally.com",
+        "americanexpress.com",
+        "as.com",
+        "backcountry.com",
+        "crave.ca",
+        "disneyplus.disney.co.jp",
+        "hilton.com",
+        "hl.co.uk",
+        "homedepot.ca",
+        "kroger.com",
+        "mora.jp",
+        "nbarizona.com",
+        "pnc.com",
+        "tatacliq.com",
+        "telus.com"
+      ]
+    }
+  },
+  {
+    "id": 50257,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||adobedtm.com^*-source.min.js",
+      "initiatorDomains": [
+        "53.com",
+        "aarp.org",
+        "aircanada.com",
+        "ally.com",
+        "americanexpress.com",
+        "as.com",
+        "atresplayer.com",
+        "automobiles.honda.com",
+        "backcountry.com",
+        "bbva.com.ar",
+        "bbvacib.com",
+        "bbvauk.com",
+        "bestbuy.ca",
+        "bose.ae",
+        "bose.at",
+        "bose.ca",
+        "bose.ch",
+        "bose.cl",
+        "bose.co",
+        "bose.co.jp",
+        "bose.co.nz",
+        "bose.co.uk",
+        "bose.com",
+        "bose.com.au",
+        "bose.de",
+        "bose.dk",
+        "bose.es",
+        "bose.fi",
+        "bose.fr",
+        "bose.hk",
+        "bose.hu",
+        "bose.ie",
+        "bose.it",
+        "bose.lu",
+        "bose.mx",
+        "bose.nl",
+        "bose.no",
+        "bose.pe",
+        "bose.pl",
+        "bose.se",
+        "boseapac.com",
+        "bosebelgium.be",
+        "boselatam.com",
+        "bt.com",
+        "cadenaser.com",
+        "churchofjesuschrist.org",
+        "cibc.com",
+        "crave.ca",
+        "currys.co.uk",
+        "deutsche-bank.de",
+        "dollargeneral.com",
+        "etihad.com",
+        "eurosport.de",
+        "fedex.com",
+        "guitarcenter.com",
+        "healthsafe-id.com",
+        "healthy.kaiserpermanente.org",
+        "helvetia.com",
+        "hgtv.com",
+        "hilton.com",
+        "homedepot.ca",
+        "ihg.com",
+        "imsa.com",
+        "ing.com.au",
+        "ingrammicro.com",
+        "kroger.com",
+        "lenovo.com",
+        "lifetime.life",
+        "lowes.com",
+        "manager-magazin.de",
+        "marriott.com",
+        "medscape.com",
+        "mtvuutiset.fi",
+        "mybell.bell.ca",
+        "natwest.com",
+        "nbarizona.com",
+        "news.sky.com",
+        "philips.com",
+        "plasticsnews.com",
+        "pnc.com",
+        "poweredbycovermore.com",
+        "ralphlauren.com",
+        "samsung.com",
+        "sephora.com",
+        "snsbank.nl",
+        "ssrn.com",
+        "starwarscelebration.com",
+        "subway.com",
+        "tatacliq.com",
+        "telegraph.co.uk",
+        "telus.com",
+        "verizon.com",
+        "virginplus.ca",
+        "walgreens.com",
+        "xfinity.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50258,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||adobedtm.com^*/mbox-contents-",
+      "initiatorDomains": [
+        "absa.co.za",
+        "ally.com",
+        "americanexpress.com",
+        "as.com",
+        "backcountry.com",
+        "ceair.com",
+        "conad.it",
+        "costco.com",
+        "dhl.de",
+        "fcbarcelona.cat",
+        "fcbarcelona.cn",
+        "fcbarcelona.com",
+        "fcbarcelona.es",
+        "fcbarcelona.fr",
+        "fcbarcelona.jp",
+        "firststatesuper.com.au",
+        "hgtv.com",
+        "lenovo.com",
+        "lowes.com",
+        "nfl.com",
+        "oprah.com",
+        "pnc.com",
+        "shoppersdrugmart.ca",
+        "sony.jp",
+        "tatacliq.com",
+        "usanetwork.com",
+        "vanityfair.com",
+        "wired.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50259,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cookielaw.org^*/OtAutoBlock.js",
+      "initiatorDomains": [
+        "bancsabadell.com",
+        "darkreading.com",
+        "uphold.com"
+      ]
+    }
+  },
+  {
+    "id": 50260,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||mpsnare.iesnare.com^",
+      "initiatorDomains": [
+        "aswbe.ana.co.jp",
+        "citi.com",
+        "citibank.com",
+        "jbhifi.com.au",
+        "login.skype.com",
+        "oreillyauto.com",
+        "power.fi",
+        "princessauto.com",
+        "ringcentral.com",
+        "screwfix.com",
+        "secure.coventrybuildingsociety.co.uk",
+        "usbank.com",
+        "verkkokauppa.com",
+        "vitacost.com",
+        "westernunion.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50261,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||lightning.cnn.com^",
+      "initiatorDomains": [
+        "wfmz.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50262,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||tag.aticdn.net^",
+      "initiatorDomains": [
+        "gouv.fr",
+        "openservices.enedis.fr",
+        "rte.ie",
+        "tv5monde.com",
+        "uktvplay.co.uk",
+        "visaconcierge.eu",
+        "yourstory.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50263,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||omtrdc.net^*/mbox/json?",
+      "initiatorDomains": [
+        "absa.co.za",
+        "att.com",
+        "pnc.com",
+        "vodafone.it"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50264,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||bugsnag.com^",
+      "initiatorDomains": [
+        "app.bugsnag.com"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50265,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||adobe.com.ssl.d1.sc.omtrdc.net^",
+      "initiatorDomains": [
+        "www.adobe.com"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50266,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||app.clarity.so^",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50267,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cbsi.map.fastly.net^"
+    }
+  },
+  {
+    "id": 50268,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||content.ingbank.pl^"
+    }
+  },
+  {
+    "id": 50269,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ct.ddc.venmo.com.fpc.datadome.co^",
+      "initiatorDomains": [
+        "id.venmo.com"
+      ]
+    }
+  },
+  {
+    "id": 50270,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||curiositystream.com.first-party-js.datadome.co^",
+      "initiatorDomains": [
+        "curiositystream.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50271,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||datadome.garena.com.first-party-js.datadome.co^",
+      "initiatorDomains": [
+        "auth.garena.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50272,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||dd.blackhawknetwork.com.first-party-js.datadome.co^",
+      "initiatorDomains": [
+        "redeem.rewardlink.com"
+      ]
+    }
+  },
+  {
+    "id": 50273,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||dd.qa.moneygram.com.first-party-js.datadome.co^",
+      "initiatorDomains": [
+        "moneygram.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50274,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||dd.wizzair.com.first-party-js.datadome.co^",
+      "initiatorDomains": [
+        "wizzair.com"
+      ]
+    }
+  },
+  {
+    "id": 50275,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||dwt.soundcloud.com.first-party-js.datadome.co^",
+      "initiatorDomains": [
+        "soundcloud.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50276,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||gva.et-gv.fr^",
+      "initiatorDomains": [
+        "culture.gouv.fr"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50277,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||n8s.jp^",
+      "initiatorDomains": [
+        "nikkei.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50278,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||online-metrix.net^",
+      "initiatorDomains": [
+        "eki-net.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50279,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||p11.techlab-cdn.com^",
+      "initiatorDomains": [
+        "wizzair.com"
+      ]
+    }
+  },
+  {
+    "id": 50280,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||paypal.com.first-party-js.datadome.co^",
+      "initiatorDomains": [
+        "paypal.com"
+      ]
+    }
+  },
+  {
+    "id": 50281,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||sc.omtrdc.net^",
+      "initiatorDomains": [
+        "cibc.com"
+      ]
+    }
+  },
+  {
+    "id": 50282,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||team-rec.jp^",
+      "initiatorDomains": [
+        "search-voi.0101.co.jp",
+        "voi.0101.co.jp"
+      ]
+    }
+  },
+  {
+    "id": 50283,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ubisoft.com.first-party-js.datadome.co^",
+      "initiatorDomains": [
+        "connect.ubisoft.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50284,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||wwwimage-tve.cbsstatic.com^"
+    }
+  },
+  {
+    "id": 50285,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||heatmap.it^",
+      "initiatorDomains": [
+        "heatmap.com",
+        "heatmap.it",
+        "heatmap.me",
+        "heatmap.org"
+      ]
+    }
+  },
+  {
+    "id": 50286,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||apps.derstandard.at^*/TrackingCookieCheck?",
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 50287,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||digitale-sammlungen.gwlb.de^*/pageview.js",
+      "initiatorDomains": [
+        "digitale-sammlungen.gwlb.de"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50288,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||dmp.theadex.com^*/adex.js",
+      "initiatorDomains": [
+        "kino.de"
+      ]
+    }
+  },
+  {
+    "id": 50289,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||energy.de^*/ivw.js?",
+      "initiatorDomains": [
+        "energy.de"
+      ]
+    }
+  },
+  {
+    "id": 50290,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ens.nzz.ch^",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50291,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||outbrainimg.com^",
+      "initiatorDomains": [
+        "computerbild.de",
+        "fitbook.de",
+        "metal-hammer.de",
+        "rollingstone.de",
+        "stylebook.de"
+      ],
+      "domainType": "thirdParty"
+    }
+  },
+  {
+    "id": 50292,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||technical-service.net^",
+      "initiatorDomains": [
+        "n-tv.de",
+        "rtl.de",
+        "vip.de"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50293,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ausha.tsbluebox.com^",
+      "initiatorDomains": [
+        "podcast.ausha.co"
+      ],
+      "resourceTypes": [
+        "media"
+      ]
+    }
+  },
+  {
+    "id": 50294,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||caf.fr^*/smarttag.js",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50295,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||connect.facebook.net^*/fbevents.js",
+      "initiatorDomains": [
+        "elinoi.com"
+      ]
+    }
+  },
+  {
+    "id": 50296,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||howsmyssl.com^",
+      "initiatorDomains": [
+        "trenitalia.fr"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50297,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||relevant-digital.com^",
+      "initiatorDomains": [
+        "20min.ch"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50298,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||service-public.fr^*/assets/js/eulerian/eulerian.js",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50299,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||aixifan.com^*/sensorsdata.min.js?",
+      "initiatorDomains": [
+        "acfun.cn"
+      ]
+    }
+  },
+  {
+    "id": 50300,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||tianyancha.com^*/sensorsdata.",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50301,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||3voor12.vpro.nl^*/streamsense.min.js",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50302,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ad.crwdcntrl.net^",
+      "initiatorDomains": [
+        "rtl.nl"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50303,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||marketingautomation.services^",
+      "initiatorDomains": [
+        "leeuwerik.nl"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50304,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||konzolvilag.hu^*/click_tracking.js",
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50305,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||adobedtm.com^*/AppMeasurement.min.js",
+      "initiatorDomains": [
+        "sky.it"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50306,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||dd.subito.it.first-party-js.datadome.co^",
+      "initiatorDomains": [
+        "areariservata.subito.it"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50307,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||jsdelivr.net^*/keen-tracking.min.js",
+      "initiatorDomains": [
+        "nextquotidiano.it"
+      ]
+    }
+  },
+  {
+    "id": 50308,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||sgtm.farmasave.it^",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50309,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdn.kaizenplatform.net^",
+      "initiatorDomains": [
+        "navi.onamae.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50310,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||delivery.satr.jp^",
+      "initiatorDomains": [
+        "mieru-ca.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50311,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||docodoco.jp^*/docodoco?key=",
+      "initiatorDomains": [
+        "jrtours.co.jp"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50312,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ev.tpocdm.com^",
+      "initiatorDomains": [
+        "wowma.jp"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50313,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||f-tra.com^",
+      "initiatorDomains": [
+        "pokemoncenter-online.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50314,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||h-cast.jp^",
+      "initiatorDomains": [
+        "bookoffonline.co.jp"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50315,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||line-scdn.net^*/torimochi.js",
+      "initiatorDomains": [
+        "demae-can.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50316,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||nakanohito.jp^*/bi.js",
+      "initiatorDomains": [
+        "kenko-tokina.co.jp",
+        "myna.go.jp",
+        "nexon.com"
+      ]
+    }
+  },
+  {
+    "id": 50317,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||pvtag.yahoo.co.jp^",
+      "initiatorDomains": [
+        "paypaymall.yahoo.co.jp"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50318,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||query.petametrics.com^",
+      "initiatorDomains": [
+        "mechacomic.jp"
+      ],
+      "resourceTypes": [
+        "image",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50319,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||rt.rtoaster.jp^",
+      "initiatorDomains": [
+        "ec-store.net"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 50320,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||rtoaster.jp^",
+      "initiatorDomains": [
+        "cecile.co.jp",
+        "ec-store.net",
+        "jreastmall.com",
+        "lexus.jp",
+        "melonbooks.co.jp"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50321,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ukw.jp^*/?cbk=",
+      "initiatorDomains": [
+        "system5.jp"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50322,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||webcdn.stream.ne.jp^*/referrer.js",
+      "initiatorDomains": [
+        "stream.ne.jp"
+      ]
+    }
+  },
+  {
+    "id": 50323,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||wf.typesquare.com^",
+      "initiatorDomains": [
+        "app.studio.design",
+        "morisawafonts.com"
+      ],
+      "resourceTypes": [
+        "font"
+      ]
+    }
+  },
+  {
+    "id": 50324,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||login.ingbank.pl^*/satelliteLib-",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50325,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||auth2.picpay.com^*/event-tracking.js",
+      "resourceTypes": [
+        "script"
+      ],
+      "domainType": "firstParty"
+    }
+  },
+  {
+    "id": 50326,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||siteapps.com^",
+      "initiatorDomains": [
+        "netcombo.com.br"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50327,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||stream.adunity.com^",
+      "initiatorDomains": [
+        "b1tv.ro"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50328,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||k12-company.ru^*/statistics.js",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50329,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||online.bcs.ru^*/piwik.bcs.js",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50330,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||widget.myrentacar.me^",
+      "resourceTypes": [
+        "script",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 50331,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdn.smartclip-services.com^",
+      "initiatorDomains": [
+        "cerebriti.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50332,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||elconfidencial.com^*/AnalyticsEvent.js"
+    }
+  },
+  {
+    "id": 50333,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||elconfidencial.com^*/EventTracker.js"
+    }
+  },
+  {
+    "id": 50334,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||spxl.socy.es^",
+      "initiatorDomains": [
+        "3djuegosguias.com",
+        "3djuegospc.com",
+        "applesfera.com",
+        "compradiccion.com",
+        "directoalpaladar.com",
+        "espinof.com",
+        "genbeta.com",
+        "poprosa.com",
+        "trendencias.com",
+        "trendenciashombre.com",
+        "vidaextra.com",
+        "vitonica.com",
+        "xatakamovil.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 50335,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||static-cdn.hotjar.com^",
+      "initiatorDomains": [
+        "mercadopublico.cl"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50336,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdn.segmentify.com^",
+      "initiatorDomains": [
+        "gratis.com"
+      ],
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 50337,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||merlincdn.net^*/common/images/spacer.gif",
+      "initiatorDomains": [
+        "turkcell.com.tr"
+      ],
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  }
+]

@@ -1,0 +1,22 @@
+/* YouTube ad containers. Player ad metadata is removed in the MAIN-world script. */
+ytd-rich-item-renderer:has(> #content > ytd-ad-slot-renderer),
+ytd-rich-item-renderer:has(> #content ytd-ad-slot-renderer),
+ytd-rich-item-renderer:has(> ytd-ad-slot-renderer),
+ytd-ad-slot-renderer,
+ytd-action-companion-ad-renderer,
+ytd-companion-slot-renderer,
+ytd-display-ad-renderer,
+ytd-in-feed-ad-layout-renderer,
+ytd-promoted-sparkles-web-renderer,
+ytd-promoted-video-renderer,
+#masthead-ad,
+#player-ads,
+.video-ads,
+.ytp-ad-module,
+.ytp-ad-overlay-container,
+.ytp-ad-player-overlay,
+.ytp-ad-text,
+.ytp-ad-image-overlay,
+.ytp-ad-skip-button-container {
+    display: none !important;
+}

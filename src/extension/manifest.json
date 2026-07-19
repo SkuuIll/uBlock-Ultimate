@@ -1,0 +1,337 @@
+{
+  "author": "SkuuIll",
+  "background": {
+    "service_worker": "js/sw.js",
+    "type": "module"
+  },
+  "action": {
+    "browser_style": false,
+    "default_icon": {
+      "16": "img/ublock16.png",
+      "32": "img/ublock32.png",
+      "64": "img/ublock64.png"
+    },
+    "default_title": "uBlock Ultimate",
+    "default_popup": "popup-fenix.html"
+  },
+  "default_locale": "en",
+  "storage": {
+    "managed_schema": "managed_schema.json"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "core-mini",
+        "path": "dnr/core-mini.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "static-badware",
+        "path": "dnr/static-badware.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "static-core",
+        "path": "dnr/static-core.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "static-privacy",
+        "path": "dnr/static-privacy.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "static-unbreak",
+        "path": "dnr/static-unbreak.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "static-video-ads",
+        "path": "dnr/static-video-ads.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "ublock-filters",
+        "path": "dnr/ublock-filters.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "ublock-badware",
+        "path": "dnr/ublock-badware.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "ublock-privacy",
+        "path": "dnr/ublock-privacy.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "ublock-unbreak",
+        "path": "dnr/ublock-unbreak.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "ublock-quick-fixes",
+        "path": "dnr/ublock-quick-fixes.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "easylist-00",
+        "path": "dnr/easylist-00.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "easylist-01",
+        "path": "dnr/easylist-01.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "easylist-02",
+        "path": "dnr/easylist-02.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "easylist-03",
+        "path": "dnr/easylist-03.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easylist-04",
+        "path": "dnr/easylist-04.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easylist-05",
+        "path": "dnr/easylist-05.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easylist-06",
+        "path": "dnr/easylist-06.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easylist-07",
+        "path": "dnr/easylist-07.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easylist-08",
+        "path": "dnr/easylist-08.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easylist-09",
+        "path": "dnr/easylist-09.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easyprivacy-00",
+        "path": "dnr/easyprivacy-00.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "easyprivacy-01",
+        "path": "dnr/easyprivacy-01.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "easyprivacy-02",
+        "path": "dnr/easyprivacy-02.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easyprivacy-03",
+        "path": "dnr/easyprivacy-03.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easyprivacy-04",
+        "path": "dnr/easyprivacy-04.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easyprivacy-05",
+        "path": "dnr/easyprivacy-05.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easyprivacy-06",
+        "path": "dnr/easyprivacy-06.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easyprivacy-07",
+        "path": "dnr/easyprivacy-07.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easyprivacy-08",
+        "path": "dnr/easyprivacy-08.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easyprivacy-09",
+        "path": "dnr/easyprivacy-09.rules.json",
+        "enabled": false
+      },
+      {
+        "id": "easyprivacy-10",
+        "path": "dnr/easyprivacy-10.rules.json",
+        "enabled": false
+      }
+    ]
+  },
+  "description": "__MSG_extShortDesc__",
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "img/ublock16.png",
+    "32": "img/ublock32.png",
+    "48": "img/ublock48.png",
+    "64": "img/ublock64.png",
+    "96": "img/ublock96.png",
+    "128": "img/ublock128.png",
+    "256": "img/ublock256.png"
+  },
+  "manifest_version": 3,
+  "minimum_chrome_version": "120",
+  "name": "uBlock Ultimate",
+  "options_page": "dashboard.html",
+  "commands": {
+    "launch-element-zapper": {
+      "description": "__MSG_popupTipZapper__"
+    },
+    "launch-element-picker": {
+      "description": "__MSG_popupTipPicker__"
+    },
+    "launch-logger": {
+      "description": "__MSG_popupTipLog__"
+    },
+    "open-dashboard": {
+      "description": "__MSG_popupTipDashboard__"
+    },
+    "relax-blocking-mode": {
+      "description": "__MSG_relaxBlockingMode__"
+    },
+    "toggle-cosmetic-filtering": {
+      "description": "__MSG_toggleCosmeticFiltering__"
+    },
+    "toggle-javascript": {
+      "description": "__MSG_toggleJavascript__"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "idle",
+    "privacy",
+    "scripting",
+    "storage",
+    "tabs",
+    "webNavigation",
+    "webRequest"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "exclude_matches": [
+        "*://suno.com/*",
+        "*://*.suno.com/*",
+        "*://vkvideo.ru/*",
+        "*://*.vkvideo.ru/*",
+        "*://yandex.com/*",
+        "*://*.yandex.com/*",
+        "*://yandex.ru/*",
+        "*://*.yandex.ru/*",
+        "*://youtube.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube-nocookie.com/*",
+        "*://*.youtube-nocookie.com/*",
+        "*://youtu.be/*",
+        "*://*.youtu.be/*",
+        "*://chatgpt.com/*",
+        "*://*.chatgpt.com/*",
+        "*://grok.com/*",
+        "*://*.grok.com/*"
+      ],
+      "js": [
+        "/js/capability-enforcer.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "exclude_matches": [
+        "*://chatgpt.com/*",
+        "*://*.chatgpt.com/*"
+      ],
+      "js": [
+        "/js/vapi.js",
+        "/js/vapi-client.js",
+        "/js/contentscript.js"
+      ],
+      "all_frames": true,
+      "match_about_blank": true,
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://youtube.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube-nocookie.com/*",
+        "*://*.youtube-nocookie.com/*"
+      ],
+      "css": [
+        "/css/youtube-adblock.css"
+      ],
+      "js": [
+        "/js/youtube-adblock-main.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "world": "MAIN"
+    }
+  ],
+  "short_name": "uBlock Ultimate",
+  "version": "0.2.0",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "/web_accessible_resources/*",
+        "/js/epicker-ui-bundle.js",
+        "/css/epicker-ui.css",
+        "/js/vapi-content.js",
+        "/zapper-ui.html",
+        "/css/zapper-ui.css",
+        "/js/scripting/zapper-ui.js",
+        "/js/scripting/tool-overlay-ui.js",
+        "/js/scripting/tool-overlay.js",
+        "/js/scripting/zapper.js",
+        "/js/scripting/dom.js",
+        "/js/scripting/ext.js",
+        "/picker-ui.html",
+        "/css/picker-ui.css",
+        "/js/scripting/picker-ui.js",
+        "/js/scripting/picker.js",
+        "/assets/assets.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+    "chromium": {
+        "dnr": true,
+        "dnrFeedback": "dev-only",
+        "webRequestBlocking": false,
+        "scriptingInsertCSS": true,
+        "documentId": "maybe",
+        "sessionRules": true,
+        "dynamicRules": true,
+        "maxDynamicRules": 5000,
+        "maxSessionRules": 5000,
+        "regexRules": true,
+        "tabHide": true,
+        "userScripts": true
+    },
+    "edge": {
+        "dnr": true,
+        "dnrFeedback": "dev-only",
+        "webRequestBlocking": false,
+        "scriptingInsertCSS": true,
+        "documentId": false,
+        "sessionRules": true,
+        "dynamicRules": true,
+        "maxDynamicRules": 5000,
+        "maxSessionRules": 5000,
+        "regexRules": true,
+        "tabHide": false,
+        "userScripts": false
+    },
+    "firefox-mv3": {
+        "dnr": true,
+        "dnrFeedback": false,
+        "webRequestBlocking": false,
+        "scriptingInsertCSS": true,
+        "documentId": false,
+        "sessionRules": true,
+        "dynamicRules": true,
+        "maxDynamicRules": 5000,
+        "maxSessionRules": 5000,
+        "regexRules": false,
+        "tabHide": false,
+        "userScripts": false
+    }
+}

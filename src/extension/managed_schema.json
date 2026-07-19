@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "blockedLists": {
+      "title": "Blocked filter lists",
+      "description": "List of filter list URLs that users cannot enable",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "forcedLists": {
+      "title": "Forced filter lists",
+      "description": "List of filter list URLs that are always enabled",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "disableFiltering": {
+      "title": "Disable content filtering",
+      "description": "When true, all content filtering is disabled",
+      "type": "boolean"
+    },
+    "disableCosmeticFiltering": {
+      "title": "Disable cosmetic filtering",
+      "description": "When true, cosmetic/procedural filters are disabled",
+      "type": "boolean"
+    },
+    "disableLogger": {
+      "title": "Disable network logger",
+      "description": "When true, the network request logger is disabled",
+      "type": "boolean"
+    },
+    "whitelist": {
+      "title": "Whitelisted sites",
+      "description": "Sites that should not be filtered",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "blocklist": {
+      "title": "Blocklisted sites",
+      "description": "Sites where filtering is always active",
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

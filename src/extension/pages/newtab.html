@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" id="ubol-newtab">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="newtabTitle">Search Tools</title>
+  <link rel="stylesheet" href="../css/newtab.css">
+<link rel="stylesheet" href="../css/ultimate.css">
+</head>
+<body>
+  <header>
+    <img src="../img/ublock256.png" alt="" id="header-logo">
+    <div class="header-text">
+      <h1 data-i18n="newtabTitle">Search Tools</h1>
+      <p class="sub" data-i18n="newtabSubtitle">Choose a search tool, enter a query, and open results directly from that provider.</p>
+    </div>
+    <div class="header-toolbar">
+      <div class="gb_L" id="gbwa">
+        <a class="toolbar-btn gb_C" aria-label="Google apps" href="https://www.google.com/intl/en/about/products" role="button" tabindex="0">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+          </svg>
+        </a>
+        <div class="gb-dropdown gb-apps-dropdown" id="gb-apps-dropdown">
+          <div class="gb-dropdown-scroll">
+            <div class="gb-apps-grid" id="gb-apps-grid"></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+
+  <main>
+    <p id="newtab-hint" data-i18n="newtabHint">Use settings from dashboard to toggle back to original chrome page.</p>
+    <div class="searchbar">
+      <form id="search-form">
+        <label for="query" data-i18n="newtabSearchQuery">Search query</label>
+        <input id="query" name="q" type="search" inputmode="search" dir="auto" autofocus>
+        <div class="actions">
+          <button type="button" class="default-btn" id="default-btn"><span data-i18n="newtabSetDefault"></span></button>
+          <button class="submit" type="submit"><span data-i18n="newtabSearch">Search</span> <span id="selected-name">Google</span></button>
+        </div>
+      </form>
+      <noscript>This standalone page needs JavaScript enabled to send searches to the selected provider.</noscript>
+    </div>
+
+    <nav class="jump" aria-label="Tool categories" id="category-links"></nav>
+    <div class="grid" id="tool-grid"></div>
+
+  </main>
+
+  <footer data-i18n="newtabFooter">Standalone search launcher. No remote scripts, tracking code, or advertising blocks are included.</footer>
+
+  <script src="../js/i18n-bundle.js"></script>
+  <script src="../js/newtab.js"></script>
+</body>
+</html>

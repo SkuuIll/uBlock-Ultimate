@@ -1,0 +1,1742 @@
+[
+  {
+    "id": 1,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||malwaredomainlist.com^"
+    }
+  },
+  {
+    "id": 2,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||malware-domain-list.com^"
+    }
+  },
+  {
+    "id": 3,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||malwaredomains.com^"
+    }
+  },
+  {
+    "id": 4,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||malwarepatrol.net^"
+    }
+  },
+  {
+    "id": 5,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||malware.com.br^"
+    }
+  },
+  {
+    "id": 6,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||malc0de.com^"
+    }
+  },
+  {
+    "id": 7,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||malc0de.net^"
+    }
+  },
+  {
+    "id": 8,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||malc0de.org^"
+    }
+  },
+  {
+    "id": 9,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||malware-domains.com^"
+    }
+  },
+  {
+    "id": 10,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||vxvault.net^"
+    }
+  },
+  {
+    "id": 11,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||virusshare.com^"
+    }
+  },
+  {
+    "id": 12,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||virusshare.net^"
+    }
+  },
+  {
+    "id": 13,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||virustotal.com^"
+    }
+  },
+  {
+    "id": 14,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||urlquery.net^"
+    }
+  },
+  {
+    "id": 15,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||urlscan.io^"
+    }
+  },
+  {
+    "id": 16,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hybrid-analysis.com^"
+    }
+  },
+  {
+    "id": 17,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||joesandbox.com^"
+    }
+  },
+  {
+    "id": 18,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||any.run^"
+    }
+  },
+  {
+    "id": 19,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||bazaar.abuse.ch^"
+    }
+  },
+  {
+    "id": 20,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||urlhaus.abuse.ch^"
+    }
+  },
+  {
+    "id": 21,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||feodotracker.abuse.ch^"
+    }
+  },
+  {
+    "id": 22,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sslbl.abuse.ch^"
+    }
+  },
+  {
+    "id": 23,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||threatfox.abuse.ch^"
+    }
+  },
+  {
+    "id": 24,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ransomwaretracker.abuse.ch^"
+    }
+  },
+  {
+    "id": 25,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||phishing.gov.au^"
+    }
+  },
+  {
+    "id": 26,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||phishtank.com^"
+    }
+  },
+  {
+    "id": 27,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||openphish.com^"
+    }
+  },
+  {
+    "id": 28,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||phishing.com^"
+    }
+  },
+  {
+    "id": 29,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||phishing.net^"
+    }
+  },
+  {
+    "id": 30,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||secure-phishing.com^"
+    }
+  },
+  {
+    "id": 31,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||protect-phishing.com^"
+    }
+  },
+  {
+    "id": 32,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||phish-protection.com^"
+    }
+  },
+  {
+    "id": 33,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||phishing-alert.com^"
+    }
+  },
+  {
+    "id": 34,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||phishing-warning.com^"
+    }
+  },
+  {
+    "id": 35,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||phishingscam.com^"
+    }
+  },
+  {
+    "id": 36,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||phishingprotection.com^"
+    }
+  },
+  {
+    "id": 37,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exploit.in^"
+    }
+  },
+  {
+    "id": 38,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exploit-db.com^"
+    }
+  },
+  {
+    "id": 39,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exploitsearch.com^"
+    }
+  },
+  {
+    "id": 40,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exploit.kit^"
+    }
+  },
+  {
+    "id": 41,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exploit-pack.com^"
+    }
+  },
+  {
+    "id": 42,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exploitpack.com^"
+    }
+  },
+  {
+    "id": 43,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exploitpack.net^"
+    }
+  },
+  {
+    "id": 44,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exploitsdownload.com^"
+    }
+  },
+  {
+    "id": 45,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exploit-tool.com^"
+    }
+  },
+  {
+    "id": 46,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exploits.in^"
+    }
+  },
+  {
+    "id": 47,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||000webhostapp.com^"
+    }
+  },
+  {
+    "id": 48,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||000webhost.com^"
+    }
+  },
+  {
+    "id": 49,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||rishu.in^"
+    }
+  },
+  {
+    "id": 50,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||rishu.org^"
+    }
+  },
+  {
+    "id": 51,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||rishu.net^"
+    }
+  },
+  {
+    "id": 52,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||freewebhostingarea.com^"
+    }
+  },
+  {
+    "id": 53,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||zymic.com^"
+    }
+  },
+  {
+    "id": 54,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hostinger.com^"
+    }
+  },
+  {
+    "id": 55,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||freenom.com^"
+    }
+  },
+  {
+    "id": 56,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ml^"
+    }
+  },
+  {
+    "id": 57,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ga^"
+    }
+  },
+  {
+    "id": 58,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cf^"
+    }
+  },
+  {
+    "id": 59,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||gq^"
+    }
+  },
+  {
+    "id": 60,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tk^"
+    }
+  },
+  {
+    "id": 61,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||coinhive.com^"
+    }
+  },
+  {
+    "id": 62,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||coinhive.net^"
+    }
+  },
+  {
+    "id": 63,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||coin-hive.com^"
+    }
+  },
+  {
+    "id": 64,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||crypto-loot.com^"
+    }
+  },
+  {
+    "id": 65,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cryptoloot.com^"
+    }
+  },
+  {
+    "id": 66,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||miner.pr0gramm.com^"
+    }
+  },
+  {
+    "id": 67,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||minecrunch.net^"
+    }
+  },
+  {
+    "id": 68,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||minr.pw^"
+    }
+  },
+  {
+    "id": 69,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||miner.pw^"
+    }
+  },
+  {
+    "id": 70,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||coinnebula.com^"
+    }
+  },
+  {
+    "id": 71,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||reasedoper.pw^"
+    }
+  },
+  {
+    "id": 72,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||webmine.cz^"
+    }
+  },
+  {
+    "id": 73,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||webminer.cz^"
+    }
+  },
+  {
+    "id": 74,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||monerominer.rocks^"
+    }
+  },
+  {
+    "id": 75,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||coin-have.com^"
+    }
+  },
+  {
+    "id": 76,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ppoi.org^"
+    }
+  },
+  {
+    "id": 77,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||jsecoin.com^"
+    }
+  },
+  {
+    "id": 78,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||jsecoin.net^"
+    }
+  },
+  {
+    "id": 79,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||coinblind.com^"
+    }
+  },
+  {
+    "id": 80,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||coinblind.net^"
+    }
+  },
+  {
+    "id": 81,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||addrevenue.io^"
+    }
+  },
+  {
+    "id": 82,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||afminer.com^"
+    }
+  },
+  {
+    "id": 83,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||crypto-webminer.com^"
+    }
+  },
+  {
+    "id": 84,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||moneyminer.eu^"
+    }
+  },
+  {
+    "id": 85,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cloudcoins.co^"
+    }
+  },
+  {
+    "id": 86,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||coinlab.biz^"
+    }
+  },
+  {
+    "id": 87,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||coinerra.com^"
+    }
+  },
+  {
+    "id": 88,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cpominer.com^"
+    }
+  },
+  {
+    "id": 89,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||dmath.ubc^"
+    }
+  },
+  {
+    "id": 90,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||fct.xyz^"
+    }
+  },
+  {
+    "id": 91,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||g-reactor.com^"
+    }
+  },
+  {
+    "id": 92,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||get-coin.info^"
+    }
+  },
+  {
+    "id": 93,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||gvisa.xyz^"
+    }
+  },
+  {
+    "id": 94,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hashpays.com^"
+    }
+  },
+  {
+    "id": 95,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hec.su^"
+    }
+  },
+  {
+    "id": 96,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hexsetup.ml^"
+    }
+  },
+  {
+    "id": 97,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hfs.info^"
+    }
+  },
+  {
+    "id": 98,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hk.^"
+    }
+  },
+  {
+    "id": 99,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||honorablemention.ml^"
+    }
+  },
+  {
+    "id": 100,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ice-miner.info^"
+    }
+  },
+  {
+    "id": 101,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||js-coin.com^"
+    }
+  },
+  {
+    "id": 102,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||juegos.tech^"
+    }
+  },
+  {
+    "id": 103,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||kadcoin.com^"
+    }
+  },
+  {
+    "id": 104,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||king-alexander.cf^"
+    }
+  },
+  {
+    "id": 105,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||konstantinov.su^"
+    }
+  },
+  {
+    "id": 106,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||la.miner.pw^"
+    }
+  },
+  {
+    "id": 107,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||lite-miner.pw^"
+    }
+  },
+  {
+    "id": 108,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||loader.pw^"
+    }
+  },
+  {
+    "id": 109,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||lucky-miner.pw^"
+    }
+  },
+  {
+    "id": 110,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mega-hash.com^"
+    }
+  },
+  {
+    "id": 111,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mega-miner.pw^"
+    }
+  },
+  {
+    "id": 112,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mega-miner.xyz^"
+    }
+  },
+  {
+    "id": 113,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mega.ooguy.com^"
+    }
+  },
+  {
+    "id": 114,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||megaminer.pw^"
+    }
+  },
+  {
+    "id": 115,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||micro-miner.pw^"
+    }
+  },
+  {
+    "id": 116,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mine.^"
+    }
+  },
+  {
+    "id": 117,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||miner.cryptonoter.com^"
+    }
+  },
+  {
+    "id": 118,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||miner.host^"
+    }
+  },
+  {
+    "id": 119,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||miner.llc^"
+    }
+  },
+  {
+    "id": 120,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||miner.ninja^"
+    }
+  },
+  {
+    "id": 121,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||miner.pc^"
+    }
+  },
+  {
+    "id": 122,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||miner.ru^"
+    }
+  },
+  {
+    "id": 123,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||miner.systems^"
+    }
+  },
+  {
+    "id": 124,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||miner.vip^"
+    }
+  },
+  {
+    "id": 125,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||miner.watch^"
+    }
+  },
+  {
+    "id": 126,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ransomware-tracker.com^"
+    }
+  },
+  {
+    "id": 127,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ransomware.com^"
+    }
+  },
+  {
+    "id": 128,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ransomware.net^"
+    }
+  },
+  {
+    "id": 129,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ransomware.org^"
+    }
+  },
+  {
+    "id": 130,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ransomware.info^"
+    }
+  },
+  {
+    "id": 131,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ransomware.live^"
+    }
+  },
+  {
+    "id": 132,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||id-ransomware.com^"
+    }
+  },
+  {
+    "id": 133,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||nomoreransom.org^"
+    }
+  },
+  {
+    "id": 134,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||noadware.it^"
+    }
+  },
+  {
+    "id": 135,
+    "priority": 420000,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||no-more-ransom.org^"
+    }
+  },
+  {
+    "id": 136,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||virustotal.com^"
+    }
+  },
+  {
+    "id": 137,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||urlscan.io^"
+    }
+  },
+  {
+    "id": 138,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||abuse.ch^"
+    }
+  },
+  {
+    "id": 139,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||any.run^"
+    }
+  },
+  {
+    "id": 140,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||hybrid-analysis.com^"
+    }
+  },
+  {
+    "id": 141,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||urlquery.net^"
+    }
+  },
+  {
+    "id": 142,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||virusshare.com^"
+    }
+  },
+  {
+    "id": 143,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||phishtank.com^"
+    }
+  },
+  {
+    "id": 144,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||openphish.com^"
+    }
+  },
+  {
+    "id": 145,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||malwarepatrol.net^"
+    }
+  },
+  {
+    "id": 146,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||malware-domains.com^"
+    }
+  },
+  {
+    "id": 147,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||nomoreransom.org^"
+    }
+  },
+  {
+    "id": 148,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ransomwaretracker.abuse.ch^"
+    }
+  },
+  {
+    "id": 149,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||feodotracker.abuse.ch^"
+    }
+  },
+  {
+    "id": 150,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||sslbl.abuse.ch^"
+    }
+  },
+  {
+    "id": 151,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||threatfox.abuse.ch^"
+    }
+  },
+  {
+    "id": 152,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||urlhaus.abuse.ch^"
+    }
+  },
+  {
+    "id": 153,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||bazaar.abuse.ch^"
+    }
+  },
+  {
+    "id": 154,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||www.bleepingcomputer.com^"
+    }
+  },
+  {
+    "id": 155,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||blog.talosintelligence.com^"
+    }
+  },
+  {
+    "id": 156,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||research.checkpoint.com^"
+    }
+  },
+  {
+    "id": 157,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||securelist.com^"
+    }
+  },
+  {
+    "id": 158,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||blog.malwarebytes.com^"
+    }
+  },
+  {
+    "id": 159,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||blog.sucuri.net^"
+    }
+  },
+  {
+    "id": 160,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||krebsonsecurity.com^"
+    }
+  },
+  {
+    "id": 161,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||thehackernews.com^"
+    }
+  },
+  {
+    "id": 162,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||threatpost.com^"
+    }
+  },
+  {
+    "id": 163,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||darkreading.com^"
+    }
+  },
+  {
+    "id": 164,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||infosecurity-magazine.com^"
+    }
+  },
+  {
+    "id": 165,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||portswigger.net^"
+    }
+  },
+  {
+    "id": 166,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||nvd.nist.gov^"
+    }
+  },
+  {
+    "id": 167,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cve.mitre.org^"
+    }
+  },
+  {
+    "id": 168,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||attack.mitre.org^"
+    }
+  },
+  {
+    "id": 169,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ciso.gov^"
+    }
+  },
+  {
+    "id": 170,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||us-cert.gov^"
+    }
+  },
+  {
+    "id": 171,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||www.cisa.gov^"
+    }
+  },
+  {
+    "id": 172,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||www.ncsc.gov.uk^"
+    }
+  },
+  {
+    "id": 173,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cyber.gov.au^"
+    }
+  },
+  {
+    "id": 174,
+    "priority": 520000,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||www.enisa.europa.eu^"
+    }
+  }
+]

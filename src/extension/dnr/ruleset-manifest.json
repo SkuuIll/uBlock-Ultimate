@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "profile": "release",
+  "rulesets": [
+    {
+      "id": "static-core",
+      "path": "dnr/static-core.rules.json",
+      "sourceLists": ["easylist", "ublock-filters"],
+      "enabledByDefault": true,
+      "testOnly": false
+    },
+    {
+      "id": "static-privacy",
+      "path": "dnr/static-privacy.rules.json",
+      "sourceLists": ["easyprivacy", "ublock-privacy"],
+      "enabledByDefault": true,
+      "testOnly": false
+    },
+    {
+      "id": "static-badware",
+      "path": "dnr/static-badware.rules.json",
+      "sourceLists": ["ublock-badware"],
+      "enabledByDefault": true,
+      "testOnly": false
+    },
+    {
+      "id": "static-unbreak",
+      "path": "dnr/static-unbreak.rules.json",
+      "sourceLists": ["ublock-unbreak", "ublock-quick-fixes"],
+      "enabledByDefault": true,
+      "testOnly": false
+    },
+    {
+      "id": "static-video-ads",
+      "path": "dnr/static-video-ads.rules.json",
+      "sourceLists": ["ubr-video-ads"],
+      "enabledByDefault": true,
+      "testOnly": false
+    }
+  ],
+  "testRulesets": [
+    {
+      "id": "tester-blocklist",
+      "path": "dnr/tester-blocklist.rules.json",
+      "testOnly": true
+    }
+  ]
+}

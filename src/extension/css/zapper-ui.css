@@ -1,0 +1,160 @@
+/*******************************************************************************
+
+    uBlock Ultimate - Zapper UI Styles
+
+*******************************************************************************/
+
+:root#ubol-zapper,
+:root#ubol-zapper body {
+    background: transparent;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+:root#ubol-zapper {
+    --quit-button-size: max(2.5em, min(3.5em, calc(100vw / 12)));
+    --ubol-overlay-fill: rgba(255,255,63,0.15);
+    --ubol-overlay-border: #FF0;
+    --surface-1: rgba(255, 255, 255, 0.85);
+    --surface-2: rgba(245, 245, 245, 0.95);
+    --ink-1: #333;
+    --border-1: rgba(0, 0, 0, 0.15);
+}
+
+svg#overlay {
+    cursor: crosshair;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+svg#overlay path:first-child {
+    fill: rgba(0,0,0,0.5);
+    fill-rule: evenodd;
+}
+
+svg#overlay path + path {
+    stroke: var(--ubol-overlay-border);
+    stroke-width: 2px;
+    fill: var(--ubol-overlay-fill);
+}
+
+:root#ubol-zapper aside {
+    position: fixed;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2147483647;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+:root#ubol-zapper body[dir="rtl"] aside {
+    left: 4px;
+    right: auto;
+}
+
+:root#ubol-zapper aside > div {
+    width: var(--quit-button-size);
+    height: var(--quit-button-size);
+    background-color: var(--surface-1);
+    border: 1px solid var(--border-1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+:root#ubol-zapper aside > div:hover {
+    background-color: var(--surface-2);
+}
+
+:root#ubol-zapper aside > div[aria-disabled="true"] {
+    opacity: 0.45;
+    cursor: default;
+}
+
+:root#ubol-zapper aside > div[aria-disabled="true"]:hover {
+    background-color: var(--surface-1);
+}
+
+:root#ubol-zapper aside > div .fa-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+:root#ubol-zapper aside > div .fa-icon svg {
+    width: 65%;
+    height: 65%;
+    fill: var(--ink-1);
+    stroke: none;
+}
+
+:root#ubol-zapper aside > #windowbar {
+    display: flex;
+    background: transparent;
+    border: none;
+    height: auto;
+    cursor: grab;
+}
+
+:root#ubol-zapper aside > #windowbar > div {
+    background: transparent;
+    border: none;
+}
+
+:root#ubol-zapper aside > #windowbar > #minimize {
+    display: none;
+}
+
+:root#ubol-zapper aside > #windowbar > #move {
+    flex-grow: 1;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAFElEQVQI12NgwAfKy8v/M5ANYLoBshgEyQo6H9UAAAAASUVORK5CYII=');
+    background-repeat: repeat;
+    cursor: grab;
+}
+
+:root#ubol-zapper aside > span#removeCount {
+    font-family: monospace;
+    font-size: 0.75em;
+    color: var(--ink-1);
+    text-align: center;
+    opacity: 0.7;
+    padding: 2px 4px;
+    background-color: var(--surface-1);
+    border: 1px solid var(--border-1);
+    border-radius: 4px;
+}
+
+#tooltip {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 4px;
+    color: #fff;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 4px 8px;
+    pointer-events: none;
+    white-space: pre;
+    z-index: 2147483648;
+    display: none;
+    max-width: 300px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root#ubol-zapper:not(.light) {
+        color-scheme: dark;
+    }
+}

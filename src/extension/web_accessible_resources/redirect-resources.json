@@ -1,0 +1,242 @@
+{
+  "noopjs": {
+    "extensionPath": "/web_accessible_resources/noop.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "noopcss": {
+    "extensionPath": "/web_accessible_resources/noop.css",
+    "mimeType": "text/css",
+    "safe": true
+  },
+  "nooptext": {
+    "extensionPath": "/web_accessible_resources/noop.txt",
+    "mimeType": "text/plain",
+    "safe": true
+  },
+  "noopframe": {
+    "extensionPath": "/web_accessible_resources/noop.html",
+    "mimeType": "text/html",
+    "safe": true
+  },
+  "noop.html": {
+    "extensionPath": "/web_accessible_resources/noop.html",
+    "mimeType": "text/html",
+    "safe": true
+  },
+  "1x1.gif": {
+    "extensionPath": "/web_accessible_resources/1x1.gif",
+    "mimeType": "image/gif",
+    "safe": true
+  },
+  "2x2.png": {
+    "extensionPath": "/web_accessible_resources/2x2.png",
+    "mimeType": "image/png",
+    "safe": true
+  },
+  "32x32.png": {
+    "extensionPath": "/web_accessible_resources/32x32.png",
+    "mimeType": "image/png",
+    "safe": true
+  },
+  "3x2.png": {
+    "extensionPath": "/web_accessible_resources/3x2.png",
+    "mimeType": "image/png",
+    "safe": true
+  },
+  "noop-0.1s.mp3": {
+    "extensionPath": "/web_accessible_resources/noop-0.1s.mp3",
+    "mimeType": "audio/mpeg",
+    "safe": true
+  },
+  "noop-0.5s.mp3": {
+    "extensionPath": "/web_accessible_resources/noop-0.5s.mp3",
+    "mimeType": "audio/mpeg",
+    "safe": true
+  },
+  "noop-1s.mp4": {
+    "extensionPath": "/web_accessible_resources/noop-1s.mp4",
+    "mimeType": "video/mp4",
+    "safe": true
+  },
+  "noop-vast2.xml": {
+    "extensionPath": "/web_accessible_resources/noop-vast2.xml",
+    "mimeType": "text/xml",
+    "safe": true
+  },
+  "noop-vast3.xml": {
+    "extensionPath": "/web_accessible_resources/noop-vast3.xml",
+    "mimeType": "text/xml",
+    "safe": true
+  },
+  "noop-vast4.xml": {
+    "extensionPath": "/web_accessible_resources/noop-vast4.xml",
+    "mimeType": "text/xml",
+    "safe": true
+  },
+  "noop-vmap1.xml": {
+    "extensionPath": "/web_accessible_resources/noop-vmap1.xml",
+    "mimeType": "text/xml",
+    "safe": true
+  },
+  "empty": {
+    "extensionPath": "/web_accessible_resources/empty",
+    "mimeType": "text/plain",
+    "safe": true
+  },
+  "googlesyndication_adsbygoogle.js": {
+    "extensionPath": "/web_accessible_resources/googlesyndication_adsbygoogle.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "googlesyndication_show_ads.js": {
+    "extensionPath": "/web_accessible_resources/googlesyndication_show_ads.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "googletagservices_gpt.js": {
+    "extensionPath": "/web_accessible_resources/googletagservices_gpt.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "googletagmanager_gtm.js": {
+    "extensionPath": "/web_accessible_resources/googletagmanager_gtm.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "google-analytics_ga.js": {
+    "extensionPath": "/web_accessible_resources/google-analytics_ga.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "google-analytics_analytics.js": {
+    "extensionPath": "/web_accessible_resources/google-analytics_analytics.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "google-analytics_cx_api.js": {
+    "extensionPath": "/web_accessible_resources/google-analytics_cx_api.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "google-analytics_inpage_linkid.js": {
+    "extensionPath": "/web_accessible_resources/google-analytics_inpage_linkid.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "google-ima.js": {
+    "extensionPath": "/web_accessible_resources/google-ima.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "amazon_ads.js": {
+    "extensionPath": "/web_accessible_resources/amazon_ads.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "amazon_apstag.js": {
+    "extensionPath": "/web_accessible_resources/amazon_apstag.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "ampproject_v0.js": {
+    "extensionPath": "/web_accessible_resources/ampproject_v0.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "chartbeat.js": {
+    "extensionPath": "/web_accessible_resources/chartbeat.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "prebid-ads.js": {
+    "extensionPath": "/web_accessible_resources/prebid-ads.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "outbrain-widget.js": {
+    "extensionPath": "/web_accessible_resources/outbrain-widget.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "popads.js": {
+    "extensionPath": "/web_accessible_resources/popads.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "popads-dummy.js": {
+    "extensionPath": "/web_accessible_resources/popads-dummy.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "scorecardresearch_beacon.js": {
+    "extensionPath": "/web_accessible_resources/scorecardresearch_beacon.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "sensors-analytics.js": {
+    "extensionPath": "/web_accessible_resources/sensors-analytics.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "fingerprint2.js": {
+    "extensionPath": "/web_accessible_resources/fingerprint2.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "fingerprint3.js": {
+    "extensionPath": "/web_accessible_resources/fingerprint3.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "hd-main.js": {
+    "extensionPath": "/web_accessible_resources/hd-main.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "nitropay_ads.js": {
+    "extensionPath": "/web_accessible_resources/nitropay_ads.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "adthrive_abd.js": {
+    "extensionPath": "/web_accessible_resources/adthrive_abd.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "noeval.js": {
+    "extensionPath": "/web_accessible_resources/noeval.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "noeval-silent.js": {
+    "extensionPath": "/web_accessible_resources/noeval-silent.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "nobab.js": {
+    "extensionPath": "/web_accessible_resources/nobab.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "nobab2.js": {
+    "extensionPath": "/web_accessible_resources/nobab2.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "nofab.js": {
+    "extensionPath": "/web_accessible_resources/nofab.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "doubleclick_instream_ad_status.js": {
+    "extensionPath": "/web_accessible_resources/doubleclick_instream_ad_status.js",
+    "mimeType": "application/javascript",
+    "safe": true
+  },
+  "noop.json": {
+    "extensionPath": "/web_accessible_resources/noop.json",
+    "mimeType": "application/json",
+    "safe": true
+  }
+}
