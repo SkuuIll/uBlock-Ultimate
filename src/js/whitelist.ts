@@ -134,6 +134,15 @@ cmEditor.on('changes', whitelistChanged);
 
 async function renderWhitelist() {
     const details = await messaging.send('dashboard', { what: 'getWhitelist' }) as WhitelistDetails;
+    if (
+        details === undefined ||
+        typeof details.reBadHostname !== 'string' ||
+        typeof details.reHostnameExtractor !== 'string' ||
+        Array.isArray(details.whitelistDefault) === false ||
+        Array.isArray(details.whitelist) === false
+    ) {
+        throw new Error('Trusted sites initialization returned an invalid response');
+    }
 
     const first = reBadHostname === undefined;
     if ( first ) {
@@ -271,7 +280,8 @@ dom.on('#whitelistRevert', 'click', revertChanges);
         };
         check();
     });
-    void renderWhitelist();
+    await renderWhitelist();
+    document.body.dataset.ready = 'true';
 })();
 
 /******************************************************************************/

@@ -384,6 +384,7 @@ dom.on('#trustMyFilters input', 'change', userFiltersChanged);
             break;
         }
     });
+    document.body.dataset.ready = 'true';
 })();
 
 cmEditor.on('changes', userFiltersChanged);

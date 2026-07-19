@@ -179,6 +179,16 @@
         "id": "easyprivacy-10",
         "path": "dnr/easyprivacy-10.rules.json",
         "enabled": false
+      },
+      {
+        "id": "privacy-url-cleanup",
+        "path": "dnr/privacy-url-cleanup.rules.json",
+        "enabled": true
+      },
+      {
+        "id": "privacy-social-trackers",
+        "path": "dnr/privacy-social-trackers.rules.json",
+        "enabled": false
       }
     ]
   },

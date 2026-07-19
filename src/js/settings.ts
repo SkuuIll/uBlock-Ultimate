@@ -359,12 +359,16 @@ self.hasUnsavedData = function() {
 
 /******************************************************************************/
 
-vAPI.messaging.send('dashboard', { what: 'userSettings' }).then(result => {
-    onUserSettingsReceived(result);
-});
-
-vAPI.messaging.send('dashboard', { what: 'getLocalData' }).then(result => {
-    onLocalDataReceived(result);
+Promise.all([
+    vAPI.messaging.send('dashboard', { what: 'userSettings' }),
+    vAPI.messaging.send('dashboard', { what: 'getLocalData' }),
+]).then(([settings, localData]) => {
+    if ( settings === undefined || localData === undefined ) {
+        throw new Error('Settings initialization returned an empty response');
+    }
+    onUserSettingsReceived(settings);
+    onLocalDataReceived(localData);
+    document.body.dataset.ready = 'true';
 });
 
 // https://github.com/uBlockOrigin/uBlock-issues/issues/591

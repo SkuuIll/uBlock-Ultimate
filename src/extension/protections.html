@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protección — uBlock Ultimate</title>
+<link rel="stylesheet" href="css/themes/default.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/dashboard-common.css">
+<link rel="stylesheet" href="css/protections.css">
+<link rel="stylesheet" href="css/ultimate.css">
+</head>
+<body>
+<main class="protections-page">
+    <header class="protections-hero">
+        <div>
+            <p class="eyebrow">uBlock Ultimate</p>
+            <h1 id="page-title">Protecciones opcionales</h1>
+            <p id="page-description">
+                Activa sólo las capas que necesites. Los cambios se aplican de forma atómica mediante DNR.
+            </p>
+        </div>
+        <div class="quota-card" aria-live="polite">
+            <span id="quota-label">Capacidad disponible</span>
+            <strong id="quota-value">—</strong>
+        </div>
+    </header>
+
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <section id="ruleset-list" class="ruleset-grid" aria-busy="true"></section>
+
+    <template id="ruleset-template">
+        <article class="ruleset-card">
+            <div class="ruleset-copy">
+                <div class="ruleset-heading">
+                    <h2></h2>
+                    <span class="risk-badge"></span>
+                </div>
+                <p class="ruleset-description"></p>
+                <p class="ruleset-meta"></p>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="switch-track" aria-hidden="true"></span>
+                <span class="switch-label"></span>
+            </label>
+        </article>
+    </template>
+</main>
+
+<script src="js/vapi.js"></script>
+<script src="js/vapi-common.js"></script>
+<script src="js/vapi-client.js"></script>
+<script src="js/protections.js" type="module"></script>
+</body>
+</html>

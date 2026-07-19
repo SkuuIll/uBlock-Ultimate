@@ -1,0 +1,232 @@
+.protections-page {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 76rem;
+    padding: clamp(1rem, 3vw, 2.5rem);
+}
+
+.protections-hero {
+    align-items: stretch;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    margin-bottom: 1.25rem;
+}
+
+.protections-hero > div:first-child,
+.quota-card,
+.ruleset-card {
+    background: color-mix(in srgb, var(--surface-1) 90%, transparent);
+    border: 1px solid var(--border-1);
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 18%);
+}
+
+.protections-hero > div:first-child {
+    padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.eyebrow {
+    color: var(--ink-3);
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    margin: 0 0 .5rem;
+    text-transform: uppercase;
+}
+
+.protections-hero h1 {
+    color: var(--ink-1);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    margin: 0;
+}
+
+.protections-hero p:last-child {
+    color: var(--ink-2);
+    line-height: 1.6;
+    margin: .75rem 0 0;
+    max-width: 65ch;
+}
+
+.quota-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 10rem;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.quota-card span {
+    color: var(--ink-3);
+    font-size: .8rem;
+}
+
+.quota-card strong {
+    color: var(--ultimate-accent);
+    font-size: 1.6rem;
+    margin-top: .35rem;
+}
+
+.status {
+    border-radius: .75rem;
+    margin-bottom: 1rem;
+    min-height: 0;
+    padding: 0;
+}
+
+.status:not(:empty) {
+    background: var(--surface-2);
+    border: 1px solid var(--border-1);
+    color: var(--ink-2);
+    padding: .8rem 1rem;
+}
+
+.status.error {
+    border-color: var(--ultimate-danger);
+    color: var(--ultimate-danger);
+}
+
+.ruleset-grid {
+    display: grid;
+    gap: .85rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ruleset-card {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    min-height: 7.5rem;
+    padding: 1.1rem 1.2rem;
+    transition: border-color 140ms ease, transform 140ms ease;
+}
+
+.ruleset-card:hover {
+    border-color: color-mix(in srgb, var(--ultimate-accent) 52%, var(--border-1));
+    transform: translateY(-1px);
+}
+
+.ruleset-heading {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.ruleset-heading h2 {
+    color: var(--ink-1);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.risk-badge {
+    background: var(--surface-3);
+    border: 1px solid var(--border-1);
+    border-radius: 999px;
+    color: var(--ink-3);
+    font-size: .68rem;
+    font-weight: 700;
+    padding: .2rem .45rem;
+    text-transform: uppercase;
+}
+
+.ruleset-description,
+.ruleset-meta {
+    color: var(--ink-2);
+    line-height: 1.45;
+    margin: .45rem 0 0;
+}
+
+.ruleset-meta {
+    color: var(--ink-3);
+    font-size: .75rem;
+}
+
+.switch {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    min-width: 4.75rem;
+}
+
+.switch input {
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.switch-track {
+    background: var(--surface-3);
+    border: 1px solid var(--border-1);
+    border-radius: 999px;
+    display: block;
+    height: 1.6rem;
+    position: relative;
+    transition: background 140ms ease, border-color 140ms ease;
+    width: 2.8rem;
+}
+
+.switch-track::after {
+    background: var(--ink-3);
+    border-radius: 50%;
+    content: "";
+    height: 1.1rem;
+    left: .2rem;
+    position: absolute;
+    top: .2rem;
+    transition: transform 140ms ease, background 140ms ease;
+    width: 1.1rem;
+}
+
+.switch input:checked + .switch-track {
+    background: color-mix(in srgb, var(--ultimate-accent) 35%, var(--surface-3));
+    border-color: var(--ultimate-accent);
+}
+
+.switch input:checked + .switch-track::after {
+    background: var(--ultimate-accent);
+    transform: translateX(1.2rem);
+}
+
+.switch input:focus-visible + .switch-track {
+    outline: 2px solid var(--ultimate-accent);
+    outline-offset: 3px;
+}
+
+.switch input:disabled + .switch-track {
+    cursor: progress;
+    opacity: .6;
+}
+
+.switch-label {
+    color: var(--ink-3);
+    font-size: .7rem;
+}
+
+@media (max-width: 52rem) {
+    .protections-hero,
+    .ruleset-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quota-card {
+        align-items: baseline;
+        flex-direction: row;
+        gap: .75rem;
+        min-width: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ruleset-card,
+    .switch-track,
+    .switch-track::after {
+        transition: none;
+    }
+}

@@ -27,6 +27,14 @@ import { dom } from './dom.js';
     const appData = await vAPI.messaging.send('dashboard', {
         what: 'getAppData',
     });
+    if (
+        appData === undefined ||
+        typeof appData.name !== 'string' ||
+        typeof appData.version !== 'string'
+    ) {
+        throw new Error('About page initialization returned an invalid response');
+    }
 
     dom.text('#aboutNameVer', `${appData.name  } ${  appData.version}`);
+    document.body.dataset.ready = 'true';
 })();

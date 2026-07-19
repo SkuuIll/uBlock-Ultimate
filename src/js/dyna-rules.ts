@@ -710,12 +710,20 @@ async function loadPublicSuffixList(): Promise<boolean> {
 vAPI.messaging.send('dashboard', {
     what: 'getRules',
 }).then(async details => {
+    if (
+        details === undefined ||
+        Array.isArray(details.permanentRules) === false ||
+        Array.isArray(details.sessionRules) === false
+    ) {
+        throw new Error('Dynamic rules initialization returned an invalid response');
+    }
     thePanes.orig.original = details.permanentRules;
     thePanes.edit.original = details.sessionRules;
     if (!loadPslSelfie(details.pslSelfie)) {
         await loadPublicSuffixList();
     }
     onPresentationChanged(true);
+    document.body.dataset.ready = 'true';
 });
 
 // Handle user interaction

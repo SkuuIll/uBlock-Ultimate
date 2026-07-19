@@ -868,6 +868,7 @@ self.hasUnsavedData = function() {
 /******************************************************************************/
 
 renderFilterLists().then(( ) => {
+    document.body.dataset.ready = 'true';
     const buttonUpdate = qs$('#buttonUpdate');
     if ( dom.cl.has(buttonUpdate, 'active') ) { return; }
     if ( dom.cl.has(buttonUpdate, 'disabled') ) { return; }

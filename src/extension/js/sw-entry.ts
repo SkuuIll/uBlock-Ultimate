@@ -5786,8 +5786,151 @@ async function createUserFilter(msg) {
     }
 }
 
+const optionalProtectionRulesets = Object.freeze([
+    {
+        id: "privacy-url-cleanup",
+        ruleCount: 1,
+        risk: "low",
+        title: {
+            en: "Remove tracking parameters",
+            es: "Eliminar parámetros de seguimiento",
+        },
+        description: {
+            en: "Removes common campaign identifiers from top-level links without touching page APIs.",
+            es: "Elimina identificadores comunes de campañas en enlaces principales sin modificar las API de las páginas.",
+        },
+    },
+    {
+        id: "static-video-ads",
+        ruleCount: 46,
+        risk: "medium",
+        title: {
+            en: "Video ad protection",
+            es: "Protección contra anuncios de video",
+        },
+        description: {
+            en: "Blocks known video advertising endpoints. Disable it if a player fails to start.",
+            es: "Bloquea endpoints conocidos de publicidad en video. Desactívalo si un reproductor no inicia.",
+        },
+    },
+    {
+        id: "privacy-social-trackers",
+        ruleCount: 7,
+        risk: "medium",
+        title: {
+            en: "Social tracking pixels",
+            es: "Píxeles de seguimiento social",
+        },
+        description: {
+            en: "Blocks third-party measurement scripts from major social and advertising platforms.",
+            es: "Bloquea scripts de medición de terceros de grandes plataformas sociales y publicitarias.",
+        },
+    },
+    {
+        id: "static-badware",
+        ruleCount: 174,
+        risk: "low",
+        title: {
+            en: "Extended malware protection",
+            es: "Protección ampliada contra malware",
+        },
+        description: {
+            en: "Adds the packaged badware block and exception rules.",
+            es: "Añade reglas empaquetadas de bloqueo y excepciones contra software malicioso.",
+        },
+    },
+    {
+        id: "static-privacy",
+        ruleCount: 183,
+        risk: "medium",
+        title: {
+            en: "Strict privacy layer",
+            es: "Capa de privacidad estricta",
+        },
+        description: {
+            en: "Adds stricter tracker blocking and privacy redirects. Some sign-in or payment flows may need an exception.",
+            es: "Añade bloqueos y redirecciones de privacidad más estrictos. Algunos accesos o pagos pueden requerir una excepción.",
+        },
+    },
+    {
+        id: "static-core",
+        ruleCount: 315,
+        risk: "medium",
+        title: {
+            en: "Extended core filters",
+            es: "Filtros principales ampliados",
+        },
+        description: {
+            en: "Enables an extra packaged set of block, allow and redirect rules.",
+            es: "Activa un conjunto empaquetado adicional de reglas de bloqueo, permiso y redirección.",
+        },
+    },
+    {
+        id: "static-unbreak",
+        ruleCount: 237,
+        risk: "low",
+        title: {
+            en: "Compatibility repairs",
+            es: "Reparaciones de compatibilidad",
+        },
+        description: {
+            en: "Adds allow and redirect rules intended to repair sites affected by strict filtering.",
+            es: "Añade reglas de permiso y redirección para reparar sitios afectados por filtros estrictos.",
+        },
+    },
+]);
+
+const optionalProtectionRulesetIds = new Set(
+    optionalProtectionRulesets.map(entry => entry.id)
+);
+
+async function getProtectionRulesetState() {
+    const enabled = new Set(
+        await chrome.declarativeNetRequest.getEnabledRulesets()
+    );
+    let availableStaticRuleCount = null;
+    if (
+        typeof chrome.declarativeNetRequest.getAvailableStaticRuleCount ===
+        "function"
+    ) {
+        availableStaticRuleCount =
+            await chrome.declarativeNetRequest.getAvailableStaticRuleCount();
+    }
+    return {
+        availableStaticRuleCount,
+        rulesets: optionalProtectionRulesets.map(entry => ({
+            ...entry,
+            enabled: enabled.has(entry.id),
+        })),
+    };
+}
+
+async function setProtectionRuleset(msg) {
+    const id = typeof msg.id === "string" ? msg.id : "";
+    if (optionalProtectionRulesetIds.has(id) === false) {
+        throw new Error(`Unknown optional ruleset: ${id || "(empty)"}`);
+    }
+    if (typeof msg.enabled !== "boolean") {
+        throw new Error("The enabled state must be boolean");
+    }
+    const enabled = new Set(
+        await chrome.declarativeNetRequest.getEnabledRulesets()
+    );
+    if (enabled.has(id) !== msg.enabled) {
+        await chrome.declarativeNetRequest.updateEnabledRulesets({
+            enableRulesetIds: msg.enabled ? [id] : [],
+            disableRulesetIds: msg.enabled ? [] : [id],
+        });
+    }
+    return getProtectionRulesetState();
+}
+
 async function handleDashboard(msg, senderTabId) {
     switch (msg.what) {
+    case "getProtectionRulesets":
+        return getProtectionRulesetState();
+    case "setProtectionRuleset":
+        return setProtectionRuleset(msg);
     case "getLists":
         return getFilterListState();
     case "dashboardConfig":
