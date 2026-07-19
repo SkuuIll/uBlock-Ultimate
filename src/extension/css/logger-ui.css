@@ -46,18 +46,13 @@ textarea {
     display: inline-flex;
     align-items: center;
     }
-#showpopup > .fa-icon > svg {
+#showpopup > .fa-icon > img {
     height: 1em;
     width: 1em;
     filter: grayscale(60%);
     }
-#showpopup.active > .fa-icon > svg {
+#showpopup.active > .fa-icon > img {
     filter: grayscale(0%) drop-shadow(0 0 3px rgb(var(--primary-70)));
-    }
-#showpopup img {
-    filter: grayscale(100%);
-    height: auto;
-    width: 1em;
     }
 #info {
     fill: #ccc;
