@@ -12,9 +12,19 @@ picker y zapper— con una interfaz oscura y un build reproducible.
 - Telemetría: ninguna
 - Licencia: GPL-3.0-only
 
-El proyecto deriva de trabajo de uBlock Origin y de adaptaciones MV3 posteriores.
-SkuuIll mantiene y diseña esta variante; los copyrights y créditos originales se
-conservan en el código y en [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+## Créditos y procedencia
+
+uBlock Ultimate es un trabajo derivado de
+[uBlock Origin](https://github.com/gorhill/uBlock), creado y mantenido por
+Raymond Hill (`gorhill`) junto con sus colaboradores. Su arquitectura de
+bloqueo, código de filtrado y bases de interfaz constituyen una parte fundamental
+del trabajo heredado por este proyecto.
+
+SkuuIll mantiene y diseña esta variante independiente para Chromium MV3, pero no
+reclama autoría sobre el código de uBlock Origin ni representa una afiliación
+oficial con su proyecto. Se conservan GPL-3.0, los encabezados de copyright y los
+créditos correspondientes. Los detalles adicionales están documentados en
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## Desarrollo
 
