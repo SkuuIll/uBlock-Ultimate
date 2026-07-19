@@ -89,6 +89,70 @@ if (!existsSync(EXTENSION)) {
         }
     }
 
+    for (const file of walk(EXTENSION).filter(path => path.endsWith('.html'))) {
+        const html = readFileSync(file, 'utf8');
+        const owner = relative(EXTENSION, file).replaceAll('\\', '/');
+        const references = html.matchAll(/\b(?:href|src)=["']([^"'#]+)["']/g);
+        for (const match of references) {
+            const reference = match[1];
+            if (/^(?:https?:|data:|mailto:|tel:|javascript:)/i.test(reference)) continue;
+            const cleanReference = reference.split(/[?#]/, 1)[0];
+            if (cleanReference === '') continue;
+            const target = cleanReference.startsWith('/')
+                ? resolve(EXTENSION, cleanReference.slice(1))
+                : resolve(dirname(file), cleanReference);
+            if (!target.startsWith(EXTENSION) || !existsSync(target)) {
+                errors.push(`${owner} references missing file: ${reference}`);
+            }
+        }
+    }
+
+    const manifest = JSON.parse(readFileSync(resolve(EXTENSION, 'manifest.json'), 'utf8'));
+    const staticResources =
+        manifest.declarative_net_request?.rule_resources ?? [];
+    if (staticResources.length > 100) {
+        errors.push(`Manifest declares ${staticResources.length} static rulesets; Chrome allows 100`);
+    }
+    const enabledStaticRulesets =
+        staticResources.filter(resource => resource.enabled).length;
+    if (enabledStaticRulesets > 50) {
+        errors.push(`Manifest enables ${enabledStaticRulesets} static rulesets; Chrome allows 50`);
+    }
+    let enabledStaticRuleCount = 0;
+    for (const resource of staticResources) {
+        const path = resolve(EXTENSION, resource.path);
+        if (!existsSync(path)) continue;
+        let rules;
+        try {
+            rules = JSON.parse(readFileSync(path, 'utf8'));
+        } catch (error) {
+            errors.push(`Ruleset ${resource.id} is not valid JSON: ${error.message}`);
+            continue;
+        }
+        if (!Array.isArray(rules)) {
+            errors.push(`Ruleset ${resource.id} must be a JSON array`);
+            continue;
+        }
+        const ids = new Set();
+        for (const rule of rules) {
+            if (!Number.isInteger(rule?.id) || rule.id <= 0) {
+                errors.push(`Ruleset ${resource.id} contains an invalid rule id`);
+                break;
+            }
+            if (ids.has(rule.id)) {
+                errors.push(`Ruleset ${resource.id} contains duplicate rule id ${rule.id}`);
+                break;
+            }
+            ids.add(rule.id);
+        }
+        if (resource.enabled) enabledStaticRuleCount += rules.length;
+    }
+    if (enabledStaticRuleCount > 30_000) {
+        errors.push(
+            `Enabled static rules (${enabledStaticRuleCount}) exceed Chrome's guaranteed 30,000-rule capacity`
+        );
+    }
+
     const activeText = walk(EXTENSION)
         .filter(file => /\.(?:html|css|js|json)$/.test(file))
         .map(file => readFileSync(file, 'utf8'))

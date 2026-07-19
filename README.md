@@ -37,6 +37,12 @@ Comandos principales:
 No se deben editar archivos dentro de `platform/chromium`: esa carpeta es una
 salida descartable del build.
 
+La prueba E2E carga una copia temporal de la extensión para impedir que Chromium
+contamine la salida con su carpeta `_metadata`. Chrome y Edge oficiales ya no
+admiten los flags de carga lateral usados por automatización; para E2E se puede
+instalar Chromium de Playwright con `npx playwright install chromium` o definir
+`CHROME_PATH` hacia un Chromium compatible.
+
 ## Instalación local
 
 1. Ejecutar `npm ci` y `npm run build`.
@@ -48,6 +54,21 @@ salida descartable del build.
 Las listas DNR grandes se actualizan al reconstruir la extensión. Quick-fixes
 suplementarios pueden comprobarse al instalar o iniciar Chromium; una descarga
 inválida nunca reemplaza las últimas reglas válidas.
+
+## Protecciones opcionales
+
+La pestaña **Protección** permite activar y desactivar rulesets DNR empaquetados
+sin reiniciar el navegador. Incluye:
+
+- limpieza de parámetros de campañas en navegaciones principales;
+- bloqueo opcional de píxeles sociales de terceros;
+- protección contra anuncios de video;
+- capas ampliadas de malware, privacidad y filtros principales;
+- reparaciones de compatibilidad para sitios afectados por filtrado estricto.
+
+La interfaz consulta la capacidad estática disponible de Chrome antes de mostrar
+el estado. Los cambios se aplican con `updateEnabledRulesets`, se conservan entre
+sesiones y Chrome rechaza atómicamente cualquier activación que exceda su cuota.
 
 ## Rendimiento y afirmaciones
 
