@@ -19,6 +19,9 @@ describe('automatic release contract', () => {
         expect(workflow).toContain('actions/upload-artifact@v4');
         expect(workflow).toContain('tag_name: continuous');
         expect(workflow).toContain('Create versioned release');
+        expect(workflow).toContain(
+            'npm install --global npm@11.17.0',
+        );
     });
 
     it('publishes separate Chromium and Firefox ZIP files', () => {
@@ -30,6 +33,10 @@ describe('automatic release contract', () => {
         );
         expect(packageTool).toContain('const suffix = `${target}.zip`');
         expect(packageTool).toContain("resolve(RELEASE, 'SHA256SUMS.txt')");
+        expect(workflow).toContain('RELEASE_NOTES.md');
+        expect(workflow).toContain('Google Chrome / Chromium MV3');
+        expect(workflow).toContain('Firefox Desktop / Android');
+        expect(workflow).toContain('done < dist/release/SHA256SUMS.txt');
     });
 
     it('only signs Firefox when Mozilla credentials are configured', () => {

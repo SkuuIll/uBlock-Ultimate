@@ -4,6 +4,7 @@
   "private": true,
   "description": "uBlock Ultimate — efficient Chromium and Firefox MV3 content blocker",
   "type": "module",
+  "packageManager": "npm@11.17.0",
   "author": "SkuuIll",
   "license": "GPL-3.0-only",
   "repository": {
