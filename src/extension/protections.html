@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Protección — uBlock Ultimate</title>
+<title>Filtros opcionales — uBlock Ultimate</title>
 <link rel="stylesheet" href="css/themes/default.css">
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/dashboard-common.css">
@@ -14,14 +14,14 @@
 <main class="protections-page">
     <header class="protections-hero">
         <div>
-            <p class="eyebrow">uBlock Ultimate</p>
-            <h1 id="page-title">Protecciones opcionales</h1>
+            <p class="eyebrow">Reglas DNR adicionales</p>
+            <h1 id="page-title">Filtros opcionales</h1>
             <p id="page-description">
-                Activa sólo las capas que necesites. Los cambios se aplican de forma atómica mediante DNR.
+                Activa únicamente las listas adicionales que necesites. Las listas principales ya funcionan sin tocar esta sección.
             </p>
         </div>
         <div class="quota-card" aria-live="polite">
-            <span id="quota-label">Capacidad disponible</span>
+            <span id="quota-label">Reglas disponibles</span>
             <strong id="quota-value">—</strong>
         </div>
     </header>
@@ -51,6 +51,7 @@
 <script src="js/vapi.js"></script>
 <script src="js/vapi-common.js"></script>
 <script src="js/vapi-client.js"></script>
+<script src="js/theme.js" type="module"></script>
 <script src="js/protections.js" type="module"></script>
 </body>
 </html>

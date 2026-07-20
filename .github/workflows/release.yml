@@ -1,43 +1,127 @@
-name: Release
+name: Build and release
 
 on:
   push:
+    branches:
+      - main
     tags:
-      - 'v*' # Trigger on tags like v0.2.0
-  workflow_dispatch: # Allows manual triggering from GitHub Actions tab
+      - 'v*'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: extension-release-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Needed to create a release
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: '22'
-          cache: 'npm'
+          cache: npm
 
-      - name: Install dependencies
+      - name: Install locked dependencies
         run: npm ci
 
-      - name: Verify code (Typecheck, Lint, Test, Build, Audit)
+      - name: Verify source and both browser builds
         run: npm run verify
 
-      - name: Package extension
+      - name: Create Chromium and Firefox ZIP files
         run: npm run package
 
-      - name: Get version from package.json
-        id: get_version
-        run: echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
+      - name: Read package version
+        shell: bash
+        run: echo "VERSION=$(node -p "require('./package.json').version")" >> "$GITHUB_ENV"
 
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: Require version tag to match package.json
+        if: startsWith(github.ref, 'refs/tags/v')
+        shell: bash
+        run: test "$GITHUB_REF_NAME" = "v$VERSION"
+
+      - name: Sign Firefox package with Mozilla
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          AMO_JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
+          AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
+        shell: bash
+        run: |
+          if [[ -z "$AMO_JWT_ISSUER" || -z "$AMO_JWT_SECRET" ]]; then
+            echo "Mozilla secrets are not configured; publishing the Firefox ZIP without a signed XPI."
+            exit 0
+          fi
+          mkdir -p dist/release/signed
+          npx web-ext sign \
+            --source-dir platform/firefox \
+            --artifacts-dir dist/release/signed \
+            --channel unlisted \
+            --api-key "$AMO_JWT_ISSUER" \
+            --api-secret "$AMO_JWT_SECRET"
+          signed_xpi="$(find dist/release/signed -maxdepth 1 -name '*.xpi' -print -quit)"
+          test -n "$signed_xpi"
+          cp "$signed_xpi" "dist/release/uBlock-Ultimate-${VERSION}-firefox-signed.xpi"
+          sha256sum "dist/release/uBlock-Ultimate-${VERSION}-firefox-signed.xpi" >> dist/release/SHA256SUMS.txt
+
+      - name: Upload install packages from every build
+        uses: actions/upload-artifact@v4
         with:
-          files: dist/release/uBlock-Ultimate-${{ env.VERSION }}-chromium.zip
-          generate_release_notes: true # Generates a changelog automatically based on PRs and commits
+          name: uBlock-Ultimate-${{ env.VERSION }}-${{ github.run_number }}
+          path: |
+            dist/release/uBlock-Ultimate-${{ env.VERSION }}-chromium.zip
+            dist/release/uBlock-Ultimate-${{ env.VERSION }}-firefox.zip
+            dist/release/uBlock-Ultimate-${{ env.VERSION }}-firefox-signed.xpi
+            dist/release/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Move rolling release tag to current main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        shell: bash
+        run: |
+          git tag --force continuous "$GITHUB_SHA"
+          git push origin refs/tags/continuous --force
+
+      - name: Create or update automatic main release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: continuous
+          name: Latest automatic build
+          prerelease: true
+          make_latest: false
+          overwrite_files: true
+          generate_release_notes: false
+          body: |
+            Automatic build from the latest verified commit on `main`.
+            Firefox ZIP files require Mozilla signing for permanent installation.
+          files: |
+            dist/release/uBlock-Ultimate-${{ env.VERSION }}-chromium.zip
+            dist/release/uBlock-Ultimate-${{ env.VERSION }}-firefox.zip
+            dist/release/SHA256SUMS.txt
+
+      - name: Create versioned release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v3
+        with:
+          overwrite_files: true
+          fail_on_unmatched_files: false
+          generate_release_notes: true
+          make_latest: true
+          files: |
+            dist/release/uBlock-Ultimate-${{ env.VERSION }}-chromium.zip
+            dist/release/uBlock-Ultimate-${{ env.VERSION }}-firefox.zip
+            dist/release/uBlock-Ultimate-${{ env.VERSION }}-firefox-signed.xpi
+            dist/release/SHA256SUMS.txt

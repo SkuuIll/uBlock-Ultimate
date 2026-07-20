@@ -14,14 +14,17 @@ interface ProtectionState {
     rulesets: ProtectionRuleset[];
 }
 
-const spanish = navigator.language.toLowerCase().startsWith('es');
+const uiLanguage = chrome.i18n?.getMessage?.('@@ui_locale') ||
+    chrome.i18n?.getUILanguage?.() ||
+    navigator.language;
+const spanish = uiLanguage.toLowerCase().startsWith('es');
 const language = spanish ? 'es' : 'en';
 
 const text = spanish
     ? {
-        title: 'Protecciones opcionales',
-        description: 'Activa sólo las capas que necesites. Los cambios se aplican de forma atómica mediante DNR.',
-        capacity: 'Capacidad disponible',
+        title: 'Filtros opcionales',
+        description: 'Activa únicamente las listas adicionales que necesites. Las listas principales ya funcionan sin tocar esta sección.',
+        capacity: 'Reglas disponibles',
         enabled: 'Activado',
         disabled: 'Desactivado',
         rules: 'reglas',
@@ -31,9 +34,9 @@ const text = spanish
         risks: { low: 'Bajo riesgo', medium: 'Precaución', high: 'Alto riesgo' },
     }
     : {
-        title: 'Optional protections',
-        description: 'Enable only the layers you need. Changes are applied atomically through DNR.',
-        capacity: 'Available capacity',
+        title: 'Optional filters',
+        description: 'Enable only the extra lists you need. The main filter lists already work without changing this section.',
+        capacity: 'Available rules',
         enabled: 'Enabled',
         disabled: 'Disabled',
         rules: 'rules',

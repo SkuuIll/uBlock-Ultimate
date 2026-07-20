@@ -6,7 +6,14 @@ body {
     margin-bottom: 6rem;
     }
 #actions {
-    background-color: var(--surface-1);
+    background-color: var(--ultimate-surface);
+    border: 1px solid var(--ultimate-border);
+    border-radius: var(--ultimate-radius);
+    box-sizing: border-box;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
+    margin: 0.75rem 0;
+    max-width: 100%;
+    padding: 0.55rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -74,12 +81,35 @@ body.working #actions button {
     }
 
 #lists .listEntries {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin-inline-start: var(--checkbox-size);
+    max-width: calc(100% - var(--checkbox-size));
     }
+
+#actions + div,
+#lists {
+    background: var(--ultimate-surface);
+    border: 1px solid var(--ultimate-border);
+    border-radius: var(--ultimate-radius);
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-block: 0.75rem;
+    padding: 0.8rem 1rem;
+}
+
+#lists .listEntry > .detailbar {
+    border-radius: var(--ultimate-radius-sm);
+    padding-block: 0.18rem;
+}
+
+#lists .listEntry > .detailbar:hover {
+    background: var(--ultimate-surface-muted);
+}
 #lists > .listEntries {
     margin-inline-start: 0;
+    max-width: 100%;
     }
 #lists .listEntry {
     align-items: flex-start;
@@ -221,7 +251,7 @@ body.working #lists .listEntry.checked.obsolete:not(.cached) > .detailbar .iconb
     visibility: visible;
     }
 #lists .listEntry[data-role="import"] textarea {
-    border: 1px solid #ccc;
+    border: 1px solid var(--ultimate-border);
     box-sizing: border-box;
     display: block;
     font-size: smaller;
@@ -232,3 +262,20 @@ body.working #lists .listEntry.checked.obsolete:not(.cached) > .detailbar .iconb
     white-space: pre;
     width: 100%;
     }
+
+@media (max-width: 640px) {
+    #lists .listEntry {
+        white-space: normal;
+    }
+
+    #lists .listEntry > .detailbar {
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    #lists .listname {
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+}

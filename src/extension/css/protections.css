@@ -1,86 +1,72 @@
 .protections-page {
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 76rem;
-    padding: clamp(1rem, 3vw, 2.5rem);
+    max-width: 68rem;
+    padding: clamp(0.75rem, 2vw, 1.25rem);
 }
 
 .protections-hero {
-    align-items: stretch;
-    display: grid;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--ultimate-border);
+    display: flex;
     gap: 1rem;
-    grid-template-columns: minmax(0, 1fr) auto;
-    margin-bottom: 1.25rem;
-}
-
-.protections-hero > div:first-child,
-.quota-card,
-.ruleset-card {
-    background: color-mix(in srgb, var(--surface-1) 90%, transparent);
-    border: 1px solid var(--border-1);
-    border-radius: 1rem;
-    box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 18%);
-}
-
-.protections-hero > div:first-child {
-    padding: clamp(1.25rem, 3vw, 2rem);
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    padding: 0.25rem 0 1rem;
 }
 
 .eyebrow {
-    color: var(--ink-3);
-    font-size: .75rem;
+    color: var(--ultimate-accent);
+    font-size: 0.68rem;
     font-weight: 700;
-    letter-spacing: .12em;
-    margin: 0 0 .5rem;
+    letter-spacing: 0.08em;
+    margin: 0 0 0.25rem;
     text-transform: uppercase;
 }
 
 .protections-hero h1 {
-    color: var(--ink-1);
-    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    color: var(--ultimate-text);
+    font-size: 1.25rem;
     margin: 0;
 }
 
 .protections-hero p:last-child {
-    color: var(--ink-2);
-    line-height: 1.6;
-    margin: .75rem 0 0;
-    max-width: 65ch;
+    color: var(--ultimate-text-muted);
+    line-height: 1.5;
+    margin: 0.35rem 0 0;
+    max-width: 70ch;
 }
 
 .quota-card {
-    align-items: center;
+    align-items: baseline;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 10rem;
-    padding: 1.25rem;
-    text-align: center;
+    flex: 0 0 auto;
+    gap: 0.45rem;
+    white-space: nowrap;
 }
 
 .quota-card span {
-    color: var(--ink-3);
-    font-size: .8rem;
+    color: var(--ultimate-text-muted);
+    font-size: 0.75rem;
 }
 
 .quota-card strong {
     color: var(--ultimate-accent);
-    font-size: 1.6rem;
-    margin-top: .35rem;
+    font-size: 0.9rem;
 }
 
 .status {
-    border-radius: .75rem;
-    margin-bottom: 1rem;
+    border-radius: var(--ultimate-radius-sm);
+    color: var(--ultimate-text-muted);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
     min-height: 0;
-    padding: 0;
 }
 
 .status:not(:empty) {
-    background: var(--surface-2);
-    border: 1px solid var(--border-1);
-    color: var(--ink-2);
-    padding: .8rem 1rem;
+    background: var(--ultimate-surface-muted);
+    border: 1px solid var(--ultimate-border);
+    padding: 0.55rem 0.7rem;
 }
 
 .status.error {
@@ -89,69 +75,77 @@
 }
 
 .ruleset-grid {
-    display: grid;
-    gap: .85rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    background: var(--ultimate-surface);
+    border: 1px solid var(--ultimate-border);
+    border-radius: var(--ultimate-radius);
+    display: block;
+    overflow: hidden;
 }
 
 .ruleset-card {
     align-items: center;
+    background: transparent;
+    border-bottom: 1px solid var(--ultimate-border);
     display: flex;
     gap: 1rem;
     justify-content: space-between;
-    min-height: 7.5rem;
-    padding: 1.1rem 1.2rem;
-    transition: border-color 140ms ease, transform 140ms ease;
+    min-height: 4.25rem;
+    padding: 0.75rem 0.9rem;
+}
+
+.ruleset-card:last-child {
+    border-bottom: 0;
 }
 
 .ruleset-card:hover {
-    border-color: color-mix(in srgb, var(--ultimate-accent) 52%, var(--border-1));
-    transform: translateY(-1px);
+    background: var(--ultimate-surface-muted);
+}
+
+.ruleset-copy {
+    min-width: 0;
 }
 
 .ruleset-heading {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 0.4rem;
 }
 
 .ruleset-heading h2 {
-    color: var(--ink-1);
-    font-size: 1rem;
+    color: var(--ultimate-text);
+    font-size: 0.9rem;
     margin: 0;
 }
 
 .risk-badge {
-    background: var(--surface-3);
-    border: 1px solid var(--border-1);
+    border: 1px solid var(--ultimate-border);
     border-radius: 999px;
-    color: var(--ink-3);
-    font-size: .68rem;
+    color: var(--ultimate-text-muted);
+    font-size: 0.6rem;
     font-weight: 700;
-    padding: .2rem .45rem;
+    padding: 0.08rem 0.35rem;
     text-transform: uppercase;
 }
 
-.ruleset-description,
-.ruleset-meta {
-    color: var(--ink-2);
-    line-height: 1.45;
-    margin: .45rem 0 0;
+.ruleset-description {
+    color: var(--ultimate-text-muted);
+    line-height: 1.4;
+    margin: 0.25rem 0 0;
 }
 
 .ruleset-meta {
-    color: var(--ink-3);
-    font-size: .75rem;
+    color: var(--ink-4);
+    font-size: 0.68rem;
+    margin: 0.18rem 0 0;
 }
 
 .switch {
     align-items: center;
     cursor: pointer;
     display: flex;
-    flex-direction: column;
-    gap: .35rem;
-    min-width: 4.75rem;
+    flex: 0 0 auto;
+    gap: 0.45rem;
 }
 
 .switch input {
@@ -163,69 +157,71 @@
 
 .switch-track {
     background: var(--surface-3);
-    border: 1px solid var(--border-1);
+    border: 1px solid var(--ultimate-border);
     border-radius: 999px;
     display: block;
-    height: 1.6rem;
+    height: 1.25rem;
     position: relative;
-    transition: background 140ms ease, border-color 140ms ease;
-    width: 2.8rem;
+    width: 2.25rem;
 }
 
 .switch-track::after {
-    background: var(--ink-3);
+    background: var(--ultimate-text-muted);
     border-radius: 50%;
     content: "";
-    height: 1.1rem;
-    left: .2rem;
+    height: 0.85rem;
+    left: 0.16rem;
     position: absolute;
-    top: .2rem;
-    transition: transform 140ms ease, background 140ms ease;
-    width: 1.1rem;
+    top: 0.16rem;
+    transition: transform 100ms ease;
+    width: 0.85rem;
 }
 
 .switch input:checked + .switch-track {
-    background: color-mix(in srgb, var(--ultimate-accent) 35%, var(--surface-3));
+    background: color-mix(in srgb, var(--ultimate-accent) 24%, var(--surface-3));
     border-color: var(--ultimate-accent);
 }
 
 .switch input:checked + .switch-track::after {
     background: var(--ultimate-accent);
-    transform: translateX(1.2rem);
+    transform: translateX(0.98rem);
 }
 
 .switch input:focus-visible + .switch-track {
-    outline: 2px solid var(--ultimate-accent);
-    outline-offset: 3px;
+    outline: 2px solid var(--ultimate-focus);
+    outline-offset: 2px;
 }
 
 .switch input:disabled + .switch-track {
-    cursor: progress;
-    opacity: .6;
+    opacity: 0.6;
 }
 
 .switch-label {
-    color: var(--ink-3);
-    font-size: .7rem;
+    color: var(--ultimate-text-muted);
+    font-size: 0.68rem;
+    min-width: 4.5rem;
 }
 
-@media (max-width: 52rem) {
-    .protections-hero,
-    .ruleset-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 640px) {
+    .protections-hero {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.6rem;
     }
 
-    .quota-card {
-        align-items: baseline;
-        flex-direction: row;
-        gap: .75rem;
-        min-width: 0;
+    .ruleset-card {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.55rem;
+    }
+
+    .switch {
+        justify-content: flex-end;
+        width: 100%;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .ruleset-card,
-    .switch-track,
     .switch-track::after {
         transition: none;
     }

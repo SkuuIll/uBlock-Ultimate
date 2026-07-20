@@ -120,16 +120,10 @@ export const profileModePolicy = {
                     }
                 });
                 if (incognito) {
-                    // Incognito: check if storage is split or spanning
-                    try {
-                        const storageType = chrome.storage ? chrome.storage.incognito : null;
-                        if (storageType === "split") {
-                            return MODE.INCOGNITO_SPLIT;
-                        }
-                        return MODE.INCOGNITO_SPANNING;
-                    } catch (_) {
-                        return MODE.INCOGNITO_SPLIT;
-                    }
+                    // The non-standard storage.incognito property is absent in
+                    // Firefox and Chromium MV3. This manifest uses the default
+                    // spanning incognito behavior.
+                    return MODE.INCOGNITO_SPANNING;
                 }
             }
         } catch (_) { /* not in extension context */ }

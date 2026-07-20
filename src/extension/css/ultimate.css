@@ -1,5 +1,5 @@
 :root {
-    color-scheme: dark;
+    color-scheme: light dark;
     --ultimate-bg: #080b14;
     --ultimate-bg-elevated: #101525;
     --ultimate-surface: rgb(22 28 48 / 92%);
@@ -14,12 +14,138 @@
     --ultimate-warning: #f6c768;
     --ultimate-danger: #ff6f91;
     --ultimate-focus: #c4b5fd;
+    --ultimate-editor-surface: #0d1220;
+    --ultimate-editor-active: #151b2d;
     --ultimate-radius-sm: 6px;
     --ultimate-radius: 10px;
     --ultimate-radius-lg: 16px;
-    --ultimate-shadow: 0 12px 34px rgb(0 0 0 / 32%);
+    --ultimate-shadow: 0 8px 20px rgb(0 0 0 / 22%);
     --ultimate-transition: 120ms ease;
+
+    /*
+     * Bridge the inherited uBlock component tokens to the Ultimate palette.
+     * Keeping this mapping here prevents individual dashboard panes from
+     * falling back to the original gray/blue theme.
+     */
+    --primary-5: 23 16 48;
+    --primary-10: 35 24 70;
+    --primary-20: 60 39 119;
+    --primary-30: 82 51 164;
+    --primary-40: 104 67 204;
+    --primary-50: 124 92 255;
+    --primary-60: 155 124 255;
+    --primary-70: 180 156 255;
+    --primary-80: 207 193 255;
+    --primary-90: 232 225 255;
+    --primary-95: 245 241 255;
+    --surface-0-rgb: 8 11 20;
+    --surface-0: rgb(var(--surface-0-rgb));
+    --surface-1: var(--ultimate-bg);
+    --surface-2: var(--ultimate-bg-elevated);
+    --surface-3: #1e263f;
+    --ink-rgb: 244 243 255;
+    --ink-1: var(--ultimate-text);
+    --ink-2: #d8d9e8;
+    --ink-3: var(--ultimate-text-muted);
+    --ink-4: #858ba4;
+    --border-1: var(--ultimate-border);
+    --border-2: rgb(167 139 250 / 32%);
+    --border-3: var(--ultimate-border-strong);
+    --border-4: rgb(196 181 253 / 60%);
+    --accent-surface-1: var(--ultimate-accent-strong);
+    --accent-ink-1: #fff;
+    --link-ink: #b9a7ff;
+    --link-hover-ink: #d8ceff;
+    --subtil-ink: var(--ultimate-text-muted);
+    --fieldset-header-ink: var(--ultimate-text);
+    --button-surface-rgb: 30 38 63;
+    --button-surface: var(--ultimate-surface-muted);
+    --button-ink: var(--ultimate-text);
+    --button-preferred-surface: var(--ultimate-accent-strong);
+    --button-preferred-ink: #fff;
+    --button-disabled-surface: #1b2033;
+    --checkbox-ink: #9298ad;
+    --checkbox-checked-ink: var(--ultimate-accent);
+    --dashboard-tab-ink: var(--ultimate-text-muted);
+    --dashboard-tab-active-ink-rgb: 180 156 255;
+    --dashboard-tab-active-ink: var(--ultimate-accent);
+    --dashboard-tab-focus-surface-rgb: 60 39 119;
+    --dashboard-tab-focus-surface: rgb(60 39 119 / 55%);
+    --dashboard-tab-hover-surface: var(--ultimate-surface-muted);
+    --dashboard-tab-hover-border: var(--ultimate-border-strong);
+    --dashboard-highlight-surface-rgb: 60 39 119;
+    --cm-active-line: rgb(30 38 63 / 82%);
+    --cm-gutter-border: var(--ultimate-border);
+    --cm-gutter-surface: var(--ultimate-bg-elevated);
+    --cm-selection-surface: rgb(124 92 255 / 28%);
+    --cm-selection-focused-surface: rgb(124 92 255 / 44%);
     accent-color: var(--ultimate-accent);
+}
+
+:root.dark {
+    color-scheme: dark;
+}
+
+:root.light {
+    color-scheme: light;
+    --ultimate-bg: #f6f7fc;
+    --ultimate-bg-elevated: #ebeef8;
+    --ultimate-surface: rgb(255 255 255 / 96%);
+    --ultimate-surface-muted: rgb(239 241 250 / 92%);
+    --ultimate-border: rgb(91 74 180 / 22%);
+    --ultimate-border-strong: rgb(91 74 180 / 48%);
+    --ultimate-text: #17182a;
+    --ultimate-text-muted: #5f6278;
+    --ultimate-accent: #6848dc;
+    --ultimate-accent-strong: #5636c8;
+    --ultimate-success: #087f5b;
+    --ultimate-warning: #986400;
+    --ultimate-danger: #c22f52;
+    --ultimate-focus: #5b3fd0;
+    --ultimate-editor-surface: #fff;
+    --ultimate-editor-active: #f0f2fa;
+    --ultimate-shadow: 0 6px 18px rgb(46 39 88 / 10%);
+    --surface-0-rgb: 255 255 255;
+    --surface-0: rgb(var(--surface-0-rgb));
+    --surface-1: var(--ultimate-bg);
+    --surface-2: var(--ultimate-bg-elevated);
+    --surface-3: #dde2f2;
+    --ink-rgb: 23 24 42;
+    --ink-1: var(--ultimate-text);
+    --ink-2: #3f4259;
+    --ink-3: var(--ultimate-text-muted);
+    --ink-4: #7b7f96;
+    --border-1: var(--ultimate-border);
+    --border-2: rgb(91 74 180 / 30%);
+    --border-3: var(--ultimate-border-strong);
+    --border-4: rgb(86 54 200 / 60%);
+    --accent-surface-1: var(--ultimate-accent-strong);
+    --accent-ink-1: #fff;
+    --link-ink: #5636c8;
+    --link-hover-ink: #4023a3;
+    --subtil-ink: var(--ultimate-text-muted);
+    --fieldset-header-ink: #31284d;
+    --button-surface-rgb: 235 238 248;
+    --button-surface: var(--ultimate-surface-muted);
+    --button-ink: var(--ultimate-text);
+    --button-preferred-surface: var(--ultimate-accent-strong);
+    --button-preferred-ink: #fff;
+    --button-disabled-surface: #e0e3ee;
+    --checkbox-ink: #74788c;
+    --checkbox-checked-ink: var(--ultimate-accent);
+    --dashboard-tab-ink: #55596f;
+    --dashboard-tab-active-ink-rgb: 86 54 200;
+    --dashboard-tab-active-ink: var(--ultimate-accent-strong);
+    --dashboard-tab-focus-surface-rgb: 232 225 255;
+    --dashboard-tab-focus-surface: rgb(104 72 220 / 12%);
+    --dashboard-tab-hover-surface: var(--ultimate-surface-muted);
+    --dashboard-tab-hover-border: var(--ultimate-border-strong);
+    --dashboard-highlight-surface-rgb: 232 225 255;
+    --cm-active-line: rgb(232 235 247 / 88%);
+    --cm-gutter-border: var(--ultimate-border);
+    --cm-gutter-surface: var(--ultimate-bg-elevated);
+    --cm-selection-surface: rgb(104 72 220 / 18%);
+    --cm-selection-focused-surface: rgb(104 72 220 / 28%);
 }
 
 html,
@@ -39,6 +165,19 @@ select,
 textarea {
     border-color: var(--ultimate-border);
     border-radius: var(--ultimate-radius-sm);
+    color: var(--ultimate-text);
+}
+
+input,
+select,
+textarea {
+    background-color: var(--ultimate-surface-muted);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--ultimate-text-muted);
+    opacity: 0.8;
 }
 
 button,
@@ -69,6 +208,11 @@ button:hover,
     color: #fff;
 }
 
+:root.light ::selection {
+    background: rgb(104 72 220 / 26%);
+    color: #17182a;
+}
+
 * {
     scrollbar-color: var(--ultimate-accent-strong) var(--ultimate-bg-elevated);
     scrollbar-width: thin;
@@ -80,6 +224,41 @@ button:hover,
 .panel {
     border-color: var(--ultimate-border);
     box-shadow: var(--ultimate-shadow);
+}
+
+body > .fieldset {
+    background: var(--ultimate-surface);
+    border: 1px solid var(--ultimate-border);
+    border-radius: var(--ultimate-radius);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
+    margin: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+body > hr {
+    display: none;
+}
+
+.fieldset-header {
+    color: var(--fieldset-header-ink);
+}
+
+.CodeMirror,
+.CodeMirror-merge,
+.CodeMirror-merge-pane,
+.CodeMirror-merge .CodeMirror {
+    background-color: var(--ultimate-editor-surface);
+    color: var(--ultimate-text);
+}
+
+.CodeMirror-gutters,
+.CodeMirror-merge-gap {
+    background-color: var(--ultimate-bg-elevated);
+    border-color: var(--ultimate-border);
+}
+
+.CodeMirror-activeline-background {
+    background-color: var(--ultimate-editor-active);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -96,5 +275,37 @@ button:hover,
 @media (forced-colors: active) {
     :where(button, [role="button"], a, input, select, textarea):focus-visible {
         outline: 2px solid Highlight;
+    }
+}
+
+@media (pointer: coarse) {
+    :where(button, [role="button"], select, input:not([type="checkbox"]):not([type="radio"])) {
+        min-height: 44px;
+    }
+
+    :where(button, [role="button"], a, label) {
+        touch-action: manipulation;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        overflow-wrap: anywhere;
+    }
+
+    .fieldset {
+        margin-inline: clamp(0.65rem, 4vw, 1rem);
+    }
+
+    textarea,
+    input,
+    select {
+        max-width: 100%;
+    }
+
+    .modalDialog,
+    .dialog,
+    .panel {
+        max-width: calc(100vw - 1rem);
     }
 }

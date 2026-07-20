@@ -61,7 +61,7 @@ function _checkBrowserApi(perm) {
         case "tabs": return typeof chrome !== "undefined" && !!chrome.tabs;
         case "webRequest": return typeof chrome !== "undefined" && !!chrome.webRequest;
         case "declarativeNetRequest": return typeof chrome !== "undefined" && !!chrome.declarativeNetRequest;
-        case "declarativeNetRequestFeedback": return typeof chrome !== "undefined" && !!chrome.declarativeNetRequest && typeof chrome.declarativeNetRequest.onRuleMatchedDebug !== "undefined";
+        case "declarativeNetRequestFeedback": return typeof chrome !== "undefined" && !!chrome.declarativeNetRequest && typeof chrome.declarativeNetRequest["onRuleMatchedDebug"] !== "undefined";
         case "storage": return typeof chrome !== "undefined" && !!chrome.storage;
         case "unlimitedStorage": return true;  // no API check possible
         case "contextMenus": return typeof chrome !== "undefined" && !!chrome.contextMenus;

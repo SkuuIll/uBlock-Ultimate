@@ -1161,6 +1161,50 @@ body[dir="rtl"] #pageSelector {
     height: 1px;
 }
 
+@media (max-width: 640px) {
+    body {
+        min-width: 0;
+    }
+
+    .permatoolbar {
+        gap: 0.25rem;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+    }
+
+    .permatoolbar > div {
+        flex-shrink: 0;
+    }
+
+    #pageSelector {
+        min-width: 8rem;
+        width: min(42vw, 14rem);
+    }
+
+    #netInspector #filterExprGroup {
+        margin-inline: 0.25rem;
+    }
+
+    #netInspector #filterInput > input {
+        min-width: 7rem;
+        width: 28vw;
+    }
+
+    #popupContainer {
+        border-inline: 0;
+        left: 0;
+        max-height: 75svh;
+        min-width: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    #modalOverlayContainer {
+        max-height: 92svh;
+        width: calc(100vw - 1rem);
+    }
+}
+
 /* -------------------------------------------------------------------------
  * Original-style request table
  * ---------------------------------------------------------------------- */

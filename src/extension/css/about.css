@@ -1,3 +1,13 @@
 body {
     margin-bottom: 6rem;
     }
+
+body > .body {
+    background: var(--ultimate-surface);
+    border: 1px solid var(--ultimate-border);
+    border-radius: var(--ultimate-radius-lg);
+    box-shadow: var(--ultimate-shadow);
+    margin: clamp(0.75rem, 3vw, 1.5rem);
+    max-width: 70rem;
+    padding: clamp(1rem, 3vw, 1.5rem);
+}

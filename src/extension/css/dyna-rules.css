@@ -87,3 +87,20 @@ body[dir="rtl"] .CodeMirror-merge-pane-rightmost {
 :root.mobile #diff .tools {
     overflow: auto;
     }
+
+@media (max-width: 640px) {
+    #diff .tools {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    #diff .ruleActions {
+        flex: 0 0 75%;
+        min-width: 12rem;
+        width: auto;
+    }
+
+    .codeMirrorMergeContainer {
+        padding-inline-end: 0.25rem;
+    }
+}

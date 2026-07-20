@@ -870,6 +870,57 @@ body:not([data-more*="e"]) [data-more="e"] {
     line-height: 20px;
     }
 
+@media (max-width: 600px) {
+    :root.mobile,
+    :root.mobile body {
+        min-width: 0;
+        width: 100%;
+    }
+
+    :root.mobile body {
+        min-height: 100vh;
+        min-height: 100svh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    :root.mobile #panes {
+        border-radius: 0;
+        box-shadow: none;
+        flex-direction: column;
+        min-width: 0;
+        width: 100%;
+    }
+
+    :root.mobile #main,
+    :root.mobile #firewall {
+        box-sizing: border-box;
+        max-height: none;
+        max-width: none;
+        min-width: 0;
+        width: 100%;
+    }
+
+    :root.mobile #switch {
+        font-size: clamp(72px, 24vw, 96px);
+    }
+
+    :root.mobile .toolRibbon .tool {
+        justify-content: center;
+        min-height: 48px;
+    }
+
+    :root.mobile #firewall {
+        overflow-x: hidden;
+    }
+
+    :root.mobile #firewall > div > span:first-of-type {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
 /* ─── Mouse-driven devices ──────────────────────────────────────── */
 :root.desktop {
     display: flex;

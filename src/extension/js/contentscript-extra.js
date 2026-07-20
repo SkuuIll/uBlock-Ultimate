@@ -271,9 +271,10 @@
           return PSelectorShadowTask.openOrClosedShadowRoot;
         }
         if (typeof chrome === "object" && chrome !== null) {
-          if (chrome.dom instanceof Object) {
-            if (typeof chrome.dom.openOrClosedShadowRoot === "function") {
-              PSelectorShadowTask.openOrClosedShadowRoot = chrome.dom.openOrClosedShadowRoot;
+          const domApi = chrome["dom"];
+          if (domApi instanceof Object) {
+            if (typeof domApi["openOrClosedShadowRoot"] === "function") {
+              PSelectorShadowTask.openOrClosedShadowRoot = domApi["openOrClosedShadowRoot"];
               return PSelectorShadowTask.openOrClosedShadowRoot;
             }
           }

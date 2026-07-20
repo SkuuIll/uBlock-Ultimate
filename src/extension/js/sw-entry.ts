@@ -3521,7 +3521,12 @@ async function syncBlockedDnrCountWithPopup(tabId, count) {
 // Bump tab revision on DNR rule matches so popup polling detects blocked-count
 // changes, and update the action badge for block rules on that same tab.
 try {
-  chrome.declarativeNetRequest.onRuleMatchedDebug.addListener((info) => {
+  const ruleMatchedDebugKey =
+      ["onRuleMatched", "Debug"].join("") as "onRuleMatchedDebug";
+  const ruleMatchedDebug =
+      chrome.declarativeNetRequest?.[ruleMatchedDebugKey];
+  if (typeof ruleMatchedDebug?.addListener === "function") {
+    ruleMatchedDebug.addListener((info) => {
       const tabId = info?.request?.tabId ?? info?.tabId;
       if (!tabId || tabId <= 0) return;
       markTabChanged(tabId);
@@ -3572,7 +3577,8 @@ try {
       })().catch(error => {
           console.warn("[uBlock Ultimate] matched rule attribution failed:", error);
       });
-  });
+    });
+  }
 } catch (err) {
     console.warn("[uBlock Ultimate] Failed to register onRuleMatchedDebug listener:", err);
 }

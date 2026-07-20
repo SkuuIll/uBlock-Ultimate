@@ -3,6 +3,7 @@ import {
     mkdirSync,
     readFileSync,
     readdirSync,
+    rmSync,
     statSync,
     writeFileSync,
 } from 'node:fs';
@@ -12,18 +13,12 @@ import { dirname, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const EXTENSION = resolve(ROOT, 'platform/chromium');
 const RELEASE = resolve(ROOT, 'dist/release');
 const packageJson = JSON.parse(readFileSync(resolve(ROOT, 'package.json'), 'utf-8'));
-const ZIP = resolve(RELEASE, `uBlock-Ultimate-${packageJson.version}-chromium.zip`);
 const UTF8_FLAG = 0x0800;
 const DEFLATE_METHOD = 8;
 const DOS_TIME = 0;
 const DOS_DATE = 33; // 1980-01-01, the earliest ZIP timestamp.
-
-if (!existsSync(resolve(EXTENSION, 'manifest.json'))) {
-    throw new Error('Missing production build; run npm run build first');
-}
 
 function listFiles(root) {
     const files = [];
@@ -97,51 +92,91 @@ function centralHeader(entry) {
     return header;
 }
 
-const entries = listFiles(EXTENSION).map(path => {
-    const content = readFileSync(path);
-    const name = Buffer.from(
-        relative(EXTENSION, path).replaceAll('\\', '/'),
-        'utf8',
-    );
-    return {
-        name,
-        content,
-        compressed: deflateRawSync(content, { level: 9 }),
-        crc: crc32(content),
-        offset: 0,
-    };
-});
-
-const localParts = [];
-let offset = 0;
-for (const entry of entries) {
-    entry.offset = offset;
-    const header = localHeader(entry);
-    localParts.push(header, entry.name, entry.compressed);
-    offset += header.length + entry.name.length + entry.compressed.length;
-}
-
-const centralParts = [];
-for (const entry of entries) {
-    centralParts.push(centralHeader(entry), entry.name);
-}
-const centralDirectory = Buffer.concat(centralParts);
-
-const end = Buffer.alloc(22);
-end.writeUInt32LE(0x06054B50, 0);
-end.writeUInt16LE(0, 4);
-end.writeUInt16LE(0, 6);
-end.writeUInt16LE(entries.length, 8);
-end.writeUInt16LE(entries.length, 10);
-end.writeUInt32LE(centralDirectory.length, 12);
-end.writeUInt32LE(offset, 16);
-end.writeUInt16LE(0, 20);
-
 mkdirSync(RELEASE, { recursive: true });
-writeFileSync(ZIP, Buffer.concat([...localParts, centralDirectory, end]));
+for (const name of readdirSync(RELEASE)) {
+    if (name.startsWith(`uBlock-Ultimate-${packageJson.version}-`)) {
+        rmSync(resolve(RELEASE, name), { force: true });
+    }
+}
 
-const content = readFileSync(ZIP);
-const sha256 = createHash('sha256').update(content).digest('hex');
-console.log(`Package: ${ZIP}`);
-console.log(`Size: ${(statSync(ZIP).size / 1024 / 1024).toFixed(2)} MiB`);
-console.log(`SHA-256: ${sha256}`);
+function packageTarget(target) {
+    const extension = resolve(ROOT, `platform/${target}`);
+    if (!existsSync(resolve(extension, 'manifest.json'))) {
+        throw new Error(
+            `Missing ${target} production build; run npm run build first`,
+        );
+    }
+
+    const suffix = `${target}.zip`;
+    const archive = resolve(
+        RELEASE,
+        `uBlock-Ultimate-${packageJson.version}-${suffix}`,
+    );
+    const entries = listFiles(extension).map(path => {
+        const content = readFileSync(path);
+        const name = Buffer.from(
+            relative(extension, path).replaceAll('\\', '/'),
+            'utf8',
+        );
+        return {
+            name,
+            content,
+            compressed: deflateRawSync(content, { level: 9 }),
+            crc: crc32(content),
+            offset: 0,
+        };
+    });
+
+    const localParts = [];
+    let offset = 0;
+    for (const entry of entries) {
+        entry.offset = offset;
+        const header = localHeader(entry);
+        localParts.push(header, entry.name, entry.compressed);
+        offset += header.length + entry.name.length + entry.compressed.length;
+    }
+
+    const centralParts = [];
+    for (const entry of entries) {
+        centralParts.push(centralHeader(entry), entry.name);
+    }
+    const centralDirectory = Buffer.concat(centralParts);
+
+    const end = Buffer.alloc(22);
+    end.writeUInt32LE(0x06054B50, 0);
+    end.writeUInt16LE(0, 4);
+    end.writeUInt16LE(0, 6);
+    end.writeUInt16LE(entries.length, 8);
+    end.writeUInt16LE(entries.length, 10);
+    end.writeUInt32LE(centralDirectory.length, 12);
+    end.writeUInt32LE(offset, 16);
+    end.writeUInt16LE(0, 20);
+
+    writeFileSync(
+        archive,
+        Buffer.concat([...localParts, centralDirectory, end]),
+    );
+
+    const content = readFileSync(archive);
+    const sha256 = createHash('sha256').update(content).digest('hex');
+    console.log(`Package: ${archive}`);
+    console.log(
+        `Size: ${(statSync(archive).size / 1024 / 1024).toFixed(2)} MiB`,
+    );
+    console.log(`SHA-256: ${sha256}`);
+    return {
+        name: relative(RELEASE, archive).replaceAll('\\', '/'),
+        sha256,
+    };
+}
+
+const packages = [];
+for (const target of ['chromium', 'firefox']) {
+    packages.push(packageTarget(target));
+}
+
+writeFileSync(
+    resolve(RELEASE, 'SHA256SUMS.txt'),
+    `${packages.map(item => `${item.sha256}  ${item.name}`).join('\n')}\n`,
+    'utf8',
+);

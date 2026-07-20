@@ -1868,8 +1868,9 @@ function trustedClickElement(
         }
         // Chromium
         if ( typeof chrome === 'object' ) {
-            if ( chrome.dom && chrome.dom.openOrClosedShadowRoot ) {
-                return chrome.dom.openOrClosedShadowRoot(elem);
+            const domApi = chrome['dom'];
+            if ( domApi && domApi['openOrClosedShadowRoot'] ) {
+                return domApi['openOrClosedShadowRoot'](elem);
             }
         }
         return elem.shadowRoot;

@@ -12,13 +12,25 @@ import {
 } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createTargetManifest } from './tools/manifest-targets.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const STATIC_SOURCE = resolve(ROOT, 'src/extension');
-const OUTPUT = resolve(ROOT, 'platform/chromium');
-const STAGING = resolve(ROOT, 'dist/.chromium-build');
 const isDevelopment = process.argv.includes('--dev');
 const cleanOnly = process.argv.includes('--clean');
+const targetArgument = process.argv.find(argument => argument.startsWith('--target='));
+const requestedTarget = targetArgument?.split('=', 2)[1] ?? 'all';
+const supportedTargets = new Set(['all', 'chromium', 'firefox']);
+
+if (!supportedTargets.has(requestedTarget)) {
+    throw new Error(
+        `Unsupported target "${requestedTarget}". Use chromium, firefox, or all.`,
+    );
+}
+
+const targets = requestedTarget === 'all'
+    ? ['chromium', 'firefox']
+    : [requestedTarget];
 
 const entries = {
     'src/js/popup-fenix.ts': 'js/popup-fenix-bundle.js',
@@ -107,8 +119,8 @@ function assertStaticSourceIsClean() {
     }
 }
 
-async function bundle(entryRelative, outputRelative, format = 'iife') {
-    const outfile = resolve(STAGING, outputRelative);
+async function bundle(staging, entryRelative, outputRelative, format = 'iife') {
+    const outfile = resolve(staging, outputRelative);
     mkdirSync(dirname(outfile), { recursive: true });
     await esbuild.build({
         entryPoints: [resolve(ROOT, entryRelative)],
@@ -132,36 +144,95 @@ async function bundle(entryRelative, outputRelative, format = 'iife') {
     writeFileSync(outfile, header + content, 'utf8');
 }
 
-rmSync(STAGING, { recursive: true, force: true });
 if (cleanOnly) {
-    rmSync(OUTPUT, { recursive: true, force: true });
+    for (const target of ['chromium', 'firefox']) {
+        rmSync(resolve(ROOT, `platform/${target}`), {
+            recursive: true,
+            force: true,
+        });
+        rmSync(resolve(ROOT, `dist/.${target}-build`), {
+            recursive: true,
+            force: true,
+        });
+    }
     process.exit(0);
 }
 
+function configureManifest(staging, target) {
+    const path = resolve(staging, 'manifest.json');
+    const sourceManifest = JSON.parse(readFileSync(path, 'utf8'));
+    if (sourceManifest.version !== '0.2.0') {
+        throw new Error(
+            `Static manifest version must be 0.2.0, found ${sourceManifest.version}`,
+        );
+    }
+
+    if (target === 'chromium') {
+        rmSync(resolve(staging, 'js/firefox-api-bridge.js'), { force: true });
+        return;
+    }
+
+    const manifest = createTargetManifest(sourceManifest, target);
+    writeFileSync(path, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
+}
+
+function injectFirefoxBridge(staging) {
+    for (const file of listFiles(staging).filter(path => path.endsWith('.html'))) {
+        const html = readFileSync(file, 'utf8');
+        if (
+            !html.includes('</head>') ||
+            html.includes('firefox-api-bridge.js')
+        ) {
+            continue;
+        }
+        writeFileSync(
+            file,
+            html.replace(
+                '</head>',
+                '<script src="/js/firefox-api-bridge.js"></script>\n</head>',
+            ),
+            'utf8',
+        );
+    }
+}
+
+async function buildTarget(target) {
+    const output = resolve(ROOT, `platform/${target}`);
+    const staging = resolve(ROOT, `dist/.${target}-build`);
+
+    rmSync(staging, { recursive: true, force: true });
+    mkdirSync(dirname(staging), { recursive: true });
+    cpSync(STATIC_SOURCE, staging, { recursive: true });
+    for (const file of listFiles(staging)) {
+        if (file.endsWith('.ts')) rmSync(file, { force: true });
+    }
+
+    for (const [entry, outfile] of Object.entries(entries)) {
+        await bundle(
+            staging,
+            entry,
+            outfile,
+            moduleOutputs.has(outfile) ? 'esm' : 'iife',
+        );
+    }
+    await bundle(staging, 'src/extension/js/sw-entry.ts', 'js/sw.js', 'esm');
+    configureManifest(staging, target);
+    if (target === 'firefox') injectFirefoxBridge(staging);
+
+    rmSync(output, { recursive: true, force: true });
+    mkdirSync(dirname(output), { recursive: true });
+    renameSync(staging, output);
+
+    const files = listFiles(output);
+    const bytes = files.reduce((sum, file) => sum + statSync(file).size, 0);
+    console.log(
+        `${target === 'firefox' ? 'Firefox' : 'Chromium'} ` +
+        `${isDevelopment ? 'development' : 'production'} build: ` +
+        `${files.length} files, ${(bytes / 1024 / 1024).toFixed(2)} MiB`,
+    );
+}
+
 assertStaticSourceIsClean();
-mkdirSync(dirname(STAGING), { recursive: true });
-cpSync(STATIC_SOURCE, STAGING, { recursive: true });
-for (const file of listFiles(STAGING)) {
-    if (file.endsWith('.ts')) rmSync(file, { force: true });
+for (const target of targets) {
+    await buildTarget(target);
 }
-
-for (const [entry, outfile] of Object.entries(entries)) {
-    await bundle(entry, outfile, moduleOutputs.has(outfile) ? 'esm' : 'iife');
-}
-await bundle('src/extension/js/sw-entry.ts', 'js/sw.js', 'esm');
-
-const manifest = JSON.parse(readFileSync(resolve(STAGING, 'manifest.json'), 'utf8'));
-if (manifest.version !== '0.2.0') {
-    throw new Error(`Static manifest version must be 0.2.0, found ${manifest.version}`);
-}
-
-rmSync(OUTPUT, { recursive: true, force: true });
-mkdirSync(dirname(OUTPUT), { recursive: true });
-renameSync(STAGING, OUTPUT);
-
-const files = listFiles(OUTPUT);
-const bytes = files.reduce((sum, file) => sum + statSync(file).size, 0);
-console.log(
-    `Chromium ${isDevelopment ? 'development' : 'production'} build: ` +
-    `${files.length} files, ${(bytes / 1024 / 1024).toFixed(2)} MiB`,
-);

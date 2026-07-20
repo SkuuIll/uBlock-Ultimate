@@ -2,7 +2,7 @@
   "name": "ublock-ultimate",
   "version": "0.2.0",
   "private": true,
-  "description": "uBlock Ultimate — efficient Chromium MV3 content blocker",
+  "description": "uBlock Ultimate — efficient Chromium and Firefox MV3 content blocker",
   "type": "module",
   "author": "SkuuIll",
   "license": "GPL-3.0-only",
@@ -18,17 +18,25 @@
     "node": ">=22",
     "npm": ">=11"
   },
+  "overrides": {
+    "adm-zip": "0.6.0"
+  },
   "scripts": {
     "clean": "node build.mjs --clean",
-    "build": "node build.mjs",
-    "dev": "node build.mjs --dev",
+    "build": "node build.mjs --target=all",
+    "build:chromium": "node build.mjs --target=chromium",
+    "build:firefox": "node build.mjs --target=firefox",
+    "dev": "node build.mjs --dev --target=all",
+    "dev:chromium": "node build.mjs --dev --target=chromium",
+    "dev:firefox": "node build.mjs --dev --target=firefox",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint build.mjs tools/modern-audit.mjs tools/package-release.mjs src/extension/js/hybrid-filter-updater.ts src/extension/js/newtab.js src/extension/js/storage-schema-v2.ts src/runtime tests",
+    "lint": "eslint build.mjs tools/firefox-lint.mjs tools/manifest-targets.mjs tools/modern-audit.mjs tools/package-release.mjs src/extension/js/hybrid-filter-updater.ts src/extension/js/newtab.js src/extension/js/storage-schema-v2.ts src/runtime tests",
     "test": "vitest run",
     "test:e2e": "playwright test",
+    "lint:firefox": "node tools/firefox-lint.mjs",
     "audit": "node tools/modern-audit.mjs",
-    "package": "npm run build && npm run audit && node tools/package-release.mjs",
-    "verify": "npm run typecheck && npm run lint && npm run test && npm run build && npm run audit"
+    "package": "npm run build && npm run lint:firefox && npm run audit && node tools/package-release.mjs",
+    "verify": "npm run typecheck && npm run lint && npm run test && npm run build && npm run lint:firefox && npm run audit"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -40,6 +48,7 @@
     "globals": "^15.14.0",
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.61.1",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "web-ext": "10.5.0"
   }
 }
