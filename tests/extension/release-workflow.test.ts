@@ -40,8 +40,8 @@ describe('automatic release contract', () => {
         expect(packageTool).toContain('const suffix = `${target}.zip`');
         expect(packageTool).toContain("resolve(RELEASE, 'SHA256SUMS.txt')");
         expect(workflow).toContain('RELEASE_NOTES.md');
-        expect(workflow).toContain('Google Chrome / Chromium MV3');
-        expect(workflow).toContain('Firefox Desktop / Android');
+        expect(workflow).toContain('Google Chrome y Chromium MV3');
+        expect(workflow).toContain('Firefox Desktop y Android');
         expect(workflow).toContain('done < dist/release/SHA256SUMS.txt');
         expect(packageTool).toContain('FORBIDDEN_PROJECT_ENTRY');
         expect(packageTool).toContain(
@@ -70,6 +70,21 @@ describe('automatic release contract', () => {
             'for asset in "${assets[@]}"; do',
         );
         expect(workflow).not.toContain('softprops/action-gh-release');
+    });
+
+    it('publishes the continuous build as a normal latest release', () => {
+        expect(publishScript).toContain('args+=(--latest)');
+        expect(publishScript).toContain(
+            'args+=(--prerelease=false --latest)',
+        );
+        expect(publishScript).not.toContain(
+            '--prerelease --latest=false',
+        );
+        expect(workflow).toContain(
+            '"uBlock Ultimate $VERSION - Latest"',
+        );
+        expect(workflow).toContain('## Características principales');
+        expect(workflow).toContain('## Instalación');
     });
 
     it('only signs Firefox when Mozilla credentials are configured', () => {

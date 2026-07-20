@@ -63,19 +63,38 @@ jobs:
         shell: bash
         run: |
           {
-            printf '## uBlock Ultimate %s\n\n' "$VERSION"
-            printf 'Build verified automatically from commit [`%s`](%s).\n\n' \
+            printf '# uBlock Ultimate %s\n\n' "$VERSION"
+            printf 'Bloqueador de contenido Manifest V3 eficiente, sin telemetría y preparado para Chromium, Firefox Desktop y Firefox para Android.\n\n'
+            printf 'Esta compilación fue verificada automáticamente desde el commit [`%s`](%s).\n\n' \
               "${GITHUB_SHA:0:7}" "$COMMIT_URL"
-            printf -- '- Update: %s\n' "$COMMIT_MESSAGE"
-            printf -- '- Workflow: [GitHub Actions run](%s)\n\n' "$RUN_URL"
-            printf '### Installation files\n\n'
-            printf -- '- **Google Chrome / Chromium MV3:** `uBlock-Ultimate-%s-chromium.zip`\n' "$VERSION"
-            printf -- '- **Firefox Desktop / Android:** `uBlock-Ultimate-%s-firefox.zip`\n\n' "$VERSION"
+            printf '## Descargas\n\n'
+            printf '| Navegador | Archivo | Uso |\n'
+            printf '| --- | --- | --- |\n'
+            printf '| Google Chrome y Chromium MV3 | `uBlock-Ultimate-%s-chromium.zip` | Descomprimir y cargar desde `chrome://extensions` |\n' "$VERSION"
+            printf '| Firefox Desktop y Android | `uBlock-Ultimate-%s-firefox.zip` | Paquete validado para firma o instalación temporal |\n\n' "$VERSION"
+            printf 'Los ZIP contienen únicamente la extensión instalable. No incluyen el código fuente del proyecto, pruebas, herramientas, dependencias ni archivos internos de GitHub.\n\n'
+            printf '## Características principales\n\n'
+            printf -- '- Bloqueo de anuncios, rastreadores, malware y parámetros de seguimiento.\n'
+            printf -- '- Listas y protecciones opcionales activables desde la interfaz.\n'
+            printf -- '- Filtros propios, reglas dinámicas, logger, picker y zapper.\n'
+            printf -- '- Interfaz adaptable para escritorio y dispositivos móviles compatibles.\n'
+            printf -- '- Sin telemetría ni transmisión de datos de uso.\n\n'
+            printf '## Instalación\n\n'
+            printf '### Chrome / Chromium\n\n'
+            printf '1. Descargar y descomprimir el ZIP de Chromium.\n'
+            printf '2. Abrir `chrome://extensions` y activar **Modo de desarrollador**.\n'
+            printf '3. Elegir **Cargar descomprimida** y seleccionar la carpeta extraída.\n\n'
+            printf '### Firefox\n\n'
+            printf 'El ZIP de Firefox supera la validación automatizada, pero Mozilla exige firma para una instalación permanente. Para pruebas temporales en escritorio se puede cargar su `manifest.json` desde `about:debugging`.\n\n'
+            printf '## Verificación\n\n'
+            printf -- '- Actualización: %s\n' "$COMMIT_MESSAGE"
+            printf -- '- Ejecución: [GitHub Actions](%s)\n' "$RUN_URL"
+            printf -- '- Licencia: GPL-3.0-only\n'
+            printf -- '- Código base acreditado: [uBlock Origin](https://github.com/gorhill/uBlock)\n\n'
             printf '### SHA-256\n\n'
             while read -r hash filename; do
               printf -- '- `%s` — `%s`\n' "$filename" "$hash"
             done < dist/release/SHA256SUMS.txt
-            printf '\n> Firefox requires Mozilla signing for permanent installation.\n'
           } > dist/release/RELEASE_NOTES.md
 
       - name: Require version tag to match package.json
@@ -134,7 +153,7 @@ jobs:
         run: |
           bash .github/scripts/publish-release.sh \
             continuous \
-            'Latest automatic build' \
+            "uBlock Ultimate $VERSION - Latest" \
             dist/release/RELEASE_NOTES.md \
             continuous \
             dist/release/uBlock-Ultimate-${{ env.VERSION }}-chromium.zip \

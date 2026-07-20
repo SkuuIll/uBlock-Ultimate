@@ -1,9 +1,29 @@
 # uBlock Ultimate
 
+[![Build and release](https://github.com/SkuuIll/uBlock-Ultimate/actions/workflows/release.yml/badge.svg)](https://github.com/SkuuIll/uBlock-Ultimate/actions/workflows/release.yml)
+[![Latest release](https://img.shields.io/github/v/release/SkuuIll/uBlock-Ultimate?include_prereleases&label=release)](https://github.com/SkuuIll/uBlock-Ultimate/releases/latest)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-7c3aed)](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
+[![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-64748b)](LICENSE.txt)
+
 uBlock Ultimate es un bloqueador de contenido Manifest V3 para Chromium,
 Firefox Desktop y Firefox para Android.
 Mantiene herramientas avanzadas —listas, filtros propios, reglas dinámicas, logger,
 picker y zapper— con una interfaz oscura y un build reproducible.
+
+> Proyecto independiente mantenido por SkuuIll y basado en el trabajo de
+> [uBlock Origin](https://github.com/gorhill/uBlock). No existe afiliación oficial.
+
+## Descargas
+
+La versión verificada más reciente se encuentra en
+[GitHub Releases](https://github.com/SkuuIll/uBlock-Ultimate/releases/latest):
+
+- **Chrome / Chromium MV3:** `uBlock-Ultimate-<versión>-chromium.zip`
+- **Firefox Desktop / Android:** `uBlock-Ultimate-<versión>-firefox.zip`
+
+Los paquetes publicados contienen solamente la extensión instalable. El código
+fuente, las pruebas, las herramientas de desarrollo y las dependencias no se
+incluyen dentro de esos ZIP.
 
 ## Estado
 
@@ -99,8 +119,9 @@ independientes:
 - `uBlock-Ultimate-<versión>-chromium.zip`
 - `uBlock-Ultimate-<versión>-firefox.zip`
 
-Los push directos a `main` actualizan automáticamente el prerelease
-**Latest automatic build** bajo el tag móvil `continuous`. Los tags de versión,
+Los push directos a `main` actualizan automáticamente el Release normal
+**uBlock Ultimate <versión> - Latest** bajo el tag móvil `continuous` y lo
+marcan como la versión más reciente. Los tags de versión,
 por ejemplo `v0.2.1`, crean un Release versionado y deben coincidir con la
 versión declarada en `package.json`.
 

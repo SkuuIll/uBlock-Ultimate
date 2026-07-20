@@ -50,7 +50,7 @@ create_release() {
     )
 
     if [[ "$release_kind" == "continuous" ]]; then
-        args+=(--prerelease --latest=false)
+        args+=(--latest)
     elif [[ "$release_kind" == "versioned" ]]; then
         args+=(--generate-notes --latest)
     else
@@ -68,11 +68,7 @@ update_release() {
         --notes-file "$notes_file"
     )
 
-    if [[ "$release_kind" == "continuous" ]]; then
-        args+=(--prerelease --latest=false)
-    else
-        args+=(--latest)
-    fi
+    args+=(--prerelease=false --latest)
 
     gh "${args[@]}"
 }
