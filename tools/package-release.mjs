@@ -19,6 +19,8 @@ const UTF8_FLAG = 0x0800;
 const DEFLATE_METHOD = 8;
 const DOS_TIME = 0;
 const DOS_DATE = 33; // 1980-01-01, the earliest ZIP timestamp.
+const FORBIDDEN_PROJECT_ENTRY =
+    /^(?:\.git(?:hub)?|dist|node_modules|platform|src|tests?|tools)(?:\/|$)|^(?:build\.mjs|package(?:-lock)?\.json|playwright\.config\.[cm]?[jt]s|tsconfig\.json)$/;
 
 function listFiles(root) {
     const files = [];
@@ -107,12 +109,28 @@ function packageTarget(target) {
         );
     }
 
+    const files = listFiles(extension);
+    const names = files.map(path =>
+        relative(extension, path).replaceAll('\\', '/')
+    );
+    if (!names.includes('manifest.json')) {
+        throw new Error(`${target} package has no root manifest.json`);
+    }
+    const forbiddenEntry = names.find(name =>
+        FORBIDDEN_PROJECT_ENTRY.test(name)
+    );
+    if (forbiddenEntry !== undefined) {
+        throw new Error(
+            `${target} package contains project-only file: ${forbiddenEntry}`,
+        );
+    }
+
     const suffix = `${target}.zip`;
     const archive = resolve(
         RELEASE,
         `uBlock-Ultimate-${packageJson.version}-${suffix}`,
     );
-    const entries = listFiles(extension).map(path => {
+    const entries = files.map(path => {
         const content = readFileSync(path);
         const name = Buffer.from(
             relative(extension, path).replaceAll('\\', '/'),

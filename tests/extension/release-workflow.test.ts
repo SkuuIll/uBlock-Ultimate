@@ -11,13 +11,19 @@ const packageTool = readFileSync(
     resolve(root, 'tools/package-release.mjs'),
     'utf8',
 );
+const publishScript = readFileSync(
+    resolve(root, '.github/scripts/publish-release.sh'),
+    'utf8',
+);
 
 describe('automatic release contract', () => {
     it('builds on main updates and version tags', () => {
         expect(workflow).toContain('branches:\n      - main');
         expect(workflow).toContain("tags:\n      - 'v*'");
         expect(workflow).toContain('actions/upload-artifact@v4');
-        expect(workflow).toContain('tag_name: continuous');
+        expect(workflow).toContain(
+            'bash .github/scripts/publish-release.sh',
+        );
         expect(workflow).toContain('Create versioned release');
         expect(workflow).toContain(
             'npm install --global npm@11.17.0',
@@ -37,6 +43,21 @@ describe('automatic release contract', () => {
         expect(workflow).toContain('Google Chrome / Chromium MV3');
         expect(workflow).toContain('Firefox Desktop / Android');
         expect(workflow).toContain('done < dist/release/SHA256SUMS.txt');
+        expect(packageTool).toContain('FORBIDDEN_PROJECT_ENTRY');
+        expect(packageTool).toContain(
+            'package contains project-only file',
+        );
+    });
+
+    it('retries transient GitHub API failures with an explicit tag', () => {
+        expect(publishScript).toContain('max_attempts=5');
+        expect(publishScript).toContain('gh release view "$tag"');
+        expect(publishScript).toContain('release create "$tag"');
+        expect(publishScript).toContain('gh "${args[@]}"');
+        expect(publishScript).toContain(
+            'retry gh release upload "$tag"',
+        );
+        expect(workflow).not.toContain('softprops/action-gh-release');
     });
 
     it('only signs Firefox when Mozilla credentials are configured', () => {
