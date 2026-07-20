@@ -1,5 +1,5 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { relative, resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 
 const root = resolve(import.meta.dirname, '../..');
@@ -13,7 +13,25 @@ function readPngSize(path: string): [number, number] {
     return [png.readUInt32BE(16), png.readUInt32BE(20)];
 }
 
+function sourceFiles(directory: string): string[] {
+    return readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
+        const path = resolve(directory, entry.name);
+        return entry.isDirectory() ? sourceFiles(path) : [path];
+    });
+}
+
 describe('extension source contract', () => {
+    it('never imports generated browser output from editable source', () => {
+        const generatedOutputImport =
+            /(?:from\s+|import\s*\()\s*['"][^'"]*platform\/(?:chromium|firefox)\//;
+        const offenders = sourceFiles(resolve(root, 'src'))
+            .filter(path => /\.[cm]?[jt]sx?$/.test(path))
+            .filter(path => generatedOutputImport.test(readFileSync(path, 'utf8')))
+            .map(path => relative(root, path).replaceAll('\\', '/'));
+
+        expect(offenders).toEqual([]);
+    });
+
     it('contains exactly the supported locales', () => {
         const locales = readdirSync(resolve(source, '_locales'))
             .filter(name => statSync(resolve(source, '_locales', name)).isDirectory())

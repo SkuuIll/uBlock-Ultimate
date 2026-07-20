@@ -9,7 +9,7 @@
 ******************************************************************************/
 
 import { runPreHooks } from "./site-protector.js";
-import { resolvePagePolicy } from "../../../platform/chromium/js/policy-resolver.js";
+import { resolvePagePolicy } from "../../extension/js/policy-resolver.js";
 
 export interface ContentScriptParamsHandlerDeps {
     getHostnameSwitchState: () => Record<string, Record<string, boolean>>;
