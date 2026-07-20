@@ -49,13 +49,25 @@ describe('automatic release contract', () => {
         );
     });
 
-    it('retries transient GitHub API failures with an explicit tag', () => {
-        expect(publishScript).toContain('max_attempts=5');
+    it('retries transient API failures and verifies every asset digest', () => {
+        expect(publishScript).toContain('max_attempts=8');
         expect(publishScript).toContain('gh release view "$tag"');
         expect(publishScript).toContain('release create "$tag"');
         expect(publishScript).toContain('gh "${args[@]}"');
         expect(publishScript).toContain(
-            'retry gh release upload "$tag"',
+            'expected_digest="sha256:$(sha256sum',
+        );
+        expect(publishScript).toContain(
+            'remote_asset_metadata "$name"',
+        );
+        expect(publishScript).toContain(
+            'delete_remote_asset "$asset_id"',
+        );
+        expect(publishScript).toContain(
+            'gh release upload "$tag" "$asset"',
+        );
+        expect(publishScript).toContain(
+            'for asset in "${assets[@]}"; do',
         );
         expect(workflow).not.toContain('softprops/action-gh-release');
     });
